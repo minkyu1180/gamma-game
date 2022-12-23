@@ -1,0 +1,2 @@
+# gamma-game
+GammaGameAlphaVer
