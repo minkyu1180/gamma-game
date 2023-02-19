@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: ee693e02112594dba83167cfaf2daf2f
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - GyeonggiBatangOTF
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 018adba93dd9b44f1b0767ba67923734, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

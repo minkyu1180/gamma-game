@@ -42,3 +42,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: UI_Elements
+    uniqueID: 933964411
+    locked: 0
+  - name: BackgroundImageLayer
+    uniqueID: 1738717511
+    locked: 0

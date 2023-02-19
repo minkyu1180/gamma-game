@@ -1,0 +1,6 @@
+Character(jihee, 이지희, color=red, image=default)
+ChangeEmotion jihee anger
+jihee "창밖에 참새가 날아가네 두려울 것도 없지 날아가네"
+jihee "후 ....."
+show openingCutScene1
+jihee "예아 아 필 굳"
