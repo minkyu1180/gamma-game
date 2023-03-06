@@ -11,6 +11,7 @@ public class InputDecoder
 {
     public static List<Character> CharacterList = new List<Character> ();
 
+    public static AudioSource bgmManager = GameObject.Find("BGMControlManager").GetComponent<AudioSource>();
     public static GameObject InterfaceElements = GameObject.Find("UI_Elements");
     private static GameObject Background = GameObject.Find("Background");
     private static Image BackgroundImage = Background.GetComponent<Image>();
@@ -25,6 +26,10 @@ public class InputDecoder
         string withOutTabs = stringToParse.Replace("\t", "");
         stringToParse = withOutTabs;
 
+        if (stringToParse == "")
+        {
+            return;
+        }
         if (stringToParse.StartsWith("\""))
         {
             Say(stringToParse);
@@ -45,7 +50,7 @@ public class InputDecoder
             showImage(stringToParse);
         }
 
-        if (args[0] == "clrscr")
+        if (args[0] == "Clear")
         {
             ClearScene();
         }
@@ -60,9 +65,40 @@ public class InputDecoder
             {
                 if (args[1] == character.shortName)
                 {
-                    character.sideImage = args[2];
+                    character.emotion = args[2];
                 }
             }
+        }
+
+        if (args[0] == "ChangeColor")
+        {
+            foreach (Character character in CharacterList)
+            {
+                if (args[1] == character.shortName)
+                {
+                    Color MyColour = Color.clear; ColorUtility.TryParseHtmlString (args[2], out MyColour);
+                    character.color = MyColour;
+                }
+            }
+        }
+
+        if (args[0] == "ChangeSpeed"){
+            foreach (Character character in CharacterList)
+            {
+                if (args[1] == character.shortName)
+                {
+                    character.textSpeed = float.Parse(args[2]);
+                }
+            }
+        }
+
+        if (args[0] == "PlayMusic"){
+            bgmManager.clip = Resources.Load("Sound/Music/" + args[1]) as AudioClip;
+            bgmManager.Play();
+        }
+
+        if (args[0] == "StopMusic"){
+            bgmManager.Stop();
         }
     }
 
@@ -73,7 +109,7 @@ public class InputDecoder
         int toQuote = stringToParse.IndexOf("\"") + 1;
         int endQuote = stringToParse.Length - 1;
         string stringToOutput = stringToParse.Substring(toQuote, endQuote - toQuote);
-        Say(character, stringToOutput, character.sideImage);
+        Say(character, stringToOutput, character.emotion);
     }
 
     public static void Say(string what)
@@ -81,7 +117,11 @@ public class InputDecoder
         if (!InterfaceElements.activeInHierarchy) InterfaceElements.SetActive(true);
         //DialogBoxTextObject.GetComponent<TextMeshProUGUI>().text = what;
         dialogMode = true;
+        DialogBoxTextObject.GetComponent<TextMeshProUGUI>().color = Color.white;
+        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().textSpeed = 0.06f;
         DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().PutDialog(what);
+        NamePlateTextObject.GetComponent<TextMeshProUGUI>().text = "";
+        PortraitImage.sprite = null;
     }
 
     public static void Say(Character character, string what, string sideImage)
@@ -89,9 +129,11 @@ public class InputDecoder
         if (!InterfaceElements.activeInHierarchy) InterfaceElements.SetActive(true);
         //DialogBoxTextObject.GetComponent<TextMeshProUGUI>().text = what;
         dialogMode = true;
-        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().PutDialog(what);
+        DialogBoxTextObject.GetComponent<TextMeshProUGUI>().color = character.color;
+        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().textSpeed = character.textSpeed;
+        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().PutDialog(what, character.voice);
         NamePlateTextObject.GetComponent<TextMeshProUGUI>().text = character.fullName;
-        PortraitImage.sprite = Resources.Load<Sprite> ("images/" + character.shortName + '/' + sideImage);
+        PortraitImage.sprite = Resources.Load<Sprite> ("Images/" + character.shortName + '/' + sideImage);
     }
 
     
@@ -106,7 +148,7 @@ public class InputDecoder
         var matches = imageToUse.Match(stringToParse);
         string imageToShow = matches.Groups["ImageFileName"].ToString();
 
-        BackgroundImage.sprite = Resources.Load<Sprite>("images/" + imageToShow);
+        BackgroundImage.sprite = Resources.Load<Sprite>("Images/background/" + imageToShow);
     }
 
     public static void ClearScene()
@@ -122,21 +164,24 @@ public class InputDecoder
         string newCharShortName = null;
         string newCharFullName = null;
         Color newCharColor = Color.white;
-        string newCharSideImage = null;
+        string newCharEmotion = null;
+        float newCharTextSpeed = 0.06f;
+        string newCharVoice = null;
 
-
-        var characterExpression = new Regex(@"Character\((?<shortName>[a-zA-Zㄱ-ㅎ가-힣0-9_]+), (?<fullName>[a-zA-Zㄱ-ㅎ가-힣0-9_]+), color=(?<characterColor>[a-zA-Zㄱ-ㅎ가-힣0-9_]+), image=(?<sideImage>[a-zA-Zㄱ-ㅎ가-힣0-9_]+)\)");
+        var characterExpression = new Regex(@"Character\((?<shortName>[a-zA-Zㄱ-ㅎ가-힣0-9_]+), (?<fullName>[a-zA-Zㄱ-ㅎ가-힣0-9_]+), color=(?<characterColor>[a-zA-Zㄱ-ㅎ가-힣0-9_]+), emotion=(?<emotion>[a-zA-Zㄱ-ㅎ가-힣0-9_]+), speed=(?<textSpeed>[a-zA-Zㄱ-ㅎ가-힣0-9_.]+), voice=(?<voice>[a-zA-Zㄱ-ㅎ가-힣0-9_.]+)\)");
         if (characterExpression.IsMatch(stringToParse))
         {
             var matches = characterExpression.Match(stringToParse);
             newCharShortName = matches.Groups["shortName"].ToString();
             newCharFullName = matches.Groups["fullName"].ToString();
             newCharColor = Color.clear; ColorUtility.TryParseHtmlString(matches.Groups["characterColor"].ToString(), out newCharColor);
-            newCharSideImage = matches.Groups["sideImage"].ToString();
+            newCharEmotion = matches.Groups["emotion"].ToString();
+            newCharTextSpeed = float.Parse(matches.Groups["textSpeed"].ToString());
+            newCharVoice = matches.Groups["voice"].ToString();
         }
 
 
-        CharacterList.Add(new Character(newCharShortName, newCharFullName, newCharColor, newCharSideImage));
+        CharacterList.Add(new Character(newCharShortName, newCharFullName, newCharColor, newCharEmotion, newCharTextSpeed, newCharVoice));
     }
     #endregion
 }

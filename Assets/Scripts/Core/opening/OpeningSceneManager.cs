@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class OpeningSceneManager : MonoBehaviour
 {
+    
     void Start()
     {
         GameObject DialogBoxTextObject = GameObject.Find("DialogBoxText");
         DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Scripts/Opening");
+        
         
 
 

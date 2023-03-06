@@ -6,17 +6,23 @@ using TMPro;
 public class DialogBoxTextTyper:MonoBehaviour
 {
     TextMeshProUGUI dialogText;
+    AudioSource audioSource;
     private static string dialog;
     public bool quickDialog = false;
     public bool loading = true;
+    public float textSpeed = 0.04f;
+    public AudioClip speechVoice;
 
+    private AudioClip clickSound;
     private List<string> commands = new List<string>();
     private int commandLine = 0;
     private string lastCommand = "";
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         dialogText = GetComponent<TextMeshProUGUI>();
+        clickSound = Resources.Load("Sound/Voice/clickSound") as AudioClip;
         dialog = "";
     }
 
@@ -29,7 +35,7 @@ public class DialogBoxTextTyper:MonoBehaviour
                 InputDecoder.ParseInputLine(commands[commandLine]);
             }
 
-            if (!InputDecoder.dialogMode && commandLine < commands.Count - 1)
+            if (!InputDecoder.dialogMode && commandLine < commands.Count)
             {
                 commandLine++;
             }
@@ -40,6 +46,7 @@ public class DialogBoxTextTyper:MonoBehaviour
                 else if ( quickDialog && (Input.GetMouseButtonDown(0) || Input.GetKeyDown("left ctrl")) ) 
                 {
                     InputDecoder.dialogMode = false;
+                    audioSource.PlayOneShot(clickSound);
                     if (commands.Count - 1 == commandLine)  //end of the script
                     {
                         commands.Clear();
@@ -47,12 +54,20 @@ public class DialogBoxTextTyper:MonoBehaviour
                     }
                 }
             }
+            else
+            {
+                if (commands.Count == commandLine)  //end of the script
+                {
+                    commands.Clear();
+                    InputDecoder.InterfaceElements.SetActive(false);
+                }
+            }
         }
     }
 
     public void LoadScript(string filePath)
     {
-        TextAsset commandFile = Resources.Load<TextAsset>("Scripts/Opening");
+        TextAsset commandFile = Resources.Load<TextAsset>(filePath);
         var commandArray = commandFile.text.Split('\n');
         foreach (var line in commandArray)
         {
@@ -63,7 +78,16 @@ public class DialogBoxTextTyper:MonoBehaviour
 
     public void PutDialog(string say)
     {
-        dialogText = GetComponent<TextMeshProUGUI>();
+        audioSource.mute = true;
+        dialog = say;
+        quickDialog = false;
+        StartCoroutine(DisplayLine());
+    }
+
+    public void PutDialog(string say, AudioClip voice)
+    {
+        audioSource.mute = false;
+        speechVoice = voice;
         dialog = say;
         quickDialog = false;
         StartCoroutine(DisplayLine());
@@ -75,11 +99,15 @@ public class DialogBoxTextTyper:MonoBehaviour
     IEnumerator DisplayLine()
     {
         dialogText.text = "";
-
+        
 
         foreach (char letter in dialog.ToCharArray())
         {
+            
             dialogText.text += letter;
+            if (letter != ' '){
+                audioSource.PlayOneShot(speechVoice);
+            }
             if (quickDialog)
             { 
                 dialogText.text = dialog;
@@ -92,7 +120,7 @@ public class DialogBoxTextTyper:MonoBehaviour
                     quickDialog = true;
                     break;
                 }
-                yield return new WaitForSeconds(0.04f);
+                yield return new WaitForSeconds(textSpeed);
             }
         }
 
