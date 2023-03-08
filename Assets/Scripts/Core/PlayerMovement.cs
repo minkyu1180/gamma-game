@@ -10,7 +10,10 @@ public class PlayerMovement : MonoBehaviour
 
     public float jump;
 
-    public bool isJumping;
+    public bool doubleJumpEnabled;
+    public bool highJumpEnabled;
+
+    public bool isDirectionDoomed;
     public bool isDoubleJumpUsed;
     public bool isRight;
 
@@ -22,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         isRight = true;
-        isJumping = true;
+        isDirectionDoomed = true;
         isDoubleJumpUsed = false;
         Player = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -30,7 +33,6 @@ public class PlayerMovement : MonoBehaviour
         beforeJumpInertia = 0f;
     }
 
-    // Update is called once per frame
     void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");
@@ -38,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
         {
             spriteRenderer.flipX = Input.GetAxisRaw("Horizontal") == -1;
             isRight = Input.GetAxisRaw("Horizontal") == 1;
-            if (!isJumping)
+            if (!isDirectionDoomed)
             {
                 anim.SetBool("isWalking", true);
             }
@@ -55,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
         {
             horizontalInput = 0f;
         }
-        if (isJumping)
+        if (isDirectionDoomed) //isJump     
         {
             if (beforeJumpInertia * horizontalInput <= 0f)
                 horizontalInput *= 0.07f;
@@ -63,16 +65,17 @@ public class PlayerMovement : MonoBehaviour
                 horizontalInput *= 0.9f;
         }
 
-        //Player.velocity = new Vector2(speed * move, Player.velocity.y);  //speed 2
-        Player.AddForce(new Vector2(speed * horizontalInput, 0f)); //speed 0.4
+        //Player.transform.Translate (speed * Time.deltaTime * horizontalInput, 0, 0);  //speed 
+        //Player.AddForce(new Vector2(speed * horizontalInput, 0f)); //speed 2
+        //Debug.Log(horizontalInput);
     
-        if (Input.GetButton("Jump") && !isJumping)
+        if (Input.GetButtonDown("Jump") && !anim.GetBool("IsFloat")) // isJumping
         {
-            isJumping = true;
+            isDirectionDoomed = true;
             if (horizontalInput > 0f) beforeJumpInertia = 1f;
             else if (horizontalInput < 0f) beforeJumpInertia = -1f;
             else beforeJumpInertia = 0f;
-            if (!Input.GetButton("Horizontal") && (Input.GetAxisRaw("Vertical") == 1))
+            if (!Input.GetButton("Horizontal") && (Input.GetAxisRaw("Vertical") == 1) && highJumpEnabled)
             {
                 Player.AddForce(new Vector2(0f, jump * 2f));
                 anim.SetTrigger("UpJumpTrigger");    
@@ -83,7 +86,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if (Input.GetButtonDown("Jump") && !isDoubleJumpUsed && anim.GetBool("IsFloat"))
+        else if (Input.GetButtonDown("Jump") && !isDoubleJumpUsed && anim.GetBool("IsFloat") && doubleJumpEnabled)
         {
             isDoubleJumpUsed = true;
             anim.SetBool("IsDoubleJumpUsed", true);
@@ -92,7 +95,7 @@ public class PlayerMovement : MonoBehaviour
             Player.AddForce(new Vector2(dir * 300f, jump * 0.5f));
         }
 
-        Debug.DrawRay(Player.position, Vector3.down, new Color(0, 1, 0));
+        //Debug.DrawRay(new Vector2(Player.position.x, Player.position.y), Vector3.down, new Color(0, 1, 0));
         RaycastHit2D rayHit = Physics2D.Raycast(Player.position, Vector3.down, 0.9f, LayerMask.GetMask("Platform"));
         if (rayHit.collider!=null)
         {
@@ -100,19 +103,28 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("IsFloat", false);
             isDoubleJumpUsed = false;
             anim.SetBool("IsDoubleJumpUsed", false);
+            //isJumping = false;
         }
         else
         {
             anim.SetBool("IsFloat", true);
+            //isJumping = true;
         }
     }
 
+    
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Ground"))
         {
-            isJumping = false;
+            isDirectionDoomed = false;
         }
+    }
+     
+
+    void FixedUpdate()
+    {
+       Player.AddForce(new Vector2(speed * horizontalInput, 0f)); //speed 20
     }
 
     /*

@@ -8,7 +8,7 @@ public class OpeningSceneManager : MonoBehaviour
     void Start()
     {
         GameObject DialogBoxTextObject = GameObject.Find("DialogBoxText");
-        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Scripts/Opening");
+        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Opening");
         
         
 
