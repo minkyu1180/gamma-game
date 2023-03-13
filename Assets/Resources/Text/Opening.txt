@@ -1,19 +1,20 @@
 Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+HideInGame
 PlayMusic disappointmentMusic
-show openingCutScene1
+Show openingCutScene1
 minkyu "'아주 오래전. 혼돈의 시대'"
 minkyu "'세계는 바야흐로 혼돈의 시대였다.'"
 minkyu "살인, 폭력, 강간, 공인 인증서..."
 ChangeSpeed minkyu 0.04
 minkyu "'...그런데 그때. 용사가 나타났다'"
 ChangeSpeed minkyu 0.06
-show openingCutScene2
+Show openingCutScene2
 minkyu "'그는 이 세상의 평온을 되찾았다.'"
 minkyu "'언젠가 그가 다시 이 땅에 도래한다면,'"
 ChangeColor minkyu grey
 minkyu "'그는 또다시 우리를 구원하리라.'"
 ChangeColor minkyu white
-show blackScene
+Show blackScene
 minkyu "유명한 전설이지만, 말이 안되는 이야기에요."
 
 ChangeEmotion minkyu happy
@@ -31,4 +32,6 @@ minkyu "아."
 minkyu "벌써 일어날 시간이군요."
 ChangeEmotion minkyu despise
 minkyu "삶은 참 힘들어요..."
+ShowInGame
+PlayMusic lobbyMusic
 Clear

@@ -7,12 +7,13 @@ using System.Text.RegularExpressions;
 using UnityEngine.UI;
 using TMPro;
 
-public class InputDecoder
+public class InputDecoder : MonoBehaviour
 {
-    public static List<Character> CharacterList = new List<Character> ();
-
+    /*
+    public static List<Character> CharacterList = new List<Character> ();   
     public static AudioSource bgmManager = GameObject.Find("BGMControlManager").GetComponent<AudioSource>();
     public static GameObject InterfaceElements = GameObject.Find("UI_Elements");
+    public static GameObject GameElements = GameObject.Find("GAME_Elements");
     private static GameObject Background = GameObject.Find("Background");
     private static Image BackgroundImage = Background.GetComponent<Image>();
     public static GameObject Portrait = GameObject.Find("Portrait");
@@ -20,7 +21,34 @@ public class InputDecoder
     public static GameObject DialogBoxTextObject = GameObject.Find("DialogBoxText");
     public static GameObject NamePlateTextObject = GameObject.Find("NamePlateText");
     public static bool dialogMode = false;
-
+    */
+    public static List<Character> CharacterList;
+    public static AudioSource bgmManager;
+    public static GameObject InterfaceElements;
+    public static GameObject GameElements;
+    private static GameObject Background;
+    private static Image BackgroundImage;
+    public static GameObject Portrait;
+    private static Image PortraitImage;
+    public static GameObject DialogBoxTextObject;
+    public static GameObject NamePlateTextObject;
+    public static bool dialogMode;
+    
+    void Start()
+    {
+        //CharacterList = new List<Character> ();
+        CharacterList = new List<Character> ();
+        bgmManager = GameObject.Find("BGMControlManager").GetComponent<AudioSource>();
+        InterfaceElements = GameObject.Find("UI_Elements");
+        GameElements = GameObject.Find("GAME_Elements");
+        Background = GameObject.Find("Background");
+        BackgroundImage = Background.GetComponent<Image>();
+        Portrait = GameObject.Find("Portrait");
+        PortraitImage = Portrait.GetComponent<Image>();
+        DialogBoxTextObject = GameObject.Find("DialogBoxText");
+        NamePlateTextObject = GameObject.Find("NamePlateText");
+        dialogMode = false;
+    }
     public static void ParseInputLine(string stringToParse)
     {
         string withOutTabs = stringToParse.Replace("\t", "");
@@ -45,7 +73,7 @@ public class InputDecoder
             }
         }
 
-        if (args[0] == "show")
+        if (args[0] == "Show")
         {
             showImage(stringToParse);
         }
@@ -82,7 +110,8 @@ public class InputDecoder
             }
         }
 
-        if (args[0] == "ChangeSpeed"){
+        if (args[0] == "ChangeSpeed")
+        {
             foreach (Character character in CharacterList)
             {
                 if (args[1] == character.shortName)
@@ -92,13 +121,28 @@ public class InputDecoder
             }
         }
 
-        if (args[0] == "PlayMusic"){
+        if (args[0] == "PlayMusic")
+        {
             bgmManager.clip = Resources.Load("Sound/Music/" + args[1]) as AudioClip;
             bgmManager.Play();
         }
 
-        if (args[0] == "StopMusic"){
+        if (args[0] == "StopMusic")
+        {
             bgmManager.Stop();
+        }
+        if (args[0] == "HideInGame")
+        {
+            GameElements.SetActive(false);
+        }
+        if (args[0] == "ShowInGame")
+        {
+            GameElements.SetActive(true);
+        }
+
+        if (args[0] == "Wait")
+        {
+            DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().Wait(float.Parse(args[1]));
         }
     }
 
@@ -144,7 +188,7 @@ public class InputDecoder
 
     public static void showImage(string stringToParse)
     {
-        var imageToUse = new Regex(@"show (?<ImageFileName>[^.]+)");
+        var imageToUse = new Regex(@"Show (?<ImageFileName>[^.]+)");
         var matches = imageToUse.Match(stringToParse);
         string imageToShow = matches.Groups["ImageFileName"].ToString();
 

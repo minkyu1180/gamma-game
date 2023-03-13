@@ -76,6 +76,16 @@ public class DialogBoxTextTyper:MonoBehaviour
         loading = false;
     }
 
+    public void Wait(float duration)
+    {
+        StartCoroutine(WaitInumerator(duration));
+    }
+    private IEnumerator WaitInumerator(float duration){
+        loading = true;
+        yield return new WaitForSeconds(duration);
+        loading = false;
+    }
+
     public void PutDialog(string say)
     {
         audioSource.mute = true;

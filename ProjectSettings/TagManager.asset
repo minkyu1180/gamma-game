@@ -15,8 +15,8 @@ TagManager:
   - 
   - 
   - Platform
-  - 
-  - 
+  - Player
+  - UnPassablePlatform
   - 
   - 
   - 
@@ -45,6 +45,12 @@ TagManager:
   - name: UI_Elements
     uniqueID: 933964411
     locked: 0
-  - name: BackgroundImageLayer
+  - name: Platform
+    uniqueID: 1587424953
+    locked: 0
+  - name: Minkyu
     uniqueID: 1738717511
+    locked: 0
+  - name: BackgroundImageLayer
+    uniqueID: 1018391199
     locked: 0

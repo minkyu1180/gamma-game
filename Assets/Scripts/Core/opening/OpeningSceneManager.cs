@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class OpeningSceneManager : MonoBehaviour
 {
-    
+    public static GameObject InterfaceElements;
+    public static GameObject GameElements;
     void Start()
     {
         GameObject DialogBoxTextObject = GameObject.Find("DialogBoxText");
+        InterfaceElements = GameObject.Find("UI_Elements");
+        GameElements = GameObject.Find("GAME_Elements");
         DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Opening");
-        
-        
 
 
     }
@@ -18,17 +19,24 @@ public class OpeningSceneManager : MonoBehaviour
     
     void Update()
     {
+        //Auto wrap (minkyu)
+        //InputDecoder.InterfaceElements.SetActive(true);
+        //Dialog load
+        //This is the text load way.
+
+        /*
         if (Input.GetKeyDown("h"))
         {
-            if (InputDecoder.InterfaceElements.activeInHierarchy)
+            if (InterfaceElements.activeInHierarchy)
             {
-                InputDecoder.InterfaceElements.SetActive(false);
+                InterfaceElements.SetActive(false);
             }
             else 
             {
-                InputDecoder.InterfaceElements.SetActive(true);
+                InterfaceElements.SetActive(true);
             }
         }
+        */
         //UI hidding func
         
     }
