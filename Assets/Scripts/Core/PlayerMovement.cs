@@ -55,6 +55,24 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (anim.GetBool("IsFloat") && PlayerRigidbody.velocity.y == 0.0f)
+        {
+            StartCoroutine(grounder());
+            // in case of halt
+        }
+
+        if (!anim.GetBool("IsDown"))
+        {
+            PlayerBoxCollider.offset = new Vector2(0.01754826f, 0.003339767f);
+            PlayerBoxCollider.size = new Vector2(0.9338287f, 1.671751f);
+            
+        }
+        else
+        {
+            PlayerBoxCollider.size = new Vector2(1.508463f, 0.8153801f);
+            PlayerBoxCollider.offset = new Vector2(0.001412272f, -0.4338576f);
+        }
+
         if (!frozen)
         {
             horizontalInput = Input.GetAxis("Horizontal");
@@ -143,7 +161,6 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-        //Debug.DrawRay(new Vector2(PlayerRigidbody.position.x, PlayerRigidbody.position.y), Vector3.down, new Color(0, 1, 0));
         RaycastHit2D rayHitUnpassable = Physics2D.Raycast(PlayerRigidbody.position, Vector3.down, 0.9f, LayerMask.GetMask("UnPassablePlatform"));
         if (rayHitUnpassable.collider != null)
         {
@@ -154,7 +171,10 @@ public class PlayerMovement : MonoBehaviour
             onPassablePlatform = true;
         }
 
-        RaycastHit2D rayHit = Physics2D.Raycast(PlayerRigidbody.position, Vector3.down, 0.9f, LayerMask.GetMask("Platform", "UnPassablePlatform"));
+
+        Debug.DrawRay(new Vector2(PlayerRigidbody.position.x, PlayerRigidbody.position.y - 0.8f), new Vector3(0.7f, 0f, 0f), new Color(0, 1, 0));
+        //Debug.DrawRay(new Vector2(PlayerRigidbody.position.x, PlayerRigidbody.position.y - 0.8f), new Vector3(0f, -0.4f, 0), new Color(0, 1, 0));
+        RaycastHit2D rayHit = Physics2D.Raycast(new Vector2(PlayerRigidbody.position.x, PlayerRigidbody.position.y -0.8f), Vector3.down, 0.4f, LayerMask.GetMask("Platform", "UnPassablePlatform"));
         if (rayHit.collider!=null && !isDirectionDoomed)
         {
             anim.SetBool("IsFloat", false);
@@ -167,15 +187,28 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public IEnumerator grounder()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            yield return new WaitForSeconds(0.05f);
+            if (PlayerRigidbody.velocity.y != 0f) break;
+            if (i == 4)
+            {
+                isDirectionDoomed = false;
+            }
+        }
+    }
+
     void FixedUpdate()
     {
         if (!frozen)
         PlayerRigidbody.AddForce(new Vector2(speed * horizontalInput, 0f)); //speed 20
     }
 
-    
     private void OnCollisionEnter2D(Collision2D other)
     {
+        //&& (PlayerRigidbody.velocity.y < 0.2)
         if (other.gameObject.CompareTag("Ground") && (PlayerRigidbody.velocity.y < 0.2))
         {
             isDirectionDoomed = false;

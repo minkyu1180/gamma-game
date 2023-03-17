@@ -34,4 +34,4 @@ ChangeEmotion minkyu despise
 minkyu "삶은 참 힘들어요..."
 ShowInGame
 PlayMusic lobbyMusic
-Clear
+Show gym
