@@ -55,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+
         if (anim.GetBool("IsFloat") && PlayerRigidbody.velocity.y == 0.0f)
         {
             StartCoroutine(grounder());
@@ -161,18 +162,18 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-        RaycastHit2D rayHitUnpassable = Physics2D.Raycast(PlayerRigidbody.position, Vector3.down, 0.9f, LayerMask.GetMask("UnPassablePlatform"));
+        RaycastHit2D rayHitUnpassable = Physics2D.Raycast(new Vector2(PlayerRigidbody.position.x, PlayerRigidbody.position.y -0.8f), Vector3.down, 0.4f, LayerMask.GetMask("PassablePlatform"));
         if (rayHitUnpassable.collider != null)
         {
-            onPassablePlatform = false; 
+            onPassablePlatform = true; 
         }
         else
         {
-            onPassablePlatform = true;
+            onPassablePlatform = false;
         }
 
 
-        Debug.DrawRay(new Vector2(PlayerRigidbody.position.x, PlayerRigidbody.position.y - 0.8f), new Vector3(0.7f, 0f, 0f), new Color(0, 1, 0));
+        //Debug.DrawRay(new Vector2(PlayerRigidbody.position.x, PlayerRigidbody.position.y - 0.8f), new Vector3(0.7f, 0f, 0f), new Color(0, 1, 0));
         //Debug.DrawRay(new Vector2(PlayerRigidbody.position.x, PlayerRigidbody.position.y - 0.8f), new Vector3(0f, -0.4f, 0), new Color(0, 1, 0));
         RaycastHit2D rayHit = Physics2D.Raycast(new Vector2(PlayerRigidbody.position.x, PlayerRigidbody.position.y -0.8f), Vector3.down, 0.4f, LayerMask.GetMask("Platform", "UnPassablePlatform"));
         if (rayHit.collider!=null && !isDirectionDoomed)
@@ -212,7 +213,6 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.CompareTag("Ground") && (PlayerRigidbody.velocity.y < 0.2))
         {
             isDirectionDoomed = false;
-            Debug.Log("wwww");
         }
     }
 
@@ -255,6 +255,15 @@ public class PlayerMovement : MonoBehaviour
         StartCoroutine(autoWalkInumerator(duration, isRight));
     }
 
+    public void autoDown()
+    {
+        anim.SetBool("IsDown", true);
+    }
+
+    public void autoUnDown()
+    {
+        anim.SetBool("IsDown", false);
+    }
 
     public IEnumerator autoWalkInumerator(float duration, bool isRight)
     {
@@ -298,7 +307,7 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("IsDown", false);
 
     }
-    public void unfreeze(){
+    public void unFreeze(){
         frozen = false;
     }
 

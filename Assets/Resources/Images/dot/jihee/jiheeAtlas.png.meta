@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 066f408d8fafc45fa9e7b2eea0839292
+guid: 2c87e6b0831ad4fc096626a444fb6665
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,148 +117,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: whiteTile
+      name: jihee_default
       rect:
         serializedVersion: 2
-        x: 46
-        y: 140
-        width: 33
-        height: 33
+        x: 5
+        y: 226
+        width: 34
+        height: 58
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 22, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eaa4a4c8b313b458a8baf0fe001eca4d
-      internalID: 1958939559
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: red tile
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 140
-        width: 33
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 774f1222e622e444787bba882820a838
-      internalID: 1111434732
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blue tile
-      rect:
-        serializedVersion: 2
-        x: 118
-        y: 140
-        width: 33
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 447d8f03648e94f07b47a2cc3b428504
-      internalID: -1476066518
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: red column
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 104
-        width: 33
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6585d017d9554edcb18012cffa8d732
-      internalID: 668663766
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: map sprite_0
-      rect:
-        serializedVersion: 2
-        x: 46
-        y: 104
-        width: 33
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 78a5cbfc0562149c4b78f426c26fd79d
-      internalID: -437861165
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blue rope
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 104
-        width: 33
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7c0aa10d1f5f3457e9669884a81e5e38
-      internalID: 438317126
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blue column
-      rect:
-        serializedVersion: 2
-        x: 119
-        y: 104
-        width: 33
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d06e2612bf64a4d048fd0b5703170f18
-      internalID: 1951941734
+      spriteID: 4bf7b07e1207e436a80bf5043c60ad87
+      internalID: -1805521012
       vertices: []
       indices: 
       edges: []
@@ -274,13 +148,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      red column: 668663766
-      map sprite_0: 668663766
-      blue tile: -1476066518
-      red tile: 1111434732
-      whiteTile: 1958939559
-      blue column: 1951941734
-      blue rope: 438317126
+      jihee_default: -1805521012
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

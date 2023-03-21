@@ -1,0 +1,40 @@
+minkyu "커헉...."
+AutoUnDown
+
+minkyu "제가 몇분이나 쓰러져 있었죠?"
+jihee "글쎄요 한 20분?"
+jihee "사범으로서 강한 정신력! 강한 신체! 이런 걸 갖추어야 하는데 여자애가 친 주먹에 뻗어서 한참을 누워 있다니..."
+ChangeEmotion jihee aggrovated
+jihee "솔직히 좀 실망이야."
+
+ChangeEmotion minkyu aggrovated
+minkyu "아니아니, 지희 누나는 한국 챔피언이었잖아요."
+minkyu "이건 어쩔 수 없다고요. 저도 꽤 센데? 진짜로?"
+minkyu "어... 그리고..."
+
+ChangeEmotion minkyu aggrovate
+minkyu "솔직히 지희 누나가 여자'애'라고 불릴 나이는 아니잖.."
+
+ChangeEmotion jihee Anger
+ChangeColor jihee red
+jihee "내 나이가 어때서!"
+ChangeColor jihee white
+
+minkyu "아뇨. 뭐... '아이'는 '아이'라는 뜻입니더 ㅋㅋㅋㅋㅋㅋ"
+
+ChangeEmotion jihee aggrovated
+jihee "후..."
+jihee "이 정도면 솔직히 꽃다운 나이인데... 너 같은 얼라가 뭘 알겠니..."
+jihee "이 이야기는 여기까지 하자... 아무튼, 기절이나 했는데 몸은 괜찮은 거 맞니? 입 놀리는 거 보니까 멀쩡해 보이긴 하지만."
+
+ChangeEmotion minkyu default
+minkyu "일단 멀쩡한 기분이 들긴 하는데요. 그래도 모르니 한 번 움직여 볼게요."
+minkyu "(몸이 괜찮은 지 좀 움직여 봐야겠어요.)"
+minkyu "(좌우 키로 이동, 아래키로 엎드릴 수 있어요. 또한 space 키로 점프할 수 있답니다.)"
+
+ChangeEmotion jihee laugh
+jihee "끝나면 나에게 알려주고, 알겠지?"
+ChangeEmotion minkyu happy
+minkyu "넵."
+minkyu "(지희 누나를 클릭해 말을 걸 수 있어요. 몸이 멀쩡한 지 확인해보고 말을 걸도록 해야겠어요.)"
+AutoUnFreeze

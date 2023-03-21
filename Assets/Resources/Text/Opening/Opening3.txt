@@ -1,0 +1,83 @@
+Character(dahye, 박다혜, color=white, emotion=default, speed=0.06, voice=dahyeVoice)
+dahye "맞아, 힘든 게 당연해. 왜냐면, 슬슬 퇴근할 시간이기 때문이지."
+ChangeEmotion jihee anger
+jihee "아니 관장님!"
+jihee "아직 쟤는 연습이 필요하다니까요! 사범으로서 1인분을 지금 못하고 있어요!"
+
+ChangeEmotion dahye laugh
+dahye "그치, 뭐 열심히 하는 것도 좋긴한데."
+
+dahye "쟤 도망가면 너랑 내가 일 다해야 하는데?"
+dahye "우리 체육관 다시 2인 체제로 돌아가는 거야."
+ChangeEmotion dahye embarrassed
+dahye "진짜 감당 가능해? 일단 난 못할 것 같은데."
+
+ChangeEmotion jihee despise
+jihee "앗... 아앗... 어..."
+ChangeEmotion jihee happy
+jihee "에이 그래도 우리 민규가 튀진 않겠지? 그치 민규야?"
+
+ChangeEmotion minkyu default
+minkyu "아마? 안 튀겠죠? 엥간하면?"
+minkyu "하지만 지금 막 20분 기절하고 난 후라 솔직한 감상을 표하자면..."
+ChangeEmotion minkyu happy
+minkyu "지금은 집에 가고 싶기는 해요."
+
+ChangeEmotion jihee default
+jihee "..........."
+jihee "........................."
+jihee "............................................."
+
+
+ChangeEmotion jihee laugh
+jihee "그래 그럼 내일 하자."
+
+minkyu "호우! 퇴근!"
+ChangeEmotion dahye laugh
+dahye "이거거든~"
+
+
+StopMusic
+PlayMusic lobbyMusic
+
+
+HideInGame
+Show nightSky
+ChangeEmotion minkyu happy
+
+minkyu "(성공적인 퇴근 길이에요. 그래도 오늘은 그래도 빨리 끝난 것 같아요!)"
+minkyu "(개꿀이이에요!)"
+
+ChangeEmotion dahye default
+dahye "관원이었던 민규가 이제 사범도 하고, 덕분에 덜 바빠져서 그래도 요새 살 것 같다니까."
+
+ChangeEmotion minkyu default
+minkyu "솔직히 학생 때는 제가 사범할지는 생각도 못했는데요."
+
+dahye "난 학생 때도 같이 일해보자고 말하고 싶기는 했어. 너가 다른 일 하고 싶을까봐 그랬던 거지. 뭐 그때는 학업에도 바빠 보이기도 했고~"
+ChangeEmotion jihee excited
+jihee "맞아맞아! 너 예전에 공부도 엄청 잘 한다고 그러지 않았냐?"
+
+ChangeEmotion minkyu happy
+minkyu "뭐 옛날 얘기죠 뭐..."
+minkyu "그래도 이렇게 일하고 별 보며 집에 가고 있으니까 운치가 있네요."
+
+ChangeEmotion jihee laugh
+jihee "얘는 애 늙은이도 아니고 가끔 이런 이야기를 한다니까! 우리 중에 제일 젊은 애가."
+
+StopMusic
+
+ChangeEmotion minkyu default
+ChangeColor minkyu grey
+minkyu "(이렇게 저렇게 말은 하지만. 실은 좀 공허해요.)"
+minkyu "(사범은 어떻게든 할 수 있을 실력. 그치만 대회를 나갈 정도는 아니고. 근데 또 그렇다고 뭔가 달리 할 줄 아는 게 있는 것도 아니고)"
+minkyu "(어렸을 때는 공부도 잘하고 운동도 잘하니 그야말로 문무겸비였는데.)"
+minkyu "(뭐... 어케하죠... 이렇게 살아도 되는 걸까요...)"
+minkyu "(뭔가... 성공을 해야 할 것 같은데...)"
+minkyu "(어떻게 살아야 할까요.)"
+ChangeColor minkyu white
+
+Wait 1.0
+ChangeEmotion dahye embarrassed
+dahye "......"
+Show blackScene

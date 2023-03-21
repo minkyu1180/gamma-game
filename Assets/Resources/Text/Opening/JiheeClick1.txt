@@ -1,0 +1,7 @@
+AutoFreeze
+minkyu "멀쩡한 듯? 아직 젊으니까요."
+
+ChangeEmotion jihee happy
+jihee "다행이구마잉. 자 그럼~ 좀 더 연습해 볼까? 아직 안 힘들지?"
+ChangeEmotion minkyu despise
+minkyu "세상에... 좀 힘든데요."

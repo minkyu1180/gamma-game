@@ -12,9 +12,10 @@ public class DialogBoxTextTyper:MonoBehaviour
     public bool loading = true;
     public float textSpeed = 0.04f;
     public AudioClip speechVoice;
+    public GameObject OpeningSceneMaker;
 
     private AudioClip clickSound;
-    private List<string> commands = new List<string>();
+    private List<string> commands;
     private int commandLine = 0;
     private string lastCommand = "";
 
@@ -23,6 +24,7 @@ public class DialogBoxTextTyper:MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         dialogText = GetComponent<TextMeshProUGUI>();
         clickSound = Resources.Load("Sound/Voice/clickSound") as AudioClip;
+        OpeningSceneMaker = (GameObject.Find("BGMControlManager"));
         dialog = "";
     }
 
@@ -51,6 +53,7 @@ public class DialogBoxTextTyper:MonoBehaviour
                     {
                         commands.Clear();
                         InputDecoder.InterfaceElements.SetActive(false);
+                        OpeningSceneMaker.GetComponent<OpeningSceneManager>().isGameInScript = false;
                     }
                 }
             }
@@ -60,6 +63,7 @@ public class DialogBoxTextTyper:MonoBehaviour
                 {
                     commands.Clear();
                     InputDecoder.InterfaceElements.SetActive(false);
+                    OpeningSceneMaker.GetComponent<OpeningSceneManager>().isGameInScript = false;
                 }
             }
         }
@@ -67,6 +71,9 @@ public class DialogBoxTextTyper:MonoBehaviour
 
     public void LoadScript(string filePath)
     {
+        commands = new List<string>();
+        commandLine = 0;
+        lastCommand = "";
         TextAsset commandFile = Resources.Load<TextAsset>(filePath);
         var commandArray = commandFile.text.Split('\n');
         foreach (var line in commandArray)

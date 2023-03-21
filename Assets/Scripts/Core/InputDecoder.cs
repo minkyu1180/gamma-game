@@ -9,19 +9,6 @@ using TMPro;
 
 public class InputDecoder : MonoBehaviour
 {
-    /*
-    public static List<Character> CharacterList = new List<Character> ();   
-    public static AudioSource bgmManager = GameObject.Find("BGMControlManager").GetComponent<AudioSource>();
-    public static GameObject InterfaceElements = GameObject.Find("UI_Elements");
-    public static GameObject GameElements = GameObject.Find("GAME_Elements");
-    private static GameObject Background = GameObject.Find("Background");
-    private static Image BackgroundImage = Background.GetComponent<Image>();
-    public static GameObject Portrait = GameObject.Find("Portrait");
-    private static Image PortraitImage = Portrait.GetComponent<Image>();
-    public static GameObject DialogBoxTextObject = GameObject.Find("DialogBoxText");
-    public static GameObject NamePlateTextObject = GameObject.Find("NamePlateText");
-    public static bool dialogMode = false;
-    */
     public static List<Character> CharacterList;
     public static AudioSource bgmManager;
     public static GameObject InterfaceElements;
@@ -32,6 +19,7 @@ public class InputDecoder : MonoBehaviour
     private static Image PortraitImage;
     public static GameObject DialogBoxTextObject;
     public static GameObject NamePlateTextObject;
+    public static GameObject PlayerObject;
     public static bool dialogMode;
     
     void Start()
@@ -47,6 +35,7 @@ public class InputDecoder : MonoBehaviour
         PortraitImage = Portrait.GetComponent<Image>();
         DialogBoxTextObject = GameObject.Find("DialogBoxText");
         NamePlateTextObject = GameObject.Find("NamePlateText");
+        PlayerObject = GameObject.Find("Minkyu");
         dialogMode = false;
     }
     public static void ParseInputLine(string stringToParse)
@@ -143,6 +132,46 @@ public class InputDecoder : MonoBehaviour
         if (args[0] == "Wait")
         {
             DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().Wait(float.Parse(args[1]));
+        }
+
+        if (args[0] == "AutoFreeze")
+        {
+            PlayerObject.GetComponent<PlayerMovement>().freeze();
+        }
+
+        if (args[0] == "AutoUnFreeze")
+        {
+            PlayerObject.GetComponent<PlayerMovement>().unFreeze();
+        }
+
+        if (args[0] == "AutoWalk")
+        {
+            PlayerObject.GetComponent<PlayerMovement>().autoWalk(float.Parse(args[1]), Convert.ToBoolean(args[2]));
+        }
+
+        if (args[0] == "AutoDown")
+        {
+            PlayerObject.GetComponent<PlayerMovement>().autoDown();
+        }
+
+        if (args[0] == "AutoUnDown")
+        {
+            PlayerObject.GetComponent<PlayerMovement>().autoUnDown();
+        }
+
+        if (args[0] == "AutoJump")
+        {
+            PlayerObject.GetComponent<PlayerMovement>().autoJump();
+        }
+
+        if (args[0] == "AutoUpJump")
+        {
+            PlayerObject.GetComponent<PlayerMovement>().autoUpJump();
+        }
+
+        if (args[0] == "AutoDoubleJump")
+        {
+            PlayerObject.GetComponent<PlayerMovement>().autoDoubleJump(float.Parse(args[1]));
         }
     }
 

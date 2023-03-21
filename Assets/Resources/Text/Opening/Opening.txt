@@ -4,7 +4,7 @@ PlayMusic disappointmentMusic
 Show openingCutScene1
 minkyu "'아주 오래전. 혼돈의 시대'"
 minkyu "'세계는 바야흐로 혼돈의 시대였다.'"
-minkyu "살인, 폭력, 강간, 공인 인증서..."
+minkyu "'살인, 폭력, 강간, 공인 인증서...'"
 ChangeSpeed minkyu 0.04
 minkyu "'...그런데 그때. 용사가 나타났다'"
 ChangeSpeed minkyu 0.06
@@ -33,5 +33,6 @@ minkyu "벌써 일어날 시간이군요."
 ChangeEmotion minkyu despise
 minkyu "삶은 참 힘들어요..."
 ShowInGame
+AutoFreeze
 PlayMusic lobbyMusic
-Show gym
+AutoDown
