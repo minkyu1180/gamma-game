@@ -2,32 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class testing : MonoBehaviour
+public class testing : MonoBehaviour, IDataPersistence
 {
-    void Start()
+    private int dayCount = 0;
+    public void buttonClick()
     {
-        GameObject DialogBoxTextObject = GameObject.Find("DialogBoxText");
-        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Scripts/Opening");
-        
+        dayCount++;
+        Debug.Log("DayCount: " + dayCount);
+    }   
 
-
+    public void LoadData(GameData data)
+    {
+        this.dayCount = data.dayCount[0];
     }
 
-    
-    void Update()
+    public void SaveData(ref GameData data)
     {
-        if (Input.GetKeyDown("h"))
-        {
-            if (InputDecoder.InterfaceElements.activeInHierarchy)
-            {
-                InputDecoder.InterfaceElements.SetActive(false);
-            }
-            else 
-            {
-                InputDecoder.InterfaceElements.SetActive(true);
-            }
-        }
-        //UI hidding func
-        
+        data.dayCount[0] = this.dayCount;
     }
 }

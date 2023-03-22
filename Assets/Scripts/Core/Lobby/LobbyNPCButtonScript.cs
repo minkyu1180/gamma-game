@@ -2,11 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
 using UnityEngine;
-using UnityEngine.UI;
-
 
 // IPointerClickHandler
-public class OpeningNPCButtonScript : MonoBehaviour
+public class LobbyNPCButtonScript : MonoBehaviour
 {
     GameObject ControlManager;
     GameObject DialogBoxTextObject;
@@ -21,7 +19,6 @@ public class OpeningNPCButtonScript : MonoBehaviour
     {
         ControlManager.GetComponent<OpeningSceneManager>().isGameInScript = true;
         StartCoroutine(JiheeScript());
-        GetComponent<Button>().interactable = false;
     }
 
     IEnumerator JiheeScript()
