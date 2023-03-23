@@ -9,10 +9,10 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/Level2.unity
+    path: 
     guid: b2578aabf59a246af9c9f2943492a4bf
   - enabled: 0
-    path: Assets/Scenes/Level1.unity
+    path: 
     guid: 102c0c8b7a4e7490381438aa4fdcbd12
   - enabled: 1
     path: Assets/Scenes/TitleScene.unity
@@ -21,9 +21,12 @@ EditorBuildSettings:
     path: Assets/Scenes/OpeningScene.unity
     guid: 0621a0bb207fd4b02bbe7c9ab9aa704a
   - enabled: 0
-    path: Assets/Scenes/Gym.unity
+    path: 
     guid: 5380061bf3dfd4beaa16f164b624ac09
   - enabled: 0
-    path: Assets/Scenes/Gym 1.unity
+    path: 
     guid: e846bd6e3ab9d4ae39600770b79e35bd
+  - enabled: 1
+    path: Assets/Scenes/Pre1StageScene.unity
+    guid: 8a82ab4a7b7fc4f3ab4933549b208e9e
   m_configObjects: {}

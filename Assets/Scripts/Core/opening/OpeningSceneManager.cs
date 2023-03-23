@@ -106,7 +106,7 @@ public class OpeningSceneManager : MonoBehaviour
 
         // 1초 기다림
 
-        SceneManager.LoadScene("TitleScene");
+        SceneManager.LoadScene("Pre1StageScene");
 
 
 
