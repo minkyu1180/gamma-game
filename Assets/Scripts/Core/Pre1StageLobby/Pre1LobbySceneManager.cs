@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 
 public class Pre1LobbySceneManager : MonoBehaviour
 {
-    public bool isGameInScript;
     public bool isConditionWaiting;
     public static GameObject InterfaceElements;
     public static GameObject GameElements;
@@ -20,8 +19,8 @@ public class Pre1LobbySceneManager : MonoBehaviour
     GameObject NPCDahye;
     void Start()
     {
-        isGameInScript = true;
-        isConditionWaiting = true;
+        InputDecoder.isGameInScript = true;
+        InputDecoder.isConditionWaiting = true;
         DialogBoxTextObject = GameObject.Find("DialogBoxText");
         InterfaceElements = GameObject.Find("UI_Elements");
         GameElements = GameObject.Find("GAME_Elements");
@@ -40,11 +39,11 @@ public class Pre1LobbySceneManager : MonoBehaviour
     IEnumerator ScriptLoader()
     {
         DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Pre1Lobby/Opening");
-        yield return new WaitWhile(() => isGameInScript);
+        yield return new WaitWhile(() => InputDecoder.isGameInScript);
 
         SceneManager.LoadScene("LobbyScene");
 
-
+        
 
 
 

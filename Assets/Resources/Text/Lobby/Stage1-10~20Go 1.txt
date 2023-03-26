@@ -1,0 +1,17 @@
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(jihee, 이지희, color=white, emotion=default, speed=0.06, voice=jiheeVoice)
+Character(dahye, 박다혜, color=white, emotion=default, speed=0.06, voice=dahyeVoice)
+AutoFreeze
+
+dahye "요새 어디 자주 다닌다 야?"
+minkyu "앗 네 그... 이기고 싶은, 아니 인정받고 싶은 분이 있어서요."
+minkyu "쫌만 더하면 될 것 같아요."
+ChangeEmotion dahye laugh
+dahye "흠. 그래. 노력하고, 인정을 바란다는 것은 좋은 일이야."
+dahye "아주 잘 하고 있다."
+ChangeEmotion jihee happy
+jihee "이왕 한 김에 나처럼 국대가 되는 거야!"
+jihee "파이팅!"
+
+ChangeEmotion minkyu happy
+minkyu "아니 뭐 그 정도는 아니고요."

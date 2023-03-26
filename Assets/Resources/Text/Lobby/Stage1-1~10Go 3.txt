@@ -1,0 +1,31 @@
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(jihee, 이지희, color=white, emotion=default, speed=0.06, voice=jiheeVoice)
+Character(dahye, 박다혜, color=white, emotion=default, speed=0.06, voice=dahyeVoice)
+AutoFreeze
+
+ChangeEmotion jihee happy
+ChangeSpeed jihee 0.09
+jihee "그대 떠나보낸 내 가슴에 눈물이 차올라 날 흔들며 아프게 해~"
+jihee "그댈 떠나보낸 내 가슴에에에에엔 어둠이 들어와 사네~~~"
+
+ChangeEmotion minkyu shout
+ChangeSpeed minkyu 0.09
+minkyu "너를 잊을래! 난 너를 잊을래! 아무리 노력해도 나는 안돼~ 너를 아껴주지 못해 또 후회하네"
+minkyu "너를 잊을래! 난 너를 잊을래! 아무리 외쳐봐도 나는 안돼~ 네가 웃던 기억 속에 또 미쳐가네"
+minkyu "예예이"
+
+jihee "내가 웃는게 웃는게 아니야 또 내가 걷는게 걷는게 아니야~ 너의 기억 그 속에서 난"
+
+ChangeSpeed jihee 0.06
+ChangeSpeed minkyu 0.06
+
+ChangeEmotion dahye embarrassed
+dahye "얼씨구"
+dahye "체육관 노래방으로 만들지 말고 다들 집에 가라."
+
+ChangeEmotion jihee excited
+jihee "엣 그럼 언니 내일 뵈어요~ 안녕~~~~"
+ChangeEmotion minkyu happy
+minkyu "내일 뵐게요!"
+ChangeEmotion dahye laugh
+dahye "그래 그래. 수고 많으셨습니다요. 다들."

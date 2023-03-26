@@ -1,0 +1,19 @@
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(jihee, 이지희, color=white, emotion=default, speed=0.06, voice=jiheeVoice)
+Character(dahye, 박다혜, color=white, emotion=default, speed=0.06, voice=dahyeVoice)
+AutoFreeze
+
+ChangeEmotion minkyu aggrovated
+minkyu "아윽... 힘들어... 퇴근할게요.."
+dahye "오 나도 가야겠다. 집까지 태워줄까?"
+ChangeEmotion minkyu excited
+minkyu "(캬 집까지 편하게 가서 발 닦고 잠이나 자면 기분 째질 것 같은데...) 아뇨 그 저 오늘은 일이 있어서요. 들어가세요."
+ChangeEmotion jihee excited
+jihee "뭐냐 만날 집에 꿀 발라놓은 것 같이 가던 애가? 여자라도 생겼냐?"
+ChangeEmotion minkyu despise
+minkyu "어... 아뇨 그건 아니고요..."
+minkyu "(남들에게 말하긴 너무 허황된 전단지 같아요) 그런 게 있습니다... 일 마무리되면 알려드릴게요"
+ChangeEmotion jihee laugh
+jihee "생각보다 진지한 일인가 보네. 뭐, 잘 되면 결과 알려줘!"
+ChangeEmotion minkyu default
+minkyu "예예~"

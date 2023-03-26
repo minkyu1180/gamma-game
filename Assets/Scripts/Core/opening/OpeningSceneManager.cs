@@ -7,8 +7,6 @@ using UnityEngine.SceneManagement;
 
 public class OpeningSceneManager : MonoBehaviour
 {
-    public bool isGameInScript;
-    public bool isConditionWaiting;
     public static GameObject InterfaceElements;
     public static GameObject GameElements;
     public GameObject Camera;
@@ -20,8 +18,8 @@ public class OpeningSceneManager : MonoBehaviour
     GameObject NPCDahye;
     void Start()
     {
-        isGameInScript = true;
-        isConditionWaiting = true;
+        InputDecoder.isGameInScript = true;
+        InputDecoder.isConditionWaiting = true;
         DialogBoxTextObject = GameObject.Find("DialogBoxText");
         InterfaceElements = GameObject.Find("UI_Elements");
         GameElements = GameObject.Find("GAME_Elements");
@@ -40,7 +38,7 @@ public class OpeningSceneManager : MonoBehaviour
     IEnumerator ScriptLoader()
     {
         DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Opening/Opening");
-        yield return new WaitWhile(() => isGameInScript);
+        yield return new WaitWhile(() => InputDecoder.isGameInScript);
 
 
         //Camera.transform.position = new Vector3(Target.transform.position.x, transform.position.y, -10);
@@ -56,25 +54,25 @@ public class OpeningSceneManager : MonoBehaviour
 
         yield return new WaitForSeconds(2.0f);
 
-        isGameInScript = true;
+        InputDecoder.isGameInScript = true;
         InputDecoder.InterfaceElements.SetActive(true);
         DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Opening/Opening2");
-        yield return new WaitWhile(() => isGameInScript);
+        yield return new WaitWhile(() => InputDecoder.isGameInScript);
 
         Camera.transform.position = cameraPositionSaved;
         Camera.GetComponent<Camera>().orthographicSize = cameraSizeSaved;
 
         NPCJihee.GetComponent<Button>().interactable = true;
         Debug.Log("NPC INTERACTION PLZ");
-        yield return new WaitWhile(() => isConditionWaiting);
+        yield return new WaitWhile(() => InputDecoder.isConditionWaiting);
         
         // 관장 등장!
         NPCDahye.GetComponent<SpriteRenderer>().enabled = true;
 
-        isGameInScript = true;
+        InputDecoder.isGameInScript = true;
         InputDecoder.InterfaceElements.SetActive(true);
         DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Opening/Opening3");
-        yield return new WaitWhile(() => isGameInScript);
+        yield return new WaitWhile(() => InputDecoder.isGameInScript);
 
 
 
@@ -93,10 +91,10 @@ public class OpeningSceneManager : MonoBehaviour
 
 
 
-        isGameInScript = true;
+        InputDecoder.isGameInScript = true;
         InputDecoder.InterfaceElements.SetActive(true);
         DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Opening/Opening4");
-        yield return new WaitWhile(() => isGameInScript);
+        yield return new WaitWhile(() => InputDecoder.isGameInScript);
 
         // Opening 4 시작. 
         // 그로부터 얼마 후

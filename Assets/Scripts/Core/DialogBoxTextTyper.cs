@@ -12,7 +12,6 @@ public class DialogBoxTextTyper:MonoBehaviour
     public bool loading = true;
     public float textSpeed = 0.04f;
     public AudioClip speechVoice;
-    public GameObject OpeningSceneMaker;
 
     private AudioClip clickSound;
     private List<string> commands;
@@ -24,7 +23,6 @@ public class DialogBoxTextTyper:MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         dialogText = GetComponent<TextMeshProUGUI>();
         clickSound = Resources.Load("Sound/Voice/clickSound") as AudioClip;
-        OpeningSceneMaker = (GameObject.Find("BGMControlManager"));
         dialog = "";
     }
 
@@ -53,7 +51,7 @@ public class DialogBoxTextTyper:MonoBehaviour
                     {
                         commands.Clear();
                         InputDecoder.InterfaceElements.SetActive(false);
-                        OpeningSceneMaker.GetComponent<OpeningSceneManager>().isGameInScript = false;
+                        InputDecoder.isGameInScript = false;
                     }
                 }
             }
@@ -63,7 +61,7 @@ public class DialogBoxTextTyper:MonoBehaviour
                 {
                     commands.Clear();
                     InputDecoder.InterfaceElements.SetActive(false);
-                    OpeningSceneMaker.GetComponent<OpeningSceneManager>().isGameInScript = false;
+                    InputDecoder.isGameInScript = false;
                 }
             }
         }

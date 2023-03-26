@@ -6,8 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed;
     public float jump;
-    private float horizontalInput;
-    private float beforeJumpInertia; // 1f, 0f, -1f
+    public float horizontalInput;
+    public float beforeJumpInertia; // 1f, 0f, -1f
 
     private float defaultSpeed = 20f;
     private float defaultJump = 450f;
@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     public bool isDirectionDoomed;
     public bool isDoubleJumpUsed;
     public bool isPassingObject;
-    public bool onPassablePlatform;
+    public bool onDownJumpAblePlatform;
     public bool isRight;
 
     private Rigidbody2D PlayerRigidbody;
@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
         frozen = false;
         isDoubleJumpUsed = false;
         isPassingObject = false;
-        onPassablePlatform = false;
+        onDownJumpAblePlatform = false;
         PlayerRigidbody = GetComponent<Rigidbody2D>();
         PlayerBoxCollider = GetComponent<BoxCollider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -79,7 +79,15 @@ public class PlayerMovement : MonoBehaviour
             horizontalInput = Input.GetAxis("Horizontal");
             if (Input.GetButton("Horizontal"))
             {
-                spriteRenderer.flipX = Input.GetAxisRaw("Horizontal") == -1;
+                //spriteRenderer.flipX = Input.GetAxisRaw("Horizontal") == -1;
+                if (Input.GetAxisRaw("Horizontal") == -1)
+                {
+                    transform.localScale = new Vector3(-1, 1, 1);
+                }
+                else
+                {
+                    transform.localScale = new Vector3(1, 1, 1);
+                }
                 isRight = Input.GetAxisRaw("Horizontal") == 1;
                 if (!isDirectionDoomed)
                 {
@@ -113,7 +121,7 @@ public class PlayerMovement : MonoBehaviour
                     anim.SetBool("IsDown", true);
                     jump = 0f;
                     speed = 0f;
-                    PlayerRigidbody.drag = 8.0f;
+                    //PlayerRigidbody.drag = 8.0f;
                     // disable jump, walk and increase linear drag when down
                 }
             }
@@ -125,7 +133,7 @@ public class PlayerMovement : MonoBehaviour
                 PlayerRigidbody.drag = defaultLinearDrag;
             }
             
-            if (Input.GetButtonDown("Jump") && !anim.GetBool("IsFloat") && anim.GetBool("IsDown") && onPassablePlatform)
+            if (Input.GetButtonDown("Jump") && !anim.GetBool("IsFloat") && anim.GetBool("IsDown") && onDownJumpAblePlatform)
             {
                 StartCoroutine(passObjectInumerator(0.4f));
             }
@@ -161,21 +169,21 @@ public class PlayerMovement : MonoBehaviour
             
         }
 
-
-        RaycastHit2D rayHitUnpassable = Physics2D.Raycast(new Vector2(PlayerRigidbody.position.x, PlayerRigidbody.position.y -0.8f), Vector3.down, 0.4f, LayerMask.GetMask("PassablePlatform"));
+        Debug.DrawRay(new Vector2(PlayerRigidbody.position.x, PlayerRigidbody.position.y - 0.8f), new Vector3(0f, -0.4f, 0), new Color(0, 1, 0));
+        RaycastHit2D rayHitUnpassable = Physics2D.Raycast(new Vector2(PlayerRigidbody.position.x, PlayerRigidbody.position.y -0.8f), Vector3.down, 0.4f, LayerMask.GetMask("DownJumpAblePlatform"));
         if (rayHitUnpassable.collider != null)
         {
-            onPassablePlatform = true; 
+            onDownJumpAblePlatform = true; 
         }
         else
         {
-            onPassablePlatform = false;
+            onDownJumpAblePlatform = false;
         }
 
 
         //Debug.DrawRay(new Vector2(PlayerRigidbody.position.x, PlayerRigidbody.position.y - 0.8f), new Vector3(0.7f, 0f, 0f), new Color(0, 1, 0));
         //Debug.DrawRay(new Vector2(PlayerRigidbody.position.x, PlayerRigidbody.position.y - 0.8f), new Vector3(0f, -0.4f, 0), new Color(0, 1, 0));
-        RaycastHit2D rayHit = Physics2D.Raycast(new Vector2(PlayerRigidbody.position.x, PlayerRigidbody.position.y -0.8f), Vector3.down, 0.4f, LayerMask.GetMask("Platform", "UnPassablePlatform"));
+        RaycastHit2D rayHit = Physics2D.Raycast(new Vector2(PlayerRigidbody.position.x, PlayerRigidbody.position.y -0.8f), Vector3.down, 0.4f, LayerMask.GetMask("Platform", "UnPassablePlatform", "DownJumpAblePlatform"));
         if (rayHit.collider!=null && !isDirectionDoomed)
         {
             anim.SetBool("IsFloat", false);

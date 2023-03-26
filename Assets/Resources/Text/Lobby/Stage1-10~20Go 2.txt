@@ -1,0 +1,28 @@
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(jihee, 이지희, color=white, emotion=default, speed=0.06, voice=jiheeVoice)
+Character(dahye, 박다혜, color=white, emotion=default, speed=0.06, voice=dahyeVoice)
+AutoFreeze
+
+dahye "가끔은 나도 대련을 하고 싶은데 말이야."
+minkyu "아니 하면 되죠."
+minkyu "저도 매일 관장님은 기초 체력만 하는 것 같아서 대련하는 게 보고 싶기는 해요?"
+ChangeEmotion jihee aggrovated
+jihee "예?"
+jihee "안돼요. 언니. 저희 체육관 문 닫을 일 있나요?"
+jihee "ㄹㅇ 대련하는 순간, 폐업한다니까요. 가끔 저랑 하는 걸로 만족하세요."
+
+ChangeEmotion minkyu happy
+minkyu "오우 이건 좀 호들갑 같은데요."
+minkyu "그럼 둘이 대련하는 거 함 보여주세요."
+
+jihee "아 오늘은 몸이 안 좋아서... 다음에 보여불게."
+jihee "그나저나 요새 어디 가는 거 아니었니? 오늘은 안 가?"
+
+ChangeEmotion minkyu excited
+minkyu "아 맞다"
+ChangeEmotion minkyu happy
+minkyu "내일 뵈어요! 가볼게요!"
+Wait 1.0
+jihee "민규가 빨리 잘 해내야 할 텐데..."
+ChangeEmotion dahye laugh
+dahye "잘 하겠지."

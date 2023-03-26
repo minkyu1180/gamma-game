@@ -1,0 +1,24 @@
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(jihee, 이지희, color=white, emotion=default, speed=0.06, voice=jiheeVoice)
+Character(dahye, 박다혜, color=white, emotion=default, speed=0.06, voice=dahyeVoice)
+AutoFreeze
+
+ChangeEmotion jihee default
+jihee "아니 너무 배고픈데? 이게 말이 되나?"
+ChangeEmotion jihee excited
+jihee "야식 콜? 족발에 쏘오오오오주?"
+jihee "민규도 같이 먹을거지? 그치~ 밍규밍규밍규?"
+
+ChangeEmotion minkyu aggrovated
+minkyu "헉"
+minkyu "좀 가봐야 할 곳이 있어스르메요... 안 될 것 같네요."
+minkyu "다음엔 꼭 먹을게요"
+
+ChangeEmotion jihee aggrovated
+jihee "흠..."
+ChangeEmotion jihee happy
+jihee "뭐 어쩔 수 없지 뭐! 잘 다녀와!"
+jihee "언니랑 둘이서만 먹어야겠다~"
+
+ChangeEmotion dahye embarrassed
+dahye "나는 야식 먹는 거 확정이야 그냥??"

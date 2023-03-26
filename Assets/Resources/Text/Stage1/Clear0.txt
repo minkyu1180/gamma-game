@@ -1,0 +1,6 @@
+AutoFreeze
+ChangeEmotion minkyu happy
+minkyu "끝!"
+minkyu "(조금 더 깊은 곳으로 가보는 거예요!)"
+AutoUnFreeze
+Wait 1.2

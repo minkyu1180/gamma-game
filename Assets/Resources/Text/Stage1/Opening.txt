@@ -1,0 +1,10 @@
+Show forest
+PlayMusic firstFieldMusic
+
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+
+AutoFreeze
+minkyu "캬... 뒷산이 이렇게 컸었다니."
+minkyu "(숲 중심부로 들어가려면 우상단 방향으로 가야할 것 같아요.)"
+minkyu "(좀 까마득하긴 한데, 열심히 해봐야겠네요)"
+AutoUnFreeze

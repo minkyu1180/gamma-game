@@ -1,0 +1,12 @@
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(jihee, 이지희, color=white, emotion=default, speed=0.06, voice=jiheeVoice)
+Character(dahye, 박다혜, color=white, emotion=default, speed=0.06, voice=dahyeVoice)
+AutoFreeze
+
+ChangeEmotion minkyu happy
+minkyu "고생 많으셨습니다! 같이 퇴근하시죠!"
+dahye "어어 그려그려. 민규 어디 가니?"
+minkyu "네 볼일이 있어가지고... 들어가세요!"
+ChangeEmotion jihee happy
+jihee "잘가 민규~! 고생 많았어!"
+minkyu "예예~"

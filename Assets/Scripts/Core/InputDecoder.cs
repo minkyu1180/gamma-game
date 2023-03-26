@@ -21,7 +21,9 @@ public class InputDecoder : MonoBehaviour
     public static GameObject NamePlateTextObject;
     public static GameObject PlayerObject;
     public static bool dialogMode;
-    
+    public static bool isGameInScript;
+    public static bool isConditionWaiting;
+
     void Start()
     {
         //CharacterList = new List<Character> ();

@@ -14,12 +14,11 @@ public class OpeningNPCButtonScript : MonoBehaviour
 
     void Start()
     {
-        ControlManager = GameObject.Find("BGMControlManager");
         DialogBoxTextObject = GameObject.Find("DialogBoxText");
     }
     public void JiheeClick()
     {
-        ControlManager.GetComponent<OpeningSceneManager>().isGameInScript = true;
+        InputDecoder.isGameInScript = true;
         StartCoroutine(JiheeScript());
         GetComponent<Button>().interactable = false;
     }
@@ -28,10 +27,10 @@ public class OpeningNPCButtonScript : MonoBehaviour
     {
         InputDecoder.InterfaceElements.SetActive(true);
         DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Opening/JiheeClick1");
-        yield return new WaitWhile(() => ControlManager.GetComponent<OpeningSceneManager>().isGameInScript);
+        yield return new WaitWhile(() => InputDecoder.isGameInScript);
 
         
 
-        ControlManager.GetComponent<OpeningSceneManager>().isConditionWaiting = false;
+        InputDecoder.isConditionWaiting = false;
     }
 }
