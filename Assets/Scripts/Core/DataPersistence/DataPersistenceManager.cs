@@ -57,6 +57,7 @@ public class DataPersistenceManager : MonoBehaviour
     }
 
     //maybe I should change this to when click button
+    //but this... on App Quit
     private void OnApplicationQuit()
     {
         SaveGame();

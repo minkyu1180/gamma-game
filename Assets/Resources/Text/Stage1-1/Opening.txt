@@ -1,0 +1,59 @@
+Show forest
+PlayMusic firstFieldMusic
+
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(chunbok, 김춘복, color=white, emotion=default, speed=0.08, voice=chunbokVoice)
+
+AutoFreeze
+chunbok "호오."
+chunbok "이 나의 수련장에, 사람은 오래간만이군."
+chunbok "무엇을 찾아 왔는가? 꿈꾸는 젊은이여."
+
+ChangeEmotion minkyu despise
+AutoWalk 0.01 false
+minkyu "우왓, 깜짝이야. 어디서 나타나신 거예요?"
+chunbok "아까부터 옆에 있었다만... 산을 잘 타더군 말이야."
+
+ChangeEmotion minkyu default
+minkyu "하하... 감사합니다. 저는 도민규라고 해요. 이 산에 온 목적은, 어떤 전단지에서 누군가 자격을 준다고 해서..."
+
+chunbok "내 이름은 김춘배라네. 자격? 자격이라... 흠... 혹시..."
+ChangeEmotion chunbok cold
+ChangeColor chunbok red
+ChangeSpeed chunbok 0.12
+chunbok "용사의 자격 말인가?"
+ChangeColor chunbok white
+ChangeSpeed chunbok 0.08
+
+ChangeEmotion minkyu shout
+minkyu "엥? 그럼 할아버지가 '권위자'인가요?"
+chunbok "그렇네만."
+
+ChangeEmotion minkyu happy
+ChangeSpeed minkyu 0.04
+minkyu "아이고~~ 미처 못 알아봐서 죄송합니다. 그나저나 그러면... 전단지가 허위 전단지가 아니었군요! 근데 요즘 세상에 마왕이 진짜 있나요? 그럼 할아버지는 뭐 전대 용사 그런건가요? 용사 씩이나 뽑는데 공무원들이 안하고 이렇게 전단지로 하는 이유가...."
+ChangeSpeed minkyu 0.08
+ChangeEmotion chunbok surprised
+chunbok "그만."
+ChangeEmotion chunbok cold
+chunbok "젊은이 자네의 질문에는 지금 답해줄 수 없네. 자네가 용사가 될 때, 그때서야 비로소 알게 될거야."
+
+ChangeEmotion chunbok default
+chunbok "그보다 중요한 건, 자네가 '자격'이 있냐는 거야. 자네는 마왕과 싸울 체력이 되는가? 체력뿐만 아니라, 강인한 정신을 지니고 있는가?"
+chunbok "나는 그것을 알아야 하네."
+
+ChangeEmotion minkyu default
+minkyu "그...런가요? 그런 그건 어떻게 알죠?"
+
+chunbok "자네는 꽤 빠르더군."
+chunbok "당연히 빠른 것은 싸움에 도움이 되지. 그러나 방금의 산행에서 자네도 느꼈겠지만, 그게 전부는 아니야."
+chunbok "적절한 시간에 적절한 움직임을 취하는 것. 자신의 속도에 압도당하는 것이 아니라 그것을 역으로 제압해 부리는 것."
+chunbok "자네에게 그런 능력이 있는지 시험해 볼 걸세."
+
+chunbok "이 앞에서부터는 내가 사용하는 훈련장이라네. 정확한 시기의, 정확한 움직임을 연마하는 곳이지..."
+chunbok "훈련장을 넘어 내 앞에 오게. 그러면 일단 1차 합격이네."
+
+
+ChangeEmotion chunbok laugh
+chunbok "그럼, 행운을 비네 젋은이. 나는 먼저 가보겠네... 껄껄껄껄껄."
+chunbok "참고로 내가 가는 길은 지름길이니 자네는 오른쪽으로 가게~"

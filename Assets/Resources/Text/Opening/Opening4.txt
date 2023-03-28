@@ -1,13 +1,13 @@
 ChangeEmotion minkyu default
-minkyu "(그로부터 며칠이 지났어요)"
-minkyu "(뭐가 어찌되었든, 출근을 하고 저는 오늘 하루를 살아가야만 하는 거예요.)"
+minkyu "(그로부터 며칠이 지났다.)"
+minkyu "(뭐가 어찌되었든, 출근을 하고 저는 오늘 하루를 살아가야만 하는 것이다. 그것이... 인간이니까.)"
 
 ChangeEmotion minkyu despise
 minkyu "월요일 좋아~ 너무나 좋아~ 예아 왓더 뻑~ 끼야앗호우~"
 minkyu "엣"
 
 ChangeEmotion minkyu default
-minkyu "(발밑에 뭐가 있네요?)"
+minkyu "(발밑에 뭐가 있다?)"
 minkyu "뭐지 이게.... 전단지?"
 
 
@@ -28,5 +28,5 @@ minkyu "그리고 전설 속의 용사를 이렇게 알바 구하듯이 뽑는�
 minkyu "어... 근데 장소가 우리집에서 그렇게 안 멀긴 하네."
 minkyu "장난이라고 해도 손해 볼 건 없는 것 같은데."
 minkyu "흠... 일단 주워갈까."
-minkyu "(저는 손에 전단지를 쥐고 체육관으로 향했어요.)"
+minkyu "(손에 전단지를 쥐고 체육관으로 향했다.)"
 

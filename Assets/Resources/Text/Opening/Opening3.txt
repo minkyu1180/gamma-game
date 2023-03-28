@@ -45,8 +45,8 @@ HideInGame
 Show nightSky
 ChangeEmotion minkyu happy
 
-minkyu "(성공적인 퇴근 길이에요. 그래도 오늘은 그래도 빨리 끝난 것 같아요!)"
-minkyu "(개꿀이이에요!)"
+minkyu "(성공적인 퇴근 길이다. 그래도 오늘은 그래도 빨리 끝난 것 같다!)"
+minkyu "(즉 개꿀이라는 이야기다.)"
 
 ChangeEmotion dahye default
 dahye "관원이었던 민규가 이제 사범도 하고, 덕분에 덜 바빠져서 그래도 요새 살 것 같다니까."
@@ -69,12 +69,12 @@ StopMusic
 
 ChangeEmotion minkyu default
 ChangeColor minkyu grey
-minkyu "(이렇게 저렇게 말은 하지만. 실은 좀 공허해요.)"
+minkyu "(이렇게 저렇게 말은 하지만. 실은 좀 공허하다.)"
 minkyu "(사범은 어떻게든 할 수 있을 실력. 그치만 대회를 나갈 정도는 아니고. 근데 또 그렇다고 뭔가 달리 할 줄 아는 게 있는 것도 아니고)"
 minkyu "(어렸을 때는 공부도 잘하고 운동도 잘하니 그야말로 문무겸비였는데.)"
-minkyu "(뭐... 어케하죠... 이렇게 살아도 되는 걸까요...)"
+minkyu "(뭐... 어케하죠... 이렇게 살아도 되는 걸까...)"
 minkyu "(뭔가... 성공을 해야 할 것 같은데...)"
-minkyu "(어떻게 살아야 할까요.)"
+minkyu "(어떻게 살아야 하지.)"
 ChangeColor minkyu white
 
 Wait 1.0

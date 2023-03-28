@@ -1,6 +1,0 @@
-Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
-Character(jihee, 이지희, color=white, emotion=default, speed=0.06, voice=jiheeVoice)
-Character(dahye, 박다혜, color=white, emotion=default, speed=0.06, voice=dahyeVoice)
-AutoFreeze
-
-minkyu "속도에 

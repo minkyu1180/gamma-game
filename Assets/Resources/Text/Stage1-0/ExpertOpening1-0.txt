@@ -1,0 +1,10 @@
+Show forest
+PlayMusic firstFieldMusic
+
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+
+AutoFreeze
+minkyu "등산 등산 등산 등산 물고기~"
+minkyu "(다시 김춘복 할아버지를 만나러 가는 길.)"
+minkyu "(여기는 언제봐도 까마득하다.)"
+AutoUnFreeze

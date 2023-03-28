@@ -1,0 +1,12 @@
+minkyu "앗 잠깐만요 잠시만..."
+ChangeEmotion minkyu despise
+Wait 0.3
+minkyu "가버렸네."
+minkyu "그나저나 이런 산속에 오토바이라니... 정말 놀라운 분이군."
+ChangeEmotion minkyu aggrovated
+minkyu "나도 오토바이 타고 지름길 가고 싶다..."
+AutoWalk 0.1 true
+ChangeEmotion minkyu default
+minkyu "그치만 뭐 깡으로 가야겠지... 가보자고."
+
+AutoUnFreeze

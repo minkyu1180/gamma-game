@@ -12,7 +12,7 @@ ChangeEmotion jihee excited
 jihee "뭐냐 만날 집에 꿀 발라놓은 것 같이 가던 애가? 여자라도 생겼냐?"
 ChangeEmotion minkyu despise
 minkyu "어... 아뇨 그건 아니고요..."
-minkyu "(남들에게 말하긴 너무 허황된 전단지 같아요) 그런 게 있습니다... 일 마무리되면 알려드릴게요"
+minkyu "(남들에게 말하긴 너무 허황된 전단지 같다.) 그런 게 있습니다... 일 마무리되면 알려드릴게요"
 ChangeEmotion jihee laugh
 jihee "생각보다 진지한 일인가 보네. 뭐, 잘 되면 결과 알려줘!"
 ChangeEmotion minkyu default

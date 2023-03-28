@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
-public class Stage1_0SceneManager : MonoBehaviour
+public class Stage1_0SceneManager : MonoBehaviour, IDataPersistence
 {
     public static GameObject InterfaceElements;
     public static GameObject GameElements;
@@ -14,7 +14,16 @@ public class Stage1_0SceneManager : MonoBehaviour
     private Vector3 cameraPositionSaved;
     private float cameraSizeSaved;
     GameObject DialogBoxTextObject;
+    private int day;
+    private int stageCount;
 
+    public void LoadData(GameData data)
+    {
+        day = data.dayCount[0];
+        stageCount = data.stageCount;
+    }
+
+    public void SaveData(ref GameData data){}
     void Start()
     {
 
@@ -28,25 +37,39 @@ public class Stage1_0SceneManager : MonoBehaviour
         Player = GameObject.Find("Minkyu");
         cameraPositionSaved = Camera.transform.position;
         cameraSizeSaved = Camera.GetComponent<Camera>().orthographicSize;
-        StartCoroutine(ScriptLoader());
+        if (day == 0)
+        {
+            StartCoroutine(ScriptFirstTryLoader());
+        }
+        else if (stageCount < 1)
+        {
+            StartCoroutine(ScriptRetryLoader());
+        }
+        else
+        {
+            StartCoroutine(ScriptExpertLoader());
+        }
 
     }
 
 
 
-    IEnumerator ScriptLoader()
+    IEnumerator ScriptFirstTryLoader()
     {
-        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Stage1/Opening");
+        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Stage1-0/FirstTryOpening1-0");
         yield return new WaitWhile(() => InputDecoder.isGameInScript);
+    }
 
+    IEnumerator ScriptRetryLoader()
+    {
+        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Stage1-0/RetryOpening1-0");
+        yield return new WaitWhile(() => InputDecoder.isGameInScript);
+    }
 
-        
-        //SceneManager.LoadScene("TitleScene");
-
-
-
-
-
+    IEnumerator ScriptExpertLoader()
+    {
+        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Stage1-0/ExpertOpening1-0");
+        yield return new WaitWhile(() => InputDecoder.isGameInScript);
     }
 
 

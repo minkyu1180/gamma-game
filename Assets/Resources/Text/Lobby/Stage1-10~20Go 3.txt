@@ -25,5 +25,5 @@ ChangeEmotion jihee happy
 jihee "어어!"
 Wait 1.4
 ChangeEmotion jihee aggrovated
-jihee "(물론... 외모를 신경쓰는 이유는... 네가 과연 그걸 알아차릴려나...)"
-jihee "(이쁜 척을 더 자주해야 하나?)"
+jihee "(물론... 외모를 신경쓰는 이유는... 네가 그걸 알아차릴려나...)"
+jihee "(에이씨, 이쁜 척을 더 자주해야 하나?)"

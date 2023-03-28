@@ -23,6 +23,6 @@ minkyu "아 맞다"
 ChangeEmotion minkyu happy
 minkyu "내일 뵈어요! 가볼게요!"
 Wait 1.0
-jihee "민규가 빨리 잘 해내야 할 텐데..."
+jihee "민규가 빨리 잘 해내야 할 텐데... 걱정이 되네요."
 ChangeEmotion dahye laugh
-dahye "잘 하겠지."
+dahye "잘 하겠지. 뭐."

@@ -259,7 +259,8 @@ public class PlayerMovement : MonoBehaviour
 
     public void autoWalk(float duration, bool isRight)
     {
-        spriteRenderer.flipX = !isRight;
+        if (!isRight) transform.localScale = new Vector3(-1, 1, 1);
+        else transform.localScale = new Vector3(1,1,1);
         StartCoroutine(autoWalkInumerator(duration, isRight));
     }
 
@@ -275,7 +276,9 @@ public class PlayerMovement : MonoBehaviour
 
     public IEnumerator autoWalkInumerator(float duration, bool isRight)
     {
-        spriteRenderer.flipX = !isRight;
+        if (!isRight) transform.localScale = new Vector3(-1, 1, 1);
+        else transform.localScale = new Vector3(1,1,1);        
+        
         float dir = -1;
         anim.SetBool("IsWalking", true);
         for (float i = 0; i < duration; i = i + 0.02f)

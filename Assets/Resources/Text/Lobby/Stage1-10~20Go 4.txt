@@ -14,4 +14,4 @@ minkyu "저 퇴근할게요~!"
 
 ChangeEmotion jihee happy
 jihee "그래~"
-jihee "...할 수 있을거야"
+jihee "(...할 수 있을거야. 힘내.)"

@@ -26,7 +26,7 @@ public class Stage1_0PortalScript : MonoBehaviour
     IEnumerator GoNextStage()
     {
         InputDecoder.InterfaceElements.SetActive(true);
-        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Stage1/Clear0");
+        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Stage1-0/Clear1-0");
         yield return new WaitWhile(() => InputDecoder.isGameInScript);
 
         SceneManager.LoadScene("Stage 1-1");
