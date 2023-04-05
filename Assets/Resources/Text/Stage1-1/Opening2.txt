@@ -10,3 +10,4 @@ ChangeEmotion minkyu default
 minkyu "그치만 뭐 깡으로 가야겠지... 가보자고."
 
 AutoUnFreeze
+PlayMusic firstFieldMusic

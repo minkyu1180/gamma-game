@@ -1,0 +1,36 @@
+Show forest
+PlayMusic firstBossPlainMusic
+
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(chunbok, 김춘복, color=white, emotion=default, speed=0.08, voice=chunbokVoice)
+
+AutoFreeze
+chunbok "잘 왔군."
+chunbok "아주 잘 도착했어."
+
+ChangeEmotion minkyu happy
+minkyu "다 온 거죠? 이제 '자격' 있나요?"
+
+ChangeEmotion chunbok cold
+chunbok "아니. 아직 한참 남았다네."
+ChangeEmotion chunbok laugh
+chunbok "내가 여기서 자네를 기다린 건 저 가로등에 대해 알려주기 위함이네."
+
+ChangeEmotion minkyu despise
+minkyu "가로등? 저 앞에 있는 게 가로등이라고요? 진짜 퀄리티 수준 낮네요..."
+
+ChangeEmotion chunbok surprised
+chunbok "왜 나한테 그러는가. 게임 제작자한테 따졌으면 하네."
+ChangeEmotion chunbok default
+chunbok "아무튼 저 가로등, 평상시에는 그렇지 않은데 간간이 켜진단 말이야. 그러면 매우 뜨거워진다네."
+
+ChangeColor chunbok red
+chunbok "즉 다시 말해 가로등이 켜졌을 때는 가로등을 밟을 수 없을걸세."
+ChangeColor chunbok white
+
+chunbok "이거 말해주려고 기다렸다네"
+ChangeEmotion minkyu aggrovated
+minkyu "가슴이 웅장해지네요."
+ChangeEmotion chunbok surprised
+chunbok "어째서지...? 요즘 애들은 사소한 일에도 감동을 받나보군. 인상적이야."
+chunbok "기다린 보람이 있구만. 그러면 나는 먼저 가서 기다리겠네."

@@ -1,0 +1,14 @@
+StopMusic
+PlayMusic disappointmentMusic
+
+AutoFreeze
+AutoDown
+ChangeEmotion minkyu despise
+minkyu "아 씁... 너무 힘들다."
+minkyu "오늘은 그냥 집에 돌아가야겠다."
+minkyu "집에 가서 푹 쉬고 내일 해야지."
+
+Show blackScene
+Wait 1.5
+
+AutoUnFreeze

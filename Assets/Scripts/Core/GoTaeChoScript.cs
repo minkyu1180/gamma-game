@@ -23,9 +23,9 @@ public class GoTaeChoScript : MonoBehaviour
     IEnumerator WaitWithPainAndRevive(Collider2D other)
     {
         Time.timeScale = 0.05f;
+        other.gameObject.GetComponent<HealthScript>().Hit(10);
         yield return new WaitForSecondsRealtime(0.35f);
         Time.timeScale = 1.0f;
-        other.gameObject.GetComponent<HealthScript>().Hit(100);
         other.gameObject.transform.parent.GetComponent<Rigidbody2D>().position = StartPoint.GetComponent<Rigidbody2D>().position;
         other.gameObject.transform.parent.GetComponent<Rigidbody2D>().velocity = new Vector2(0f,0f);
         

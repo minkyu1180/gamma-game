@@ -30,6 +30,8 @@ public class PlayerMovement : MonoBehaviour
 
     AudioSource audioSource;
     private AudioClip jumpSound;
+    private AudioClip upJumpSound;
+    private AudioClip doubleJumpSound;
 
 
     // Start is called before the first frame update
@@ -51,6 +53,8 @@ public class PlayerMovement : MonoBehaviour
 
         audioSource = GetComponent<AudioSource>();
         jumpSound = Resources.Load("Sound/Voice/jumpSound") as AudioClip;
+        upJumpSound = Resources.Load("Sound/Voice/upJumpSound") as AudioClip;
+        doubleJumpSound = Resources.Load("Sound/Voice/doubleJumpSound") as AudioClip;
     }
 
     void Update()
@@ -149,6 +153,7 @@ public class PlayerMovement : MonoBehaviour
                 else beforeJumpInertia = 0f;
                 if (!Input.GetButton("Horizontal") && (Input.GetAxisRaw("Vertical") == 1) && highJumpEnabled)
                 {
+                    audioSource.PlayOneShot(upJumpSound);
                     PlayerRigidbody.AddForce(new Vector2(0f, jump * 2f));
                     anim.SetTrigger("UpJumpTrigger");    
                 }
@@ -162,6 +167,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 isDoubleJumpUsed = true;
                 anim.SetBool("IsDoubleJumpUsed", true);
+                audioSource.PlayOneShot(doubleJumpSound);
                 int dir = 1;
                 if (!isRight) dir = -1;
                 PlayerRigidbody.AddForce(new Vector2(dir * 300f, jump * 0.5f));

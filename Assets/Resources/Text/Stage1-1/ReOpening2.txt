@@ -2,3 +2,4 @@ ChangeEmotion minkyu aggrovated
 minkyu "후."
 minkyu "다시 가보는 거야."
 AutoUnFreeze
+PlayMusic firstFieldMusic

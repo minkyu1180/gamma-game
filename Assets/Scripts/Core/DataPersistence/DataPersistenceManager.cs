@@ -43,7 +43,6 @@ public class DataPersistenceManager : MonoBehaviour
         {
             dataPersistenceObj.LoadData(gameData);
         }
-        Debug.Log("Loaded Day Count" +gameData.dayCount[0]);
 
     }
 

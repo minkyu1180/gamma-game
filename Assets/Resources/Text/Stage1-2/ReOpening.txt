@@ -1,0 +1,10 @@
+Show forest
+PlayMusic firstBossPlainMusic
+
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(chunbok, 김춘복, color=white, emotion=default, speed=0.08, voice=chunbokVoice)
+
+AutoFreeze
+chunbok "이제 좀 빨리 오는 것 같군. 허허."
+ChangeEmotion chunbok laugh
+chunbok "힘내게~~ 껄껄껄껄껄껄."

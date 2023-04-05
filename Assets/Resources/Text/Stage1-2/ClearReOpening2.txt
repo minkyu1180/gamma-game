@@ -1,0 +1,4 @@
+
+minkyu "샘플 대사. 수정요망."
+AutoUnFreeze
+PlayMusic firstFieldMusic

@@ -125,7 +125,7 @@ TextureImporter:
         width: 85
         height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -142,11 +142,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 12
-        y: 189
+        y: 190
         width: 85
         height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -167,7 +167,7 @@ TextureImporter:
         width: 85
         height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -188,7 +188,7 @@ TextureImporter:
         width: 11
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -209,7 +209,7 @@ TextureImporter:
         width: 13
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -230,7 +230,7 @@ TextureImporter:
         width: 17
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -238,6 +238,111 @@ TextureImporter:
       bones: []
       spriteID: 33705b56f1ad447f799d4fea6a853308
       internalID: -540019499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chunbok sprite alias_6
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 190
+        width: 85
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f3a64cbf0704c0f992c3442c5e077e
+      internalID: -351829113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chunbok sprite alias_7
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 124
+        width: 85
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 604259494ad2c4d018f04e1ecff2da74
+      internalID: 2080212347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chunbok sprite alias_8
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 125
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28719421a7ce74811860839e1b055ca6
+      internalID: -1917469348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chunbok sprite alias_9
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 126
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d142629dd354afaa3cd08eda5aad02
+      internalID: 1023795530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chunbok sprite alias_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 125
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07fed33768984ec2af22261b81678a0
+      internalID: -1099419697
       vertices: []
       indices: 
       edges: []
@@ -255,8 +360,13 @@ TextureImporter:
     nameFileIdTable:
       chunbok sprite alias_4: -728657679
       chunbok sprite alias_2: -2012147535
+      chunbok sprite alias_6: -351829113
+      chunbok sprite alias_9: 1023795530
       chunbok sprite alias_1: -140143153
       chunbok sprite alias_5: -540019499
+      chunbok sprite alias_7: 2080212347
+      chunbok sprite alias_8: -1917469348
+      chunbok sprite alias_10: -1099419697
       chunbok sprite alias_0: 392008867
       chunbok sprite alias_3: -313394471
   spritePackingTag: 
