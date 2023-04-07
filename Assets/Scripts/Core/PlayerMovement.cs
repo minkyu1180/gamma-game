@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour, IDataPersistence
 {
     public float speed;
     public float jump;
@@ -33,6 +33,15 @@ public class PlayerMovement : MonoBehaviour
     private AudioClip upJumpSound;
     private AudioClip doubleJumpSound;
 
+
+    public void LoadData(GameData data)
+    {
+        this.doubleJumpEnabled = data.didClearStage1;
+        //stage 2
+        this.highJumpEnabled = data.didClearStage3;
+    }
+
+    public void SaveData(ref GameData data){}
 
     // Start is called before the first frame update
     void Start()

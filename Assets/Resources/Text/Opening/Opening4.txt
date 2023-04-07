@@ -10,11 +10,7 @@ ChangeEmotion minkyu default
 minkyu "(발밑에 뭐가 있다?)"
 minkyu "뭐지 이게.... 전단지?"
 
-
-
-
-
-
+Show flyer
 
 
 
@@ -25,8 +21,10 @@ minkyu "이게 말이 되는 건가?"
 ChangeEmotion minkyu default
 minkyu "아니 디자인이 이게 뭐야. 이게 전단지야? 뭔 아래한글에 몇자 쳐서 뽑은 것 같은데."
 minkyu "그리고 전설 속의 용사를 이렇게 알바 구하듯이 뽑는다고? 뭐지 이게? 약간 빅펌 변호사를 알바천국에서 구하는 모양새인데."
-minkyu "어... 근데 장소가 우리집에서 그렇게 안 멀긴 하네."
+minkyu "뒷장... 어디 보자, 시험 장소가... 뒷산이랑, 학교랑, 아파트 단지랑..."
+minkyu "다 우리집 근처긴 하네."
 minkyu "장난이라고 해도 손해 볼 건 없는 것 같은데."
 minkyu "흠... 일단 주워갈까."
+Show blackScene
 minkyu "(손에 전단지를 쥐고 체육관으로 향했다.)"
 

@@ -1,0 +1,6 @@
+AutoFreeze
+ChangeEmotion minkyu despise
+minkyu "여기는 지름길이니까. 빨리 가자."
+ChangeEmotion minkyu shout
+minkyu "간다아아아아앗!"
+AutoUnFreeze

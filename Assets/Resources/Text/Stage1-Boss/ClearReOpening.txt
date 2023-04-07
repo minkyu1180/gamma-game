@@ -1,0 +1,19 @@
+Show forest
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(chunbok, 김춘복, color=white, emotion=default, speed=0.08, voice=chunbokVoice)
+
+AutoFreeze
+
+ChangeEmotion chunbok laugh
+chunbok "왜 이리 죽상인가. 훈련하려면 제대로 하자고."
+
+ChangeEmotion minkyu default
+minkyu "...할아버지."
+minkyu "진짜 잊을 수는 없는 거죠?"
+
+chunbok "그렇다네. 절대."
+chunbok "자 그러면, 훈련 시작하겠네."
+
+
+AutoUnFreeze
+PlayMusic firstBossFightMusic

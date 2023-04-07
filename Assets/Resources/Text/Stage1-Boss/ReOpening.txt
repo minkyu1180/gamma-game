@@ -1,0 +1,18 @@
+Show forest
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(chunbok, 김춘복, color=white, emotion=default, speed=0.08, voice=chunbokVoice)
+
+AutoFreeze
+
+chunbok "스피드. 정확성. 신속성. 자네가 가진 모든 것..."
+chunbok "나에게 보여주게."
+chunbok "가겠네."
+
+ChangeEmotion minkyu default
+minkyu "(오토바이들을 피해 오른쪽 끝까지 달리자.)"
+ChangeEmotion minkyu happy
+minkyu "(...이번에는 좀 덜 맞자)"
+
+
+AutoUnFreeze
+PlayMusic firstBossFightMusic

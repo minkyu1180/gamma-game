@@ -14,25 +14,46 @@ public class Stage1_BossSceneManager : MonoBehaviour, IDataPersistence
     private Vector3 cameraPositionSaved;
     private float cameraSizeSaved;
     GameObject DialogBoxTextObject;
-    private bool itemGet;
-    private int stageCount;
+    
     public GameObject bossPatternController;
     private BossPatternControllerScript bossPatternControllerScript;
+    
     bool IsFasterActivated = false;
     bool IsBikeAttackEnd = false;
     bool IsBikeStopSoundHeard = false;
+    bool IsFinalScriptLoaded = false;
+
     public GameObject feverPanel;
     public AudioSource audioSource;
     public AudioClip bikeEndSound;
-    //public AudioSource audioSource;
-    //public float fasterSpeed = 1.1f;
+    public GameObject dataPersistenceManager;
+
+    public bool didTrueClearStage1;
+    public bool didClearStage1;
+    public bool didClear1_2Hidden;
+    public bool didSeeStage1_Boss;
+
+    private int dayCount;
+    private int stageCount;
 
     public void LoadData(GameData data)
     {
-        itemGet = data.item1Got;
+        this.didTrueClearStage1 = data.didTrueClearStage1;
+        this.didClearStage1 = data.didClearStage1;
+        this.didClear1_2Hidden = data.didClearStage1_2Hidden;
+        this.didSeeStage1_Boss = data.didSeeStage1_Boss;
+        this.dayCount = data.dayCount;
+        this.stageCount = data.stageCount;
     }
 
-    public void SaveData(ref GameData data){}
+    public void SaveData(ref GameData data)
+    {
+        data.didTrueClearStage1 = this.didTrueClearStage1;
+        data.didClearStage1 = this.didClearStage1;
+        data.didSeeStage1_Boss = this.didSeeStage1_Boss;
+        data.stageCount = this.stageCount;
+        data.dayCount = this.dayCount;
+    }
 
 
     void Start()
@@ -52,27 +73,41 @@ public class Stage1_BossSceneManager : MonoBehaviour, IDataPersistence
         audioSource = gameObject.GetComponent<AudioSource>();
         bikeEndSound = Resources.Load("Sound/Voice/bikeEndSound") as AudioClip;
         //audioSource = gameObject.GetComponent<AudioSource>();
+        dataPersistenceManager = GameObject.Find("DataPersistenceManager");
 
-        StartCoroutine(ScriptLoader());
-
-    }
-
-
-
-    IEnumerator ScriptLoader()
-    {
-        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Stage1-Boss/Opening");
-        yield return new WaitWhile(() => InputDecoder.isGameInScript);
+        string textLocation;
         
-        //bossPatternControllerScript.StartBodyCrushPattern();
-        //bossPatternControllerScript.StartRockDownPattern();
-        bossPatternControllerScript.StartAllMixPattern();
+        if (didTrueClearStage1) textLocation = "Text/Stage1-Boss/AfterAllOpening";
+        else
+        {
+            if (didClearStage1)
+            {
+                if (didClear1_2Hidden) textLocation = "Text/Stage1-Boss/ClearAfterItemReOpening";
+                else textLocation = "Text/Stage1-Boss/ClearReOpening";
+            }
+            else
+            {
+                if (didSeeStage1_Boss) textLocation = "Text/Stage1-Boss/ReOpening";
+                else textLocation = "Text/Stage1-Boss/Opening";
+                
+            }
+        }
+        StartCoroutine(OpeningScriptLoad(textLocation));
     }
 
-    IEnumerator ScriptAfterItemGetLoader()
+
+
+    IEnumerator OpeningScriptLoad(string textLocation)
     {
-        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Stage1-Boss/OpeningAfterItemGet");
+        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript(textLocation);
         yield return new WaitWhile(() => InputDecoder.isGameInScript);
+
+        didSeeStage1_Boss = true;
+        bool saved = false;
+        saved = dataPersistenceManager.GetComponent<DataPersistenceManager>().SaveGame();
+        yield return new WaitWhile(() => !saved);
+
+        bossPatternControllerScript.StartAllMixPattern();
     }
 
     void Update()
@@ -80,7 +115,6 @@ public class Stage1_BossSceneManager : MonoBehaviour, IDataPersistence
         if (!IsFasterActivated && Player.transform.position.x >= 190f)
         {
             bossPatternControllerScript.FasterPattern();
-            Debug.Log("ISFASTERACTIVATED");
             feverPanel.GetComponent<morePowerPanelScript>().feverNotification();
             //audioSource.pitch = fasterSpeed;
             //audioSource.outputAudioMixerGroup.audioMixer.SetFloat("Pitch", 1f / fasterSpeed);
@@ -99,9 +133,57 @@ public class Stage1_BossSceneManager : MonoBehaviour, IDataPersistence
             audioSource.PlayOneShot(bikeEndSound);
             
             IsBikeStopSoundHeard = true;
-        }    
+        }
+
+        if (!IsFinalScriptLoaded && Player.transform.position.x >= 350f)
+        {
+            string textLocation;
+            if (didTrueClearStage1) textLocation = "Text/Stage1-Boss/Ending/AfterAllEnding";
+            else
+            {
+                if (didClearStage1) 
+                {
+                    if (didClear1_2Hidden) textLocation = "Text/Stage1-Boss/Ending/ClearAfterItemReEnding";
+                    else textLocation = "Text/Stage1-Boss/Ending/ClearReEnding";
+                }
+                else textLocation = "Text/Stage1-Boss/Ending/Ending";
+            }
+
+            IsFinalScriptLoaded = true;
+
+            
+            StartCoroutine(EndingScriptLoad(textLocation));
+        }
 
 
     }
+
+    IEnumerator EndingScriptLoad(string textLocation)
+    {
+        yield return new WaitForSeconds(2.0f);
+        InputDecoder.isGameInScript = true;
+        InputDecoder.InterfaceElements.SetActive(true);
+
+        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript(textLocation);
+        yield return new WaitWhile(() => InputDecoder.isGameInScript);
+
+        if (didClear1_2Hidden)
+        {
+            didTrueClearStage1 = true;
+        }
+        else
+        {
+            didClearStage1 = true;
+        }
+
+        if (stageCount <= 1)stageCount = 1;
+        dayCount++;
+        bool saved = false;
+        saved = dataPersistenceManager.GetComponent<DataPersistenceManager>().SaveGame();
+        yield return new WaitWhile(() => !saved);
+
+        SceneManager.LoadScene("LobbyScene");        
+    }
+
 
 }

@@ -1,0 +1,6 @@
+AutoFreeze
+ChangeEmotion minkyu default
+minkyu "다시 한번 그 할아버지를 만나야 할 것 같다..."
+ChangeEmotion minkyu default
+minkyu "(영 찜찜해...)"
+AutoUnFreeze

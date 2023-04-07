@@ -1,0 +1,4 @@
+minkyu "음... 좋아. 점프 훈련..."
+minkyu "여기서 훈련해야겠다."
+AutoUnFreeze
+PlayMusic firstFieldMusic

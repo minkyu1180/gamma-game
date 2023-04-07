@@ -1,0 +1,5 @@
+ChangeEmotion minkyu default
+minkyu "어케이.... 가볼까??"
+
+AutoUnFreeze
+PlayMusic firstFieldMusic

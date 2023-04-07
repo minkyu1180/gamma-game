@@ -1,0 +1,11 @@
+Show forest
+PlayMusic firstBossPlainMusic
+
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(chunbok, 김춘복, color=white, emotion=default, speed=0.08, voice=chunbokVoice)
+
+AutoFreeze
+ChangeEmotion chunbok laugh
+chunbok "오래간만에 하는 말이지만,"
+chunbok "가로등 조심하게. 세상에는 어두운 게 더 좋은 것도 있는 법이야."
+minkyu "네. 알겠어요."

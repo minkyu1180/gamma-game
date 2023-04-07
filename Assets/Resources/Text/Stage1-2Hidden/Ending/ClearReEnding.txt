@@ -1,0 +1,18 @@
+AutoFreeze
+ChangeEmotion minkyu happy
+minkyu "이거 좀 많이 빡세네. 그래도 다 왔으니 다행이다."
+minkyu "이제 담판을 지어야지...!"
+
+ChangeEmotion minkyu default
+minkyu "에? 왠 책이지 이게?"
+minkyu "일기장?"
+minkyu "(책에는 노인의 고민이 들어있었다. 그 찰나의 행복감과 전율. 그걸 잊지 못하는 자신에 대한 묘사가 구구절절히 쓰여있는... 그런 일기였다.)"
+ChangeEmotion minkyu shout
+minkyu "아"
+minkyu "음... 어쩔 수 없지."
+minkyu "그것 밖에는... 방법이 없나."
+
+ChangeEmotion minkyu default
+minkyu "(다짐을 했다.)"
+
+AutoUnFreeze

@@ -1,0 +1,5 @@
+AutoFreeze
+ChangeEmotion minkyu aggrovate
+minkyu "뭐 이정도는 이제 껌이지 나한테도."
+minkyu "재밌다~"
+AutoUnFreeze

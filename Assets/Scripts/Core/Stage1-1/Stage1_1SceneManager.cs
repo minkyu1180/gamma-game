@@ -15,16 +15,26 @@ public class Stage1_1SceneManager : MonoBehaviour, IDataPersistence
     private Vector3 cameraPositionSaved;
     private float cameraSizeSaved;
     GameObject DialogBoxTextObject;
-    private int day;
-    private int stageCount;
+    GameObject dataPersistenceManager;
+
+    bool didTrueClearStage1;
+    bool didClearStage1;
+    bool didSeeStage1_1;
+    bool didClear1_2Hidden;
+
 
     public void LoadData(GameData data)
     {
-        day = data.dayCount[0];
-        stageCount = data.stageCount;
+        this.didTrueClearStage1 = data.didTrueClearStage1;
+        this.didClearStage1 = data.didClearStage1;
+        this.didSeeStage1_1 = data.didSeeStage1_1;
+        this.didClear1_2Hidden = data.didClearStage1_2Hidden;
     }
 
-    public void SaveData(ref GameData data){}
+    public void SaveData(ref GameData data)
+    {
+        data.didSeeStage1_1 = this.didSeeStage1_1;
+    }
 
 
     void Start()
@@ -38,27 +48,32 @@ public class Stage1_1SceneManager : MonoBehaviour, IDataPersistence
         Player = GameObject.Find("Minkyu");
         cameraPositionSaved = Camera.transform.position;
         cameraSizeSaved = Camera.GetComponent<Camera>().orthographicSize;
+        dataPersistenceManager = GameObject.Find("DataPersistenceManager");
         
-        if (day == 0)
-        {
-            StartCoroutine(ScriptDay0Loader());
-        }
-        else if (stageCount < 1)
-        {
-            StartCoroutine(ScriptDayOver0Loader());
-        }
+        string textLocation;
+        if (didTrueClearStage1) textLocation = "Text/Stage1-1/AfterAllOpening";
         else
         {
-            StartCoroutine(ScriptClearRetryLoader());
+            if (didClearStage1)
+            {
+                if (didClear1_2Hidden) textLocation = "Text/Stage1-1/ClearAfterItemOpening";
+                else textLocation = "Text/Stage1-1/ClearReOpening";
+            }
+            else
+            {
+                if (didSeeStage1_1) textLocation = "Text/Stage1-1/ReOpening";
+                else textLocation = "Text/Stage1-1/Opening";
+            }
         }
+        StartCoroutine(OpeningScriptLoad(textLocation));
 
     }
 
 
 
-    IEnumerator ScriptDay0Loader()
+    IEnumerator OpeningScriptLoad(string textLocation)
     {
-        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Stage1-1/Opening");
+        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript(textLocation);
         yield return new WaitWhile(() => InputDecoder.isGameInScript);
         Chunbok.transform.localScale = new Vector3(-1, 1, 1);
         yield return new WaitForSeconds(0.5f); 
@@ -69,43 +84,14 @@ public class Stage1_1SceneManager : MonoBehaviour, IDataPersistence
 
         InputDecoder.isGameInScript = true;
         InputDecoder.InterfaceElements.SetActive(true);
-        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Stage1-1/Opening2");
+        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript(textLocation + "2");
         yield return new WaitWhile(() => InputDecoder.isGameInScript);
 
-    }
+        didSeeStage1_1 = true;
+        bool saved = false;
+        saved = dataPersistenceManager.GetComponent<DataPersistenceManager>().SaveGame();
+        yield return new WaitWhile(() => !saved);
 
-    IEnumerator ScriptDayOver0Loader()
-    {
-        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Stage1-1/ReOpening");
-        yield return new WaitWhile(() => InputDecoder.isGameInScript);
-        Chunbok.transform.localScale = new Vector3(-1, 1, 1);
-        yield return new WaitForSeconds(0.5f); 
-        Chunbok.GetComponent<Animator>().SetTrigger("FireTrigger");
-        Chunbok.GetComponent<Rigidbody2D>().AddForce(new Vector2(-400f, 0f));        
-        yield return new WaitForSeconds(1.0f);  
-        Chunbok.SetActive(false);
-
-        InputDecoder.isGameInScript = true;
-        InputDecoder.InterfaceElements.SetActive(true);
-        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Stage1-1/ReOpening2");
-        yield return new WaitWhile(() => InputDecoder.isGameInScript);
-    }
-
-    IEnumerator ScriptClearRetryLoader()
-    {
-        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Stage1-1/ClearReOpening");
-        yield return new WaitWhile(() => InputDecoder.isGameInScript);
-        Chunbok.transform.localScale = new Vector3(-1, 1, 1);
-        yield return new WaitForSeconds(0.5f); 
-        Chunbok.GetComponent<Animator>().SetTrigger("FireTrigger");
-        Chunbok.GetComponent<Rigidbody2D>().AddForce(new Vector2(-400f, 0f));        
-        yield return new WaitForSeconds(1.0f);  
-        Chunbok.SetActive(false);
-
-        InputDecoder.isGameInScript = true;
-        InputDecoder.InterfaceElements.SetActive(true);
-        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Stage1-1/ClearReOpening2");
-        yield return new WaitWhile(() => InputDecoder.isGameInScript);
     }
 
 

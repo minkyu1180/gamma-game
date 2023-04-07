@@ -1,0 +1,4 @@
+minkyu "...아, 잠깐...."
+minkyu "후, 쫒아가서 말씀드리는 수밖에."
+AutoUnFreeze
+PlayMusic firstFieldMusic

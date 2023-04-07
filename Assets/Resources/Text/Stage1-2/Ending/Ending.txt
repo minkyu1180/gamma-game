@@ -1,0 +1,6 @@
+AutoFreeze
+ChangeEmotion minkyu happy
+minkyu "여긴 언제나 높다...! 엄청...!"
+ChangeEmotion minkyu default
+minkyu "(이제 진짜로 다 온 것 같다.)"
+AutoUnFreeze

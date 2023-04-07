@@ -1,0 +1,16 @@
+PlayMusic naiveAnalogMusic
+
+AutoFreeze
+minkyu "(저렇게 웃는데. 또 잊어달라는 소리를 할 수는 없다.)"
+ChangeEmotion minkyu despise
+minkyu "(후...)"
+
+ChangeEmotion minkyu default
+minkyu "훈련 시켜 주셔서 감사합니다."
+
+ChangeEmotion chunbok laugh
+chunbok "하하, 뭘 이런 거 가지고 그러나. 다음에 또 오게!"
+
+
+AutoUnFreeze
+PlayMusic firstBossFightMusic

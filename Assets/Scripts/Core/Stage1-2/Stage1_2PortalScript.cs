@@ -23,10 +23,22 @@ public class Stage1_2PortalScript : MonoBehaviour
         }
     }
 
+    /*
+    public void Update()
+    {  
+        //CHEAT. EXSISTS FOR GAME TESTING. MUST BE ELIMINATED IN FINAL RELEASE
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            GameObject minkyu = GameObject.Find("Minkyu");
+            minkyu.transform.position = gameObject.transform.position;
+        }
+    }
+    */
+    
     IEnumerator GoNextStage()
     {
         InputDecoder.InterfaceElements.SetActive(true);
-        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Stage1-2/Clear1-2");
+        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Stage1-2/Ending/Ending");
         yield return new WaitWhile(() => InputDecoder.isGameInScript);
 
         SceneManager.LoadScene("Stage 1-Boss");

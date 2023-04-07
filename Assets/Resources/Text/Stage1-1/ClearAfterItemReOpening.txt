@@ -1,0 +1,10 @@
+Show forest
+PlayMusic firstBossPlainMusic
+
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(chunbok, 김춘복, color=white, emotion=default, speed=0.08, voice=chunbokVoice)
+
+AutoFreeze
+ChangeEmotion chunbok laugh
+chunbok "오랜만이네. 또 훈련인가? 열심이구만."
+chunbok "난 먼저 가보겠네!"

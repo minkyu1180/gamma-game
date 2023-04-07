@@ -1,0 +1,9 @@
+Show forest
+PlayMusic firstFieldMusic
+
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+
+AutoFreeze
+minkyu "다시 도전이네."
+minkyu "(숲 중심부로 들어가려면 우상단 방향으로 가는 게 맞다.)"
+AutoUnFreeze

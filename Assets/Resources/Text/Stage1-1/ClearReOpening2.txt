@@ -1,4 +1,5 @@
 
-minkyu "샘플 대사. 수정요망."
+minkyu "역시 이거..."
+minkyu "후. 쉽지 않군."
 AutoUnFreeze
 PlayMusic firstFieldMusic

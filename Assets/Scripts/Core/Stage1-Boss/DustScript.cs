@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DustScript : MonoBehaviour
+public class DustScript : MonoBehaviour, IDataPersistence
 {
     public float force;
     public int type;
@@ -14,6 +14,15 @@ public class DustScript : MonoBehaviour
     //public AudioSource audioSource;
     //public AudioClip rockSound;
 
+
+    public bool didClearStage1;
+
+    public void LoadData(GameData data)
+    {
+        this.didClearStage1 = data.didClearStage1;
+    }
+    public void SaveData(ref GameData data){}
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +33,13 @@ public class DustScript : MonoBehaviour
         //rockSound = Resources.Load("Sound/Voice/rockSound") as AudioClip;
         //audioSource.pitch = Random.Range(0.5f, 0.6f);
         //audioSource.PlayOneShot(rockSound);
+        if (didClearStage1)
+        {
+            Damage1 = 80;
+            Damage2 = 110;
+            Damage3 = 150;
+        }
+
     }
 
     // Update is called once per frame

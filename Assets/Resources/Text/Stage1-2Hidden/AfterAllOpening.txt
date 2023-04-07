@@ -1,0 +1,11 @@
+Show forest
+PlayMusic firstFieldMusic
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+
+AutoFreeze
+
+minkyu "솔직히 이젠 산전수전 다 경험했어도"
+ChangeEmotion minkyu despise
+minkyu "이건 좀 빡세다."
+
+AutoUnFreeze

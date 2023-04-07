@@ -1,4 +1,7 @@
+ChangeEmotion minkyu despise
+minkyu "난 훈련 때문에 온 게 아닌데 말이야."
+ChangeEmotion minkyu default
+minkyu "뭐 원한다면 따라가 드려랴겠지."
 
-minkyu "샘플 대사. 수정요망."
 AutoUnFreeze
 PlayMusic firstFieldMusic

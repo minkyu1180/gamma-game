@@ -1,0 +1,14 @@
+Show forest
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(chunbok, 김춘복, color=white, emotion=default, speed=0.08, voice=chunbokVoice)
+
+AutoFreeze
+
+chunbok "뭐, 별 말이 필요한가? 이제? 달리자고!"
+
+ChangeEmotion minkyu default
+minkyu "(달릴 시간이다.)"
+
+
+AutoUnFreeze
+PlayMusic firstBossFightMusic

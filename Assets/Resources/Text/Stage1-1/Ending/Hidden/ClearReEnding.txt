@@ -1,0 +1,8 @@
+AutoFreeze
+ChangeEmotion minkyu despise
+minkyu "여긴... 이단 점프 없으면 물리적으로 들어갔을 수 없겠군."
+minkyu "그만큼 은밀한 곳이라는 거고."
+
+ChangeEmotion minkyu aggrovated
+minkyu "여기라면 그 할아버지를 좀 더 잘 이해할 수 있을까..?"
+AutoUnFreeze

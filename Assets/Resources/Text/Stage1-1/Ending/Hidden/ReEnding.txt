@@ -1,0 +1,18 @@
+AutoFreeze
+ChangeEmotion minkyu despise
+minkyu "여긴 어디지?"
+minkyu "이거 허공답보 없었으면 못 들어갔을 곳인데?"
+minkyu "잠깐... 난 아직 할아버지를 이기지 못해서 이단 점프가 없을 텐데."
+
+ChangeSpeed minkyu 0.12
+ChangeColor minkyu red
+minkyu "해킹을 했구나. 그렇지?"
+ChangeSpeed minkyu 0.06
+minkyu "...... 아니라고? 그러면 개발자한테 버그 리포팅 좀 해줘"
+ChangeColor minkyu white
+
+ChangeEmotion minkyu aggrovate
+minkyu "뭐, 아무튼 뭔가 은밀한 곳인 것 같군."
+ChangeEmotion minkyu default
+minkyu "(들어가 볼까...)"
+AutoUnFreeze

@@ -1,0 +1,11 @@
+AutoFreeze
+ChangeEmotion minkyu default
+minkyu "말이... 말이 안 통하는군."
+ChangeEmotion minkyu despise
+minkyu "너무 내 얘기만 하는 걸까 내가."
+ChangeColor minkyu red
+minkyu "좀 더 그 사람에 대해 더 알아야 하지 않을까."
+ChangeColor minkyu white
+ChangeEmotion minkyu default
+minkyu "쩝. 어쩔 수 없지. 그냥 가보도록 하자."
+AutoUnFreeze

@@ -1,0 +1,11 @@
+Show forest
+PlayMusic firstFieldMusic
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+
+AutoFreeze
+
+minkyu "다시... 이걸 내려가야 하긴 하네."
+ChangeEmotion minkyu despise
+minkyu "개빡센데..."
+
+AutoUnFreeze

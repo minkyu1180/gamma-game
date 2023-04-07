@@ -7,5 +7,5 @@ Character(chunbok, 김춘복, color=white, emotion=default, speed=0.08, voice=ch
 AutoFreeze
 chunbok "또 왔군."
 minkyu "그렇습니다."
-chunbok "인상적이었네. '자격'을 얻을 만큼은 되지 않았지만."
+chunbok "인상적이었네. 내 마음을 움직일 정도는 되지 않았지만."
 chunbok "노력해보게나. 그럼 먼저 가겠네."

@@ -8,7 +8,7 @@ public class MedalScript2 : MonoBehaviour, IDataPersistence
     bool itme2Got;
     public void LoadData(GameData data)
     {
-        itme2Got = data.item2Got;
+        itme2Got = data.didTrueClearStage2;
     }
 
     public void SaveData(ref GameData data){}

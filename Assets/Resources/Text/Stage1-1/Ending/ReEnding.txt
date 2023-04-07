@@ -1,0 +1,9 @@
+AutoFreeze
+ChangeEmotion minkyu happy
+minkyu "점프! 점프!"
+minkyu "다시 생각해보니 진짜 달릴 필요조차 없는 곳이네."
+ChangeEmotion minkyu despise
+minkyu "그래도 꽤 타이밍이 빡센 곳이었어."
+ChangeEmotion minkyu default
+minkyu "(이번에도 좀 더 깊은 곳으로 들어가자...)"
+AutoUnFreeze

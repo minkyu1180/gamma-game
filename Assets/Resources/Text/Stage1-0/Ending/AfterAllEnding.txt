@@ -1,0 +1,6 @@
+AutoFreeze
+ChangeEmotion minkyu happy
+minkyu "이제~ 이 정도는 껌이고 장난이지~"
+ChangeEmotion minkyu aggrovate
+minkyu "(아닌가?)"
+AutoUnFreeze

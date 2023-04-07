@@ -6,5 +6,4 @@ Character(chunbok, 김춘복, color=white, emotion=default, speed=0.08, voice=ch
 
 AutoFreeze
 ChangeEmotion chunbok laugh
-chunbok "왜 또 왔지? 뭔가 바라는 게 있는가?"
-minkyu "내용 추가"
+chunbok "훈련 열심히 하고, 빨리 따라 오라고!"

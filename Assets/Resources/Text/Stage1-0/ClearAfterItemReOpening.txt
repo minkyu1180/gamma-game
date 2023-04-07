@@ -1,0 +1,9 @@
+Show forest
+PlayMusic firstFieldMusic
+
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+
+AutoFreeze
+ChangeEmotion minkyu despise
+minkyu "이건 아니다. 다시 춘복 할어버지를 만나러 가야한다."
+AutoUnFreeze

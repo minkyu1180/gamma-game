@@ -1,6 +1,0 @@
-AutoFreeze
-ChangeEmotion minkyu happy
-minkyu "후!"
-ChangeEmotion minkyu default
-minkyu "(깊은 숲속으로 들어가자...)"
-AutoUnFreeze

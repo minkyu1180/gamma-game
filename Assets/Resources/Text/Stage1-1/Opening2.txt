@@ -1,4 +1,4 @@
-minkyu "앗 잠깐만요 잠시만..."
+minkyu "앗 잠깐만요..."
 ChangeEmotion minkyu despise
 Wait 0.3
 minkyu "가버렸네."

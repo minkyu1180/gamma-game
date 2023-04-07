@@ -1,0 +1,10 @@
+Show forest
+PlayMusic firstFieldMusic
+
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+
+AutoFreeze
+minkyu "다시 춘복 할아버지를 만나야 할 것 같은 마음에 오긴 했는데"
+minkyu "난... 그 사람을 다시 만나서 어쩌자는 걸까."
+minkyu "(내가 귀를 빤 걸 잊어버리라고 해야 할까?)"
+AutoUnFreeze

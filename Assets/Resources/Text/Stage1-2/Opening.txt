@@ -26,6 +26,7 @@ chunbok "아무튼 저 가로등, 평상시에는 그렇지 않은데 간간이 
 
 ChangeColor chunbok red
 chunbok "즉 다시 말해 가로등이 켜졌을 때는 가로등을 밟을 수 없을걸세."
+chunbok "때로는 불 꺼진 가로등이 켜진 그것보다 나은 법이지."
 ChangeColor chunbok white
 
 chunbok "이거 말해주려고 기다렸다네"

@@ -1,0 +1,6 @@
+AutoFreeze
+ChangeEmotion minkyu default
+minkyu "(옆에 춘복 할아버지의 일기장이 있다.)"
+ChangeEmotion minkyu despise
+minkyu "가자. 난 다짐했어. 계약을 해야만 해"
+AutoUnFreeze

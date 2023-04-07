@@ -6,5 +6,12 @@ Character(chunbok, 김춘복, color=white, emotion=default, speed=0.08, voice=ch
 
 AutoFreeze
 ChangeEmotion chunbok laugh
-chunbok "왜 또 왔지? 뭔가 바라는 게 있는가?"
-minkyu
+chunbok "오... 민규! 여기서 또 보는군. 건강한가?"
+ChangeEmotion minkyu despise
+minkyu "할아버지, 정말 죄송하지만... 그 때 일은 잊어주실 수 있으신가요?"
+
+ChangeEmotion chunbok surprised
+chunbok "...."
+chunbok "그건 안되네. 굉장히 즐겁고 행복한 추억이었기 때문이네. 그렇게 마음 깊숙히 박힌 걸 쉽사리 없는 셈 칠 수는 없어."
+ChangeEmotion chunbok laugh
+chunbok "먼저 가보겠네. 천천히 오길 바라네"

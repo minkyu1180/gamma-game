@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BodyCrushPatternScript : MonoBehaviour
+public class BodyCrushPatternScript : MonoBehaviour, IDataPersistence
 {
     private GameObject minkyu;
     private Vector3Int targetCellPos;
@@ -19,6 +19,20 @@ public class BodyCrushPatternScript : MonoBehaviour
 
     public AudioSource audioSource;
     public AudioClip bikeSound;
+
+    public bool didClearStage1;
+
+    public void LoadData(GameData data)
+    {
+        this.didClearStage1 = data.didClearStage1;
+    }
+    public void SaveData(ref GameData data){}
+
+    void Start()
+    {
+        if (didClearStage1) BikeDamage = 150;
+    }
+
     void Awake()
     {
         minkyu = GameObject.Find("Minkyu");

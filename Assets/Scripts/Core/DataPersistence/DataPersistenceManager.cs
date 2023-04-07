@@ -12,6 +12,7 @@ public class DataPersistenceManager : MonoBehaviour
     public static DataPersistenceManager instance { get; private set; }
     private List <IDataPersistence> dataPersistenceObjects;
     private FileDataHandler dataHandler;
+    public bool saveOnQuit = true;
 
     private void Awake()
     {
@@ -46,19 +47,33 @@ public class DataPersistenceManager : MonoBehaviour
 
     }
 
-    public void SaveGame()
+    public bool CheckGameDataExist()
+    {
+        this.gameData = dataHandler.Load();
+        if (this.gameData == null)
+        {
+            Debug.Log("No Data was found. GameData would be set to default values.");
+            return false;
+        }
+        return true;
+    }
+
+
+    public bool SaveGame()
     {
         foreach (IDataPersistence dataPersistenceObj in dataPersistenceObjects)
         {
             dataPersistenceObj.SaveData(ref gameData);
         }
         dataHandler.Save(gameData);
+        return true;
     }
 
     //maybe I should change this to when click button
     //but this... on App Quit
     private void OnApplicationQuit()
     {
+        if (saveOnQuit)
         SaveGame();
     }
 

@@ -1,0 +1,42 @@
+Show forest
+AutoFreeze
+
+ChangeEmotion chunbok default
+chunbok "일기라."
+chunbok "때로는 어둠이 빛보다, 망각이 진실보다 좋을 때가 있는데 말이야."
+
+ChangeEmotion minkyu despise
+minkyu "죄송합니다. 너무 대놓고 펼쳐져 있어서..."
+minkyu "제 부탁은 예전과 같습니다. 예전의 일을 잊어주십시오."
+
+chunbok "굳이 그렇게까지 하는 이유가 있는가?"
+
+minkyu "그 일은... 말할 수 없습니다. 다만, 잊지 않는다면 저희 모두에게 좋지 않을 것이라는 것은 확신할 수 있습니다."
+minkyu "여태껏 너무 제 입장만 생각했는데, 할아버지께서 잊으신다면..."
+minkyu "제가 이번 한번만 다시 빨아드리겠습니다."
+
+ChangeEmotion chunbok fainted
+chunbok "......"
+ChangeEmotion chunbok default
+
+PlayMusic naiveAnalogMusic
+chunbok "됐네. 자네가 그렇게까지 한다면 뭔가 이유가 있겠지."
+chunbok "그래. 나도 잊겠네. 가슴 속에 그 기억을 묻고 남은 여생을 살아가겠네."
+chunbok "어찌되었건 내 남은 여생을 준 사람은 자네니까."
+
+
+ChangeEmotion minkyu default
+minkyu "정말이십니까."
+ChangeEmotion chunbok laugh
+chunbok "아이 뭐 그렇다 해도"
+ChangeEmotion minkyu happy
+minkyu "감사합니다. 이해해주셔서 정말 감사해요..."
+
+chunbok "뭐, 이렇게 있는 것도 웃기니. 우리 집에 가서 차라도 마시고 가게."
+minkyu "네..."
+Wait 1.2
+Show blackScene
+minkyu "(춘복 할아버지의 오두막에 가서 차를 얻어마셨다.)"
+minkyu "(일이 잘 해결되어서 다행이다.)"
+
+AutoUnFreeze

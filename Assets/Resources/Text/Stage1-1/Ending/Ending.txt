@@ -1,0 +1,11 @@
+AutoFreeze
+ChangeEmotion minkyu happy
+minkyu "후! 벨트가 정말 많네."
+minkyu "이제서야 깨달은 새삼스러운 사실이지만..."
+ChangeEmotion minkyu despise
+ChangeColor minkyu red
+minkyu "두 발이 땅에 붙어있지 않으면 점프를 할 수 없구나."
+ChangeColor minkyu white
+ChangeEmotion minkyu default
+minkyu "(좀 더 깊은 곳으로 들어가자...)"
+AutoUnFreeze

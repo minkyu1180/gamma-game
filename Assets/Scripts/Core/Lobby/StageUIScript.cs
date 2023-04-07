@@ -58,7 +58,7 @@ public class StageUIScript : MonoBehaviour, IDataPersistence
     {
         Stage1Button.GetComponent<Button>().interactable = false;
         InputDecoder.InterfaceElements.SetActive(true);
-        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Lobby/Stage1-1~10Go " + Convert.ToString(UnityEngine.Random.Range(1,5)));
+        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Lobby/Stage1-1~10Go " + Convert.ToString(UnityEngine.Random.Range(1,8)));
         yield return new WaitWhile(() => InputDecoder.isGameInScript);
 
         SceneManager.LoadScene("Stage 1-0");

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
-public class HealthScript : MonoBehaviour
+public class HealthScript : MonoBehaviour, IDataPersistence
 {
     public Sprite AttackedSprite;
     public Sprite NormalSprite;
@@ -18,6 +18,19 @@ public class HealthScript : MonoBehaviour
     private GameObject GameElements;
     AudioSource audioSource;
     private AudioClip hitSound;
+    private int dayCount;
+    public GameObject dataPersistenceManager;
+
+
+    public void LoadData(GameData data)
+    {
+        this.dayCount = data.dayCount;
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.dayCount = this.dayCount;
+    }
 
     void Start()
     {
@@ -26,6 +39,7 @@ public class HealthScript : MonoBehaviour
         IsFainted = false;
         audioSource = gameObject.GetComponent<AudioSource>();
         hitSound = Resources.Load("Sound/Voice/hitSound") as AudioClip;
+        dataPersistenceManager = GameObject.Find("DataPersistenceManager");
     }
     public void Hit(int damage)
     {
@@ -94,6 +108,11 @@ public class HealthScript : MonoBehaviour
         DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/System/Fainted");
         yield return new WaitWhile(() => InputDecoder.isGameInScript);
 
+        dayCount++;
+        bool saved = false;
+        saved = dataPersistenceManager.GetComponent<DataPersistenceManager>().SaveGame();
+        yield return new WaitWhile(() => !saved);
+        
         SceneManager.LoadScene("PreLobbyScene");
     }
 }

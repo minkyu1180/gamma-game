@@ -1,0 +1,5 @@
+ChangeEmotion minkyu default
+minkyu "(... 쫓아가야 한다.)"
+
+AutoUnFreeze
+PlayMusic firstFieldMusic

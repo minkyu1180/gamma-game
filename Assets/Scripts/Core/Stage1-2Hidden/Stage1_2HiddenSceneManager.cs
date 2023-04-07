@@ -14,15 +14,22 @@ public class Stage1_2HiddenSceneManager : MonoBehaviour, IDataPersistence
     private Vector3 cameraPositionSaved;
     private float cameraSizeSaved;
     GameObject DialogBoxTextObject;
-    private bool itemGet;
-    private int stageCount;
+    GameObject dataPersistenceManager;
+
+
+    bool didTrueClearStage1;
+    bool didSeeStage1_2Hidden;
 
     public void LoadData(GameData data)
     {
-        itemGet = data.item1Got;
+        this.didTrueClearStage1 = data.didTrueClearStage1;
+        this.didSeeStage1_2Hidden = data.didSeeStage1_2Hidden;
     }
 
-    public void SaveData(ref GameData data){}
+    public void SaveData(ref GameData data)
+    {
+        data.didSeeStage1_2Hidden = didSeeStage1_2Hidden;
+    }
 
 
     void Start()
@@ -36,29 +43,29 @@ public class Stage1_2HiddenSceneManager : MonoBehaviour, IDataPersistence
         Player = GameObject.Find("Minkyu");
         cameraPositionSaved = Camera.transform.position;
         cameraSizeSaved = Camera.GetComponent<Camera>().orthographicSize;
-        
-        if (!itemGet)
-        {
-            StartCoroutine(ScriptLoader());
-        }
+        dataPersistenceManager = GameObject.Find("DataPersistenceManager");
+
+        string textLocation;
+        if (didTrueClearStage1) textLocation = "Text/Stage1-2Hidden/AfterAllOpening";
         else
         {
-            StartCoroutine(ScriptAfterItemGetLoader());
+            if (didSeeStage1_2Hidden) textLocation = "Text/Stage1-2Hidden/ReOpening";
+            else textLocation = "Text/Stage1-2Hidden/Opening";
         }
+        StartCoroutine(OpeningScriptLoad(textLocation));
     }
 
 
 
-    IEnumerator ScriptLoader()
+    IEnumerator OpeningScriptLoad(string textLocation)
     {
-        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Stage1-2Hidden/Opening");
+        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript(textLocation);
         yield return new WaitWhile(() => InputDecoder.isGameInScript);
-    }
 
-    IEnumerator ScriptAfterItemGetLoader()
-    {
-        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Stage1-2Hidden/OpeningAfterItemGet");
-        yield return new WaitWhile(() => InputDecoder.isGameInScript);
+        didSeeStage1_2Hidden = true;
+        bool saved = false;
+        saved = dataPersistenceManager.GetComponent<DataPersistenceManager>().SaveGame();
+        yield return new WaitWhile(() => !saved);
     }
 
 

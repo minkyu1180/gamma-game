@@ -1,0 +1,9 @@
+Show forest
+PlayMusic firstFieldMusic
+
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+
+AutoFreeze
+minkyu "모든 일이 일단락 되었고."
+minkyu "이제 여기 오는 건 훈련이고, 여흥이지. 자, 올라가 볼까."
+AutoUnFreeze
