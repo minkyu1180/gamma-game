@@ -34,7 +34,7 @@ public class Stage1_2PortalScript : MonoBehaviour
         }
     }
     */
-    
+
     IEnumerator GoNextStage()
     {
         InputDecoder.InterfaceElements.SetActive(true);

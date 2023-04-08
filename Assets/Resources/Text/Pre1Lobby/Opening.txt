@@ -5,5 +5,5 @@ Show blackScene
 minkyu "(... 그로부터 근무시간 후)"
 minkyu "(... 일과가 끝났다.)"
 minkyu "(궁금하기도 하고, 아까 전단지에서 본 곳을 한번 가봐야 할 것 같다.)"
-minkyu "(분명 이동네 뒷산이라고 했었지...)"
+minkyu "(분명 이 동네 뒷산이라고 했었지...)"
 AutoUnFreeze

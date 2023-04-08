@@ -4,7 +4,7 @@ Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=min
 
 AutoFreeze
 
-minkyu "솔직히 이젠 산전수전 다 경험했어도"
+minkyu "솔직히 아직도..."
 ChangeEmotion minkyu despise
 minkyu "이건 좀 빡세다."
 

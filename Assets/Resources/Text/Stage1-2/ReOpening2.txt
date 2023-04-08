@@ -1,5 +1,5 @@
 ChangeEmotion minkyu aggrovated
 minkyu "아니, 그 얘기 하려고 여기서 기다린 건가?"
-minkyu "뭔가 꼴받는데..."
+minkyu "뭔가 약오르는데..."
 AutoUnFreeze
 PlayMusic firstFieldMusic

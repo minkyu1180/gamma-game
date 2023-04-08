@@ -34,7 +34,7 @@ public class Stage1_2Hidden_PortalScript : MonoBehaviour, IDataPersistence
         }
     }
     */
-    
+
     void Start()
     {
         DialogBoxTextObject = GameObject.Find("DialogBoxText");

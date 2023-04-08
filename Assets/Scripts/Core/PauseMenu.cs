@@ -9,7 +9,6 @@ public class PauseMenu : MonoBehaviour
     void Start()
     {
         Panel.SetActive(false);
-        Cursor.visible = false;
     }
 
     // Update is called once per frame
@@ -21,13 +20,11 @@ public class PauseMenu : MonoBehaviour
             {
                 Time.timeScale = 0f;
                 Panel.SetActive(true);
-                Cursor.visible = true;
             }
             else
             {
                 Time.timeScale = 1f;
                 Panel.SetActive(false);
-                Cursor.visible = false;
             }
         }   
     }
@@ -42,6 +39,5 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         Panel.SetActive(false);
-        Cursor.visible = false;
     }
 }

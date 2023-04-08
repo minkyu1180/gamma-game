@@ -1,4 +1,4 @@
 AutoFreeze
 ChangeEmotion minkyu happy
-minkyu "오래간만에 이단 점프 연습이나 해야겠다." 
+minkyu "오래간만에 허공 답보 연습이나 해야겠다."
 AutoUnFreeze

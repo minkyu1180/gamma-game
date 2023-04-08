@@ -29,7 +29,7 @@ chunbok "즉 다시 말해 가로등이 켜졌을 때는 가로등을 밟을 수
 chunbok "때로는 불 꺼진 가로등이 켜진 그것보다 나은 법이지."
 ChangeColor chunbok white
 
-chunbok "이거 말해주려고 기다렸다네"
+chunbok "이거 말해주려고 기다렸다네."
 ChangeEmotion minkyu aggrovated
 minkyu "가슴이 웅장해지네요."
 ChangeEmotion chunbok surprised

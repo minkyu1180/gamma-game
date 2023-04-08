@@ -56,7 +56,7 @@ public class Stage1_1SceneManager : MonoBehaviour, IDataPersistence
         {
             if (didClearStage1)
             {
-                if (didClear1_2Hidden) textLocation = "Text/Stage1-1/ClearAfterItemOpening";
+                if (didClear1_2Hidden) textLocation = "Text/Stage1-1/ClearAfterItemReOpening";
                 else textLocation = "Text/Stage1-1/ClearReOpening";
             }
             else

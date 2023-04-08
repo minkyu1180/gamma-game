@@ -1,7 +1,7 @@
 minkyu "그런 뜻이 아니었는데..."
 ChangeEmotion minkyu despise
 Wait 0.3
-minkyu "가로등이 켜지면 뜨겁다. 치킨은 먹으면 맛있다. 야스오는 과학이다..."
+minkyu "가로등이 켜지면 뜨겁다. 치킨은 먹으면 맛있다. 침대는 과학이다..."
 minkyu "너무 자명한데?"
 ChangeEmotion minkyu aggrovated
 minkyu "그냥 나한테 오토바이 타는 거 보여주고 싶은 건가."
