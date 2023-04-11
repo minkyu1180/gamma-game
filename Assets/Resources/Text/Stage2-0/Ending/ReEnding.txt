@@ -1,0 +1,6 @@
+AutoFreeze
+ChangeEmotion minkyu happy
+minkyu "한 번 올라보니 수월하네..."
+ChangeEmotion minkyu default
+minkyu "(앞으로 맞이할 컨테이너 벨트와 전기 충격에 공포감이 들지만, 앞으로 나아가야 한다.)"
+AutoUnFreeze

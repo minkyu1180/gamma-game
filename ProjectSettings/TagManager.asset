@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Ground
   - PlayerHitbox
+  - Bundong
+  - Sun
+  - SunEnd
+  - SunStart
   layers:
   - Default
   - TransparentFX

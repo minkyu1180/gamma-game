@@ -127,7 +127,8 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
                     horizontalInput *= 0.9f;
             }
 
-            if (!Input.GetButton("Horizontal") && (Input.GetAxisRaw("Vertical") == -1) && !anim.GetBool("IsFloat") && (Mathf.Abs(PlayerRigidbody.velocity.y) <= 0.01))
+            // && (Mathf.Abs(PlayerRigidbody.velocity.y) <= 0.01)
+            if (!Input.GetButton("Horizontal") && (Input.GetAxisRaw("Vertical") == -1) && !anim.GetBool("IsFloat"))
             {
                 if (!anim.GetBool("IsDown"))
                 {
@@ -184,7 +185,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
             
         }
 
-        Debug.DrawRay(new Vector2(PlayerRigidbody.position.x, PlayerRigidbody.position.y - 0.8f), new Vector3(0f, -0.4f, 0), new Color(0, 1, 0));
+        //Debug.DrawRay(new Vector2(PlayerRigidbody.position.x, PlayerRigidbody.position.y - 0.8f), new Vector3(0f, -0.4f, 0), new Color(0, 1, 0));
         RaycastHit2D rayHitUnpassable = Physics2D.Raycast(new Vector2(PlayerRigidbody.position.x, PlayerRigidbody.position.y -0.8f), Vector3.down, 0.4f, LayerMask.GetMask("DownJumpAblePlatform"));
         if (rayHitUnpassable.collider != null)
         {
@@ -234,6 +235,11 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
     {
         //&& (PlayerRigidbody.velocity.y < 0.2)
         if (other.gameObject.CompareTag("Ground") && (PlayerRigidbody.velocity.y < 0.2))
+        {
+            isDirectionDoomed = false;
+        }
+
+        if (other.gameObject.CompareTag("Bundong"))
         {
             isDirectionDoomed = false;
         }

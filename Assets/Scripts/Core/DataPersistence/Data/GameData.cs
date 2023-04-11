@@ -23,6 +23,17 @@ public class GameData
     public bool didClearStage1;
     public bool didTrueClearStage1;
 
+    public bool didSeeStage2_0;
+    public bool didSeeStage2_1;
+    public bool didSeeStage2_2;
+    public bool didSeeStage2_2Hidden;
+    public bool didSeeStage2_Boss;
+
+    public bool didClearStage2_0;
+    public bool didClearStage2_1;
+    public bool didClearStage2_2;
+    public bool didClearStage2_2Hidden;
+
     public bool didClearStage2;
     public bool didTrueClearStage2;
 
@@ -47,6 +58,19 @@ public class GameData
 
         this.didClearStage1 = false;
         this.didTrueClearStage1 = false;
+
+
+
+        this.didSeeStage2_0 = false;
+        this.didSeeStage2_1 = false;
+        this.didSeeStage2_2 = false;
+        this.didSeeStage2_2Hidden = false;
+        this.didSeeStage2_Boss = false;
+
+        this.didClearStage2_0 = false;
+        this.didClearStage2_1 = false;
+        this. didClearStage2_2 = false;
+        this.didClearStage2_2Hidden = false;
 
         this.didClearStage2 = false;
         this.didTrueClearStage2 = false;

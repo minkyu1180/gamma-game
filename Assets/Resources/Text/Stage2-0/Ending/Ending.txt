@@ -1,0 +1,6 @@
+AutoFreeze
+ChangeEmotion minkyu happy
+minkyu "높기도 하네! 이렇게 높은 지는 몰랐는데 말이야...."
+ChangeEmotion minkyu default
+minkyu "(조금 더 깊은 곳으로 가자.)"
+AutoUnFreeze

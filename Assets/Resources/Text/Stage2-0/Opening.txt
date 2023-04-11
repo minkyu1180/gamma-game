@@ -1,0 +1,8 @@
+Show forest
+PlayMusic secondFieldMusic
+
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+
+AutoFreeze
+minkyu "학교??"
+AutoUnFreeze
