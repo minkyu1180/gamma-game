@@ -1,0 +1,8 @@
+AutoFreeze
+ChangeEmotion minkyu despise
+minkyu "여긴... 활강 없으면 물리적으로 들어갔을 수 없겠군."
+minkyu "아주 은밀해 보여."
+
+ChangeEmotion minkyu aggrovated
+minkyu "내가 그 사람이라면 약점을 딱 이런 곳에 숨겨놨을 거야."
+AutoUnFreeze

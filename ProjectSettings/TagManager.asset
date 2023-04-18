@@ -10,6 +10,7 @@ TagManager:
   - Sun
   - SunEnd
   - SunStart
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -24,7 +25,7 @@ TagManager:
   - UnPassablePlatform
   - DownJumpAblePlatform
   - PlayerHitBox
-  - 
+  - Boss
   - 
   - 
   - 
@@ -55,6 +56,9 @@ TagManager:
     locked: 0
   - name: Minkyu
     uniqueID: 1738717511
+    locked: 0
+  - name: Boss
+    uniqueID: 2657998169
     locked: 0
   - name: BackgroundImageLayer
     uniqueID: 1018391199

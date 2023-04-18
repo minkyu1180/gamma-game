@@ -12,6 +12,8 @@ public class UpJumpTile : MonoBehaviour
     private GameObject minkyu;
     private GridLayout gridLayout;
 
+    public float jumpForce = 1300f;
+
 
     void Start()
     {
@@ -30,7 +32,7 @@ public class UpJumpTile : MonoBehaviour
             {
                 if (other.rigidbody.velocity.y <= 0.1f && !other.gameObject.GetComponent<Animator>().GetBool("IsFloat"))
                 {   
-                    other.rigidbody.AddForce(new Vector2(0f,1300f));
+                    other.rigidbody.AddForce(new Vector2(0f,jumpForce));
                     PlayerMovement PlayerScript;
                     PlayerScript = other.gameObject.GetComponent<PlayerMovement>();
                     PlayerScript.isDirectionDoomed = true;

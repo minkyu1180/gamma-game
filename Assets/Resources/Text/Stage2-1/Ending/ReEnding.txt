@@ -1,0 +1,4 @@
+AutoFreeze
+ChangeEmotion minkyu happy
+minkyu "후. 정령들이 사납구만. 그래도 가야겠지."
+AutoUnFreeze

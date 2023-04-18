@@ -127,6 +127,23 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
                     horizontalInput *= 0.9f;
             }
 
+            
+            // glide Start
+
+            if ((Input.GetAxisRaw("Vertical") == 1) && anim.GetBool("IsFloat") && PlayerRigidbody.velocity.y <= 0)
+            {
+                PlayerRigidbody.gravityScale = 1f;
+                anim.SetBool("IsGlide", true);
+            }
+            else
+            {
+                PlayerRigidbody.gravityScale = 3.0f;
+                anim.SetBool("IsGlide", false);
+            }
+
+            // glide End
+
+
             // && (Mathf.Abs(PlayerRigidbody.velocity.y) <= 0.01)
             if (!Input.GetButton("Horizontal") && (Input.GetAxisRaw("Vertical") == -1) && !anim.GetBool("IsFloat"))
             {

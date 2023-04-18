@@ -1,0 +1,11 @@
+Show forest
+PlayMusic firstFieldMusic
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+
+AutoFreeze
+
+minkyu "간다...!"
+ChangeEmotion minkyu despise
+minkyu "(근데 어차피 심증이자 물증인 가발도 손에 넣었는데, 굳이 이쪽 길로 올 필요가 있었을까.)"
+
+AutoUnFreeze

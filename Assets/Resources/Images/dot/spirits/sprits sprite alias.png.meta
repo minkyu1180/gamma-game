@@ -375,6 +375,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: sprits sprite alias_9
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 662
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6d8771d43b17499f8b99db47746eda1
+      internalID: -570823063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprits sprite alias_10
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 622
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7057516d1b84432f88b1db60bbfa842
+      internalID: 1633458191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprits sprite alias_11
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 446
+        width: 148
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2669e55c93f664ba4a1ef687b96e4c3b
+      internalID: 1924054524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -388,6 +451,7 @@ TextureImporter:
     nameFileIdTable:
       sprits sprite alias_6: -840215530
       sprits sprite alias_0: -956133254
+      sprits sprite alias_10: 1633458191
       sprits sprite alias_2: -1168612828
       sprits sprite alias_1: -490744433
       sprits sprite alias_4: 776185902
@@ -395,6 +459,8 @@ TextureImporter:
       sprits sprite alias_8: 1663512746
       sprits sprite alias_5: -1275898257
       sprits sprite alias_7: 258356014
+      sprits sprite alias_11: 1924054524
+      sprits sprite alias_9: -570823063
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

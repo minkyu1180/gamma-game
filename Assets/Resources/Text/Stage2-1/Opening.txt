@@ -1,0 +1,43 @@
+Show school
+PlayMusic secondFieldMusic
+
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(susang, 이수상, color=white, emotion=default, speed=0.06, voice=susangVoice)
+
+AutoFreeze
+
+minkyu "그러고 보면 수상 씨...? 수상 선생님...? 아잇 그냥 선생님으로 부를게요."
+minkyu "선생님은 그럼 용사랑은 어떤 관계인가요? 저번 할아버지는 통 설명을 안해줘서..."
+
+ChangeEmotion susang laugh
+susang "난 용사랑 마왕의 학창시절 선생님이었지."
+susang "어릴 땐 귀여웠다고, 걔네. 배드민턴 수행 친다고 체육관에서 뽈뽈대며 연습하던 게 엊그제 같은데, 벌써 이렇게 크다니..."
+
+ChangeEmotion minkyu aggrovated
+minkyu "?? 용사랑 마왕을 아세요? 아니, 애초 그 둘이 학창시절이 있었다고요?"
+ChangeEmotion susang default
+susang "그럼 걔네도 사람인데. 어린 시절이 다 있지. 앗... 잠깐."
+susang "너 혹시 용사랑 마왕이 누군지 몰라?"
+
+ChangeEmotion minkyu despise
+minkyu "그걸 어케 압니까 제가... 몰라요."
+susang "엥? 걔네가 용사 후보를 선별해서 뽑는 건데... 그럴 수가 있나."
+minkyu "선별이요? 저는, 전단지 보고 왔는데?"
+minkyu "이거요. (전단지를 보여줬다.)"
+
+ChangeEmotion susang laugh
+susang "아. 이럴 줄 알았다. 이거 내 눈엔 안 보여. 그냥 흰 종이로 보이는 걸"
+ChangeEmotion minkyu aggrovated
+minkyu "??????"
+susang "너만 볼 수 있게 하는 어떤 처리가 되어있지 않나 싶다."
+
+ChangeEmotion minkyu default
+minkyu "음..."
+susang "그만큼 걔네 둘이 너를 믿는다는 소리니까. 열심히 해보라고. 그래도 나는 강하니까. 쉽게 통과시켜주진 않을 거지만."
+susang "얼른 오라고!"
+
+minkyu "(이번에도 바로 사라지셨네...)"
+minkyu "마술사... 같은 건가? 체육교사 맞아?"
+
+
+AutoUnFreeze

@@ -1,0 +1,5 @@
+AutoFreeze
+ChangeEmotion minkyu happy
+minkyu "이제 여긴 껌이지~"
+minkyu "아닐 수도? 있나?"
+AutoUnFreeze

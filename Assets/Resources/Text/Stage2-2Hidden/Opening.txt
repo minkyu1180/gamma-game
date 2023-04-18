@@ -1,0 +1,10 @@
+Show forest
+PlayMusic firstFieldMusic
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+
+AutoFreeze
+
+minkyu "여기라면 약점을 찾을 수 있을 것 같아."
+minkyu "얼른 가보자."
+
+AutoUnFreeze

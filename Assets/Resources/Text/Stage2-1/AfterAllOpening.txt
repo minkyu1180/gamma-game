@@ -1,0 +1,12 @@
+Show school
+PlayMusic secondFieldMusic
+
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(susang, 이수상, color=white, emotion=default, speed=0.06, voice=susangVoice)
+
+AutoFreeze
+ChangeEmotion minkyu happy
+ChangeEmotion susang si
+susang "이제 좀 더 빨리 오긴 하는군."
+minkyu "이게 짬에서 나오는 바이브라는 거죠."
+AutoUnFreeze

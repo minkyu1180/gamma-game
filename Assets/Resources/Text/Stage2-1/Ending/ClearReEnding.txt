@@ -1,0 +1,6 @@
+AutoFreeze
+ChangeEmotion minkyu despise
+minkyu "핫 안가본 데를 가봐야 하는데..."
+ChangeEmotion minkyu default
+minkyu "(옆의 포탈로 가는 게 낫지 않았을까...?)"
+AutoUnFreeze

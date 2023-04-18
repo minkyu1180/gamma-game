@@ -1,0 +1,14 @@
+AutoFreeze
+ChangeEmotion minkyu happy
+minkyu "후... 다 통과해서 기분은 좋은데"
+minkyu "약점, 약점을 잡아야 하는데...!"
+
+ChangeEmotion minkyu default
+minkyu "(그때, 땅바닥에서 가발을 봤다.)"
+ChangeEmotion minkyu aggrovate
+minkyu "그래... 왜 그 생각을 못했지... 정령왕... 정령을 다스리는 힘은 정력..."
+minkyu "정력이 센 남자는... 보통 대머리다... 즉 저 선생님은...!"
+ChangeEmotion minkyu happy
+minkyu "이번 대결이 끝나면 머리채를 잡아당겨 주겠어."
+
+AutoUnFreeze

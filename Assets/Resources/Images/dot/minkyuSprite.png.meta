@@ -431,6 +431,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: minkyuSprite_0
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 8
+        width: 52
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c6abfa3a1a941baa4f85d726b6cccc
+      internalID: -901123715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -452,6 +473,7 @@ TextureImporter:
       default_1: -672442091
       Idle_3: 379291872
       Run_1: -1519088620
+      minkyuSprite_0: -901123715
       minkyuSprite_1: -2050250369
       minkyuSprite_2: -1141232882
       Run_3: 202300221

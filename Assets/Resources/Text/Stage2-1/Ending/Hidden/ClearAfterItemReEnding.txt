@@ -1,0 +1,6 @@
+AutoFreeze
+ChangeEmotion minkyu despise
+minkyu "굳이 일로 갈 필요가 있나 싶지만, 어렵고."
+ChangeEmotion minkyu shout
+minkyu "하지만 기합으로 안되는 건 없어! 간다아아아아앗!"
+AutoUnFreeze

@@ -1,0 +1,12 @@
+Show school
+PlayMusic secondFieldMusic
+
+AutoFreeze
+ChangeEmotion minkyu shout
+minkyu "뭐여 이거 왼쪽 거는 어떻게 가는 거지?"
+minkyu "리치가 죽어도 닿아보이지 않는데..."
+
+minkyu "현재로써는 갈 수 없는 듯하다. 특별한 능력을 얻게 된다면 고민해보자)"
+
+AutoWalk 0.01 true 
+AutoUnFreeze

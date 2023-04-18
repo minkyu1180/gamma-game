@@ -1,0 +1,15 @@
+Show school
+PlayMusic secondFieldMusic
+
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(susang, 이수상, color=white, emotion=default, speed=0.06, voice=susangVoice)
+
+AutoFreeze
+
+ChangeEmotion susang laugh
+susang "얼른 와라~"
+ChangeEmotion minkyu aggrovated
+minkyu "후... (사라졌군)"
+minkyu "대머리가... 맞겠지?"
+
+AutoUnFreeze

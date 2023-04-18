@@ -1,0 +1,4 @@
+AutoFreeze
+ChangeEmotion minkyu shout
+minkyu "여기는! 다시와도! 고생이라! 참 힘들다!"
+AutoUnFreeze

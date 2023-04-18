@@ -1,0 +1,16 @@
+Show school
+PlayMusic secondFieldMusic
+
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(susang, 이수상, color=white, emotion=default, speed=0.06, voice=susangVoice)
+
+AutoFreeze
+ChangeEmotion susang laugh
+susang "내가 새로운 용사의 탄생을 보게 된다니, 멋지네."
+susang "물론 나를 이겨야 하겠지만."
+ChangeEmotion susang so
+susang "네가 그럴 수 있을까? 열심히 해라!"
+minkyu "(사라졌다...!)"
+
+
+AutoUnFreeze

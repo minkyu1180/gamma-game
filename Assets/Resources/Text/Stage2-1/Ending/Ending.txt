@@ -1,0 +1,5 @@
+AutoFreeze
+ChangeEmotion minkyu happy
+minkyu "가자! 나의 용사의 길을 위해!"
+ChangeEmotion minkyu default
+AutoUnFreeze

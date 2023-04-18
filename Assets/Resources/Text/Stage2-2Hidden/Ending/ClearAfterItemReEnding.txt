@@ -1,0 +1,6 @@
+AutoFreeze
+ChangeEmotion minkyu default
+minkyu "(내 손에는 이미 가발이 들려있다.)"
+ChangeEmotion minkyu aggrovate
+minkyu "얼른 가야지. 그 사람의 머리채를 잡아 당기겠어."
+AutoUnFreeze

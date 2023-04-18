@@ -15,6 +15,7 @@ public class Stage2_0SceneManager : MonoBehaviour, IDataPersistence
     private float cameraSizeSaved;
     GameObject DialogBoxTextObject;
     GameObject dataPersistenceManager;
+    GameObject Susang;
 
     bool didTrueClearStage2;
     bool didClearStage2;
@@ -43,6 +44,7 @@ public class Stage2_0SceneManager : MonoBehaviour, IDataPersistence
         GameElements = GameObject.Find("GAME_Elements");
         Camera = GameObject.Find("MainCamera");
         Player = GameObject.Find("Minkyu");
+        Susang = GameObject.Find("Susang");
         cameraPositionSaved = Camera.transform.position;
         cameraSizeSaved = Camera.GetComponent<Camera>().orthographicSize;
         dataPersistenceManager = GameObject.Find("DataPersistenceManager");
@@ -77,7 +79,7 @@ public class Stage2_0SceneManager : MonoBehaviour, IDataPersistence
         bool saved = false;
         saved = dataPersistenceManager.GetComponent<DataPersistenceManager>().SaveGame();
         yield return new WaitWhile(() => !saved);
-
+        Susang.SetActive(false);
     }
 
 

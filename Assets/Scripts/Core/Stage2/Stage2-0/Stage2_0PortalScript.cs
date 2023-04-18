@@ -84,6 +84,6 @@ public class Stage2_0PortalScript : MonoBehaviour, IDataPersistence
         saved = dataPersistenceManager.GetComponent<DataPersistenceManager>().SaveGame();
         yield return new WaitWhile(() => !saved);
 
-        SceneManager.LoadScene("Stage 1-1");
+        SceneManager.LoadScene("Stage 2-1");
     }
 }
