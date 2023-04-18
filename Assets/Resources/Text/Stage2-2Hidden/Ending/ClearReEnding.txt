@@ -10,5 +10,6 @@ minkyu "그래... 왜 그 생각을 못했지... 정령왕... 정령을 다스�
 minkyu "정력이 센 남자는... 보통 대머리다... 즉 저 선생님은...!"
 ChangeEmotion minkyu happy
 minkyu "이번 대결이 끝나면 머리채를 잡아당겨 주겠어."
+minkyu "(가발을 손에 들었다.)"
 
 AutoUnFreeze

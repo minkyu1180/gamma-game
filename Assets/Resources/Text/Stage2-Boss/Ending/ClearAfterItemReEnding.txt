@@ -1,0 +1,28 @@
+StopMusic
+PlayMusic naiveAnalogMusic
+AutoFreeze
+
+ChangeEmotion susang angry
+susang "아니 진짜… 이게… 뭐하는…"
+ChangeEmotion minkyu despise
+minkyu "이야아아앗!"
+minkyu "(선생님의 가발을 벗겨냈다. 아름다운 두피가, 밤하늘의 별빛을 받아 반짝였다.)"
+ChangeEmotion minkyu aggrovate
+minkyu "미숙한 대머리의… 무의미한 발버둥이… 보기에 매우 안타깝도다…"
+
+ChangeEmotion susang bald
+susang "아앗… 앗… 아앗… 이건 좀…"
+minkyu "자, 말씀 잘 하시면 돌려드릴게요. 저를 인정 해요, 안해요?"
+susang "아니 진짜 대머리를 놀리는 건…. 인간성이 없니 너는?"
+minkyu "…저를 인정합니까? 하지 않습니까? 학생들 앞에서 모발 없는 모습을 보이고 싶은 건 아니겠죠??"
+susang "후… 인정한다. 그러니 빨리… 가발 좀…"
+
+ChangeEmotion minkyu happy
+minkyu "야호! 감사합니다."
+minkyu "(선생님께 가발을 돌려드렸다.)"
+susang "미친 놈…"
+minkyu "(씽긋) 개운하군요 그래. 아주 개운해."
+minkyu "크하하하하하! 크하하하하하하하하하핫!"
+
+
+AutoUnFreeze

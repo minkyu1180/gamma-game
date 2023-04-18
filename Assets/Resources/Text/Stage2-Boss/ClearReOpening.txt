@@ -1,0 +1,21 @@
+Show school
+PlayMusic secondFieldMusic
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(susang, 이수상, color=white, emotion=default, speed=0.06, voice=susangVoice)
+Character(green, 그린, color=white, emotion=default, speed=0.06, voice=clickSound)
+Character(pink, 핑크, color=white, emotion=default, speed=0.06, voice=clickSound)
+Character(orange, 오렌지, color=white, emotion=default, speed=0.06, voice=clickSound)
+
+AutoFreeze
+
+ChangeEmotion minkyu despise
+minkyu "솔직히 이거 몇번 더 싸운다 해서 인정 받을 거 같냐?"
+green "ㄴㄴ 전혀"
+pink "자기도 정령검 쓰면서 용사 후보 보고는 뭐라하는 쫌생이 선생님~"
+ChangeEmotion susang laugh
+susang "마음대로 지껄여라"
+ChangeEmotion susang default
+susang "각오는 되었겠지"
+
+AutoUnFreeze
+PlayMusic secondBossFightMusic

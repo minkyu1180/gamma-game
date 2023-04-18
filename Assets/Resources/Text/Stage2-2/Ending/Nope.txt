@@ -1,0 +1,3 @@
+AutoFreeze
+green "아직 요정 3명이 다 모이지 않았어!"
+AutoUnFreeze

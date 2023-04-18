@@ -1,0 +1,20 @@
+Show school
+PlayMusic secondFieldMusic
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(susang, 이수상, color=white, emotion=default, speed=0.06, voice=susangVoice)
+Character(green, 그린, color=white, emotion=default, speed=0.06, voice=clickSound)
+Character(pink, 핑크, color=white, emotion=default, speed=0.06, voice=clickSound)
+Character(orange, 오렌지, color=white, emotion=default, speed=0.06, voice=clickSound)
+AutoFreeze
+
+ChangeEmotion minkyu happy
+minkyu "음, 또 보네요."
+minkyu "한 판 할까요? Z가... 공격이었죠?"
+susang "뭐 약점 잡힌 나로서는... 대결에 응해주는 수밖에 없잖아"
+susang "이 악마같은 자식"
+ChangeEmotion minkyu aggrovate
+minkyu "칭찬 감사해요~ (대화를 넘기면 바로 전투가 시작됩니다)"
+
+
+AutoUnFreeze
+PlayMusic secondBossFightMusic

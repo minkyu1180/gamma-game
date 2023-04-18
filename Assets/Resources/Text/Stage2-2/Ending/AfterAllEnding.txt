@@ -1,4 +1,8 @@
 AutoFreeze
 ChangeEmotion minkyu happy
-minkyu "이제 여기도 훈련용으로 오는거지"
+minkyu "나도 정령왕 정도는 아니어도 정령사 정도라고 부를 수 있지 않을까?"
+orange "어... 그건... 아니지..."
+minkyu "그래? 왜? 나도 너희 힘을 쓰잖아"
+green "팬텀이랑 고우스트가 지우 도와줬다고 걔네가 지우 포켓몬은 아니니까."
+minkyu "그런 90년대 생이나 알아들을 비유를...."
 AutoUnFreeze

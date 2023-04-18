@@ -1,6 +1,6 @@
 AutoFreeze
 ChangeEmotion minkyu despise
-minkyu "아니 진정한 인정이 대체 뭐지? 그 선생님, 약점이 있기는 하나? 꽤 완벽해 보이는데..."
-ChangeEmotion minkyu default
-minkyu "안 가본 곳을 뒤져가며 약점을 찾아야겠어...."
+minkyu "내가 인정 받을 수 있을까?"
+green "아니 절대로. 너 어차피 우리 없이는 못 이기고."
+minkyu "ㅠㅠ...."
 AutoUnFreeze

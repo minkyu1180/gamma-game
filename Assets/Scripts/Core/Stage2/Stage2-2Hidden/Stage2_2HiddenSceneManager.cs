@@ -19,11 +19,13 @@ public class Stage2_2HiddenSceneManager : MonoBehaviour, IDataPersistence
 
     bool didTrueClearStage2;
     bool didSeeStage2_2Hidden;
+    bool didClearStage2_2Hidden;
 
     public void LoadData(GameData data)
     {
         this.didTrueClearStage2 = data.didTrueClearStage2;
         this.didSeeStage2_2Hidden = data.didSeeStage2_2Hidden;
+        this.didClearStage2_2Hidden = data.didClearStage2_2Hidden;
     }
 
     public void SaveData(ref GameData data)
@@ -49,7 +51,7 @@ public class Stage2_2HiddenSceneManager : MonoBehaviour, IDataPersistence
         if (didTrueClearStage2) textLocation = "Text/Stage2-2Hidden/AfterAllOpening";
         else
         {
-            if (didSeeStage2_2Hidden) textLocation = "Text/Stage2-2Hidden/ReOpening";
+            if (didClearStage2_2Hidden) textLocation = "Text/Stage2-2Hidden/ReOpening";
             else textLocation = "Text/Stage2-2Hidden/Opening";
         }
         StartCoroutine(OpeningScriptLoad(textLocation));

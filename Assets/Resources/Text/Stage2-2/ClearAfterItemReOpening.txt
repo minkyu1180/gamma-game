@@ -3,13 +3,15 @@ PlayMusic secondFieldMusic
 
 Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
 Character(susang, 이수상, color=white, emotion=default, speed=0.06, voice=susangVoice)
+Character(green, 그린, color=white, emotion=default, speed=0.06, voice=clickSound)
+Character(pink, 핑크, color=white, emotion=default, speed=0.06, voice=clickSound)
+Character(orange, 오렌지, color=white, emotion=default, speed=0.06, voice=clickSound)
 
 AutoFreeze
+pink "가"
+green "즈"
+orange "아...!"
+minkyu "끼요오오오오옷 간다! 대머리 선생님!"
 
-ChangeEmotion susang laugh
-susang "또 왔니? 포기를 모르는구나. 나는 먼저 가서 기다릴게~"
-ChangeEmotion minkyu aggrovated
-minkyu "...그러는 것도 여기까지다. 대머리"
-minkyu "오늘밤, 네 반짝이는 두피를 공기중에 노출시켜주겠다...!"
 
 AutoUnFreeze

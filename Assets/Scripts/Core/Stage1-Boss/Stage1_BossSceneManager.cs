@@ -48,9 +48,9 @@ public class Stage1_BossSceneManager : MonoBehaviour, IDataPersistence
 
     public void SaveData(ref GameData data)
     {
+        data.didSeeStage1_Boss = this.didSeeStage1_Boss;
         data.didTrueClearStage1 = this.didTrueClearStage1;
         data.didClearStage1 = this.didClearStage1;
-        data.didSeeStage1_Boss = this.didSeeStage1_Boss;
         data.stageCount = this.stageCount;
         data.dayCount = this.dayCount;
     }

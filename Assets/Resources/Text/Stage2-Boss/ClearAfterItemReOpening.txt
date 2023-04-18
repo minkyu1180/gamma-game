@@ -1,0 +1,25 @@
+Show school
+PlayMusic secondFieldMusic
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(susang, 이수상, color=white, emotion=default, speed=0.06, voice=susangVoice)
+Character(green, 그린, color=white, emotion=default, speed=0.06, voice=clickSound)
+Character(pink, 핑크, color=white, emotion=default, speed=0.06, voice=clickSound)
+Character(orange, 오렌지, color=white, emotion=default, speed=0.06, voice=clickSound)
+AutoFreeze
+
+ChangeEmotion minkyu aggrovate
+minkyu "하하하! 선생님... 오늘은 저를 인정하셔야 될 겁니다... 저는 마침내 선생님의 치명적인 약점을 알아 버리고 말았으니까!"
+susang "흥 뭔데 그게."
+minkyu "사실 정령왕이 아닌 정력왕 아닙니까...! 이 대머리 선생님!"
+ChangeEmotion susang angry
+susang "....!"
+ChangeEmotion minkyu default
+minkyu "반응이... 있다!"
+ChangeEmotion minkyu aggrovate
+minkyu "하하... 선생님. 마음껏 도망쳐 보시죠."
+minkyu "선생님의 두피가 제 손에 잡히지 않게!!!"
+green "악마로다..."
+pink "공격은 Z야! 기억하라고! (대화를 넘기면 바로 전투가 시작됩니다)"
+
+AutoUnFreeze
+PlayMusic secondBossFightMusic

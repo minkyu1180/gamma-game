@@ -1,5 +1,5 @@
-Show forest
-PlayMusic firstFieldMusic
+Show school
+PlayMusic secondFieldMusic
 Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
 
 AutoFreeze

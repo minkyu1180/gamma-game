@@ -1,0 +1,12 @@
+StopMusic
+PlayMusic naiveAnalogMusic
+
+
+AutoFreeze
+ChangeEmotion minkyu happy
+minkyu "그놈의 인정, 함 해주시면 안되나요?"
+ChangeEmotion susang default
+susang "안돼. 누구 좋으라고. 넌 아직 내 맘에 차지 않았다."
+minkyu "에이씨… (오늘은 허탕이네…)"
+
+AutoUnFreeze

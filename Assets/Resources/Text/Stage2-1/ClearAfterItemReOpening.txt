@@ -9,7 +9,7 @@ AutoFreeze
 ChangeEmotion susang laugh
 susang "얼른 와라~"
 ChangeEmotion minkyu aggrovated
-minkyu "후... (사라졌군)"
-minkyu "대머리가... 맞겠지?"
+minkyu "(후...)"
+minkyu "(대머리가... 맞겠지?)"
 
 AutoUnFreeze

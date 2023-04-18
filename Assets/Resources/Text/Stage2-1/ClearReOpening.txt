@@ -7,8 +7,6 @@ Character(susang, 이수상, color=white, emotion=default, speed=0.06, voice=sus
 AutoFreeze
 ChangeEmotion susang so
 susang "얼른 와라!"
-ChangeEmotion minkyu despise
-minkyu "(사라졌다.)"
 ChangeEmotion minkyu default
-minkyu "약점을 찾아야 한다."
+minkyu "(약점을 찾아야 한다.)"
 AutoUnFreeze

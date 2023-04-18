@@ -38,6 +38,7 @@ public class SaveAtPositionScript : MonoBehaviour, IDataPersistence
 
     IEnumerator ExpalinNotToGo(string textLocation)
     {
+        InputDecoder.isGameInScript = true;
         InputDecoder.InterfaceElements.SetActive(true);
         DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript(textLocation);
         yield return new WaitWhile(() => InputDecoder.isGameInScript);

@@ -1,3 +1,9 @@
 AutoFreeze
-minkyu "해 정령 올 때는 점프를 할지, 숙여야 할지 애매한 때가 많단 말이야. 어쨌든, 더 깊은 곳으로 가야겠다."
+
+green "아임 뻐킹 뚜벅이 내 주머닌 사랑의 빵"
+orange "동네... 주민... 스윙스..."
+pink "사주시지 밥"
+ChangeEmotion minkyu happy
+minkyu "진짜 그 시절 씨잼 같네..."
+minkyu "심심하진 않으니 좋다."
 AutoUnFreeze

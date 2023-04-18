@@ -11,7 +11,6 @@ public class BundongEndNotificator : MonoBehaviour
             if (transform.IsChildOf(other.transform.parent))
             {
                 other.transform.parent.GetComponent<BunDongMovementScript>().endPointAttached = true;
-                Debug.Log("WWW");
             }
         }
     }

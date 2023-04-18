@@ -1,0 +1,17 @@
+Show school
+PlayMusic secondFieldMusic
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(susang, 이수상, color=white, emotion=default, speed=0.06, voice=susangVoice)
+Character(green, 그린, color=white, emotion=default, speed=0.06, voice=clickSound)
+Character(pink, 핑크, color=white, emotion=default, speed=0.06, voice=clickSound)
+Character(orange, 오렌지, color=white, emotion=default, speed=0.06, voice=clickSound)
+
+AutoFreeze
+minkyu "어, 그러니까, 어떻게 싸워야 한다고?"
+orange "아이템 3개 먹고 Z 키를 눌러 공격..."
+susang "잡담은 거기까지인가...? (대화를 넘기면 바로 전투가 시작됩니다.)"
+
+
+
+AutoUnFreeze
+PlayMusic secondBossFightMusic

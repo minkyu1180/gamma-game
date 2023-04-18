@@ -3,10 +3,6 @@ PlayMusic secondFieldMusic
 
 Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
 Character(susang, 이수상, color=white, emotion=default, speed=0.06, voice=susangVoice)
-
-susang "조심하면서 오라고. 솔직히 여기 길이, 그렇게 쉽지는 않아."
-minkyu "네...!"
-
-AutoFreeze
-minkyu "다시 학교군."
-AutoUnFreeze
+Character(green, 그린, color=white, emotion=default, speed=0.06, voice=clickSound)
+Character(pink, 핑크, color=white, emotion=default, speed=0.06, voice=clickSound)
+Character(orange, 오렌지, color=white, emotion=default, speed=0.06, voice=clickSound)

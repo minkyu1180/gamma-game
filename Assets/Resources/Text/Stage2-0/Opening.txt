@@ -27,7 +27,7 @@ minkyu "(히익 변태....!)"
 ChangeEmotion susang laugh
 susang "뭐 어찌되었건, 만나서 반갑다."
 
-minkyu "(전국의 학셍들의 불평에도 불구하고 학교는 꼭 고지대에 있는 게 그런 음모 때문이었나...)"
+minkyu "(전국 학생들의 불평에도 불구하고 학교는 꼭 고지대에 있는 게 그런 음모 때문이었나...)"
 ChangeEmotion minkyu default
 minkyu "아, 네. 안녕하세요. 도민규라고 해요."
 minkyu "이미 아시는 것 같긴 한데, 용사자격...? 시험 응시자에요."

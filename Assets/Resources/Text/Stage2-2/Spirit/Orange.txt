@@ -1,0 +1,17 @@
+AutoFreeze
+pink "오렌지! 뭘 하고 있나요?"
+green "그러게?"
+orange "이 말괄량이 해 정령들을 봐... 귀엽지... 않니..?"
+ChangeEmotion minkyu despise
+minkyu "(난 지긋지긋 한데)"
+orange "별로... 아닌가... 보구나..."
+orange "다시 만나서... 기뻐... 인간... 네가 한 일?"
+orange "-요정... 버스트...-로 보답... 가능?"
+pink "오 우리가 말하기도 전에!"
+ChangeEmotion minkyu default
+minkyu "가능가능!"
+orange "오케이... 같이 가자 인간."
+minkyu "(오렌지가 핑크 위에 엎어졌다.)"
+minkyu "(왼쪽 어깨가 살짝 더 무거워진 느낌이다.)"
+
+AutoUnFreeze

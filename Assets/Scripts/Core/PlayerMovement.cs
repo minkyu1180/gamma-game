@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
     private float defaultLinearDrag = 0.3f;
 
     public bool doubleJumpEnabled;
+    public bool glideEnabled;
     public bool highJumpEnabled;
     public bool frozen;
 
@@ -37,7 +38,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
     public void LoadData(GameData data)
     {
         this.doubleJumpEnabled = data.didClearStage1;
-        //stage 2
+        this.glideEnabled = data.didClearStage2;
         this.highJumpEnabled = data.didClearStage3;
     }
 
@@ -130,7 +131,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
             
             // glide Start
 
-            if ((Input.GetAxisRaw("Vertical") == 1) && anim.GetBool("IsFloat") && PlayerRigidbody.velocity.y <= 0)
+            if (glideEnabled && (Input.GetAxisRaw("Vertical") == 1) && anim.GetBool("IsFloat") && PlayerRigidbody.velocity.y <= 0)
             {
                 PlayerRigidbody.gravityScale = 1f;
                 anim.SetBool("IsGlide", true);

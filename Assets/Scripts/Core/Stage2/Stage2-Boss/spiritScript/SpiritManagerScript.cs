@@ -25,9 +25,9 @@ public class SpiritManagerScript : MonoBehaviour
 
     void Start()
     {
-        transform.GetChild(0).gameObject.SetActive(false);
-        transform.GetChild(1).gameObject.SetActive(false);
-        transform.GetChild(2).gameObject.SetActive(false);
+        //transform.GetChild(0).gameObject.SetActive(false);
+        //transform.GetChild(1).gameObject.SetActive(false);
+        //transform.GetChild(2).gameObject.SetActive(false);
         minkyu = GameObject.Find("Minkyu");
 
         audioSource = gameObject.GetComponent<AudioSource>();

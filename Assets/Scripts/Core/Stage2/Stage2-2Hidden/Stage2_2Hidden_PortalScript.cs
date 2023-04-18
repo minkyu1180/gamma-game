@@ -39,7 +39,6 @@ public class Stage2_2Hidden_PortalScript : MonoBehaviour, IDataPersistence
     {
         DialogBoxTextObject = GameObject.Find("DialogBoxText");
         dataPersistenceManager = GameObject.Find("DataPersistenceManager");
-
     }
     void OnTriggerStay2D(Collider2D other)
     {

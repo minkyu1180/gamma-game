@@ -1,0 +1,29 @@
+AutoFreeze
+green "오."
+minkyu "오."
+green "내 부탁 좀 들어줄 수 있니?"
+ChangeEmotion minkyu aggrovated
+minkyu "뭔데? 아니, 그보다 넌 뭔데?"
+green "나는 이 학교의 요정이야. 이름은 그린. 나랑... 오렌지랑... 핑크랑. 3명이 이 학교를 지키고 있지."
+green "한밤 중에 이런 학교에 오다니. 너도 보니까 시험 응시생인가 본데."
+green "내가 널 도와줄 테니, 나 좀 도와줄 수 있을까?"
+ChangeEmotion minkyu default
+minkyu "뭘 도와줬으면 하는데?"
+green "내 친구들 좀 모아줘. 자고 일어났는데, 친구들이 없어져서"
+green "나랑 비슷하게 생긴 오렌지색, 핑크색 녀석들이야."
+green "만약 우리 셋을 다 모은다면, 우리의 힘 -요정 버스트-를 쓰게 해줄게!"
+ChangeEmotion minkyu despise
+minkyu "하이픈 표시가 굉장히 씹덕같구나."
+minkyu "나도 복싱은 할 수 있는데 말이야."
+green "복싱이라... '정령왕'한테? 물리 공격이 통할 거라고 지금 생각하는 거야?"
+ChangeEmotion minkyu default
+minkyu "정령왕?"
+green "이수상 선생님 말이야. 엄-청 강한, 정령을 다루는 존재야"
+green "그 사람 때문에 용사 시험 자체를 포기한 자들이 꽤 있다고."
+green "엥간해서는 내 도움을 받는 게 좋을 걸?"
+minkyu "그러려나... 하긴 뭐 보험은 많을수록 좋으니까. 네 부탁을 들어주도록 할게."
+minkyu "너랑 비슷하게 생긴 애들을 2명 더 모으면 된다는 거지?"
+green "으응! 고마워. 그럼 나는 너 따라 갈게!"
+minkyu "(그린이 어깨에 달라붙었다.)"
+
+AutoUnFreeze

@@ -1,5 +1,11 @@
 AutoFreeze
 ChangeEmotion minkyu happy
-minkyu "더블 점프가 확실히 어려운 편이네... 얼른 가자."
+green "요정-버스트의 힘! 아무도 막을 수 없다고!"
+pink "그건 그래. 우리가 쫌 쩔거든?"
+orange "개...쩔...탱..."
+
+minkyu "16년도 씨잼같은 이야기를..."
+minkyu "도움이 된다면 다행이겠지만"
+
 ChangeEmotion minkyu default
 AutoUnFreeze

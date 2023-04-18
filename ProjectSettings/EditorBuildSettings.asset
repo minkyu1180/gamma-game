@@ -35,4 +35,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Stage1/Stage 1-2Hidden.unity
     guid: 200d47451dd7847e8859b9ec4bdb7f4d
+  - enabled: 1
+    path: Assets/Scenes/Stage2/Stage 2-0.unity
+    guid: 75cf7a5cb1a594c178855b11159e2c76
+  - enabled: 1
+    path: Assets/Scenes/Stage2/Stage 2-1.unity
+    guid: b9f804b14bacc4d1783a77d369b8a243
+  - enabled: 1
+    path: Assets/Scenes/Stage2/Stage 2-2.unity
+    guid: 1528d344c53fc4d1dbee736d1d919069
+  - enabled: 1
+    path: Assets/Scenes/Stage2/Stage 2-2Hidden.unity
+    guid: e227a890fe4384041b837d02ed278691
+  - enabled: 1
+    path: Assets/Scenes/Stage2/Stage 2-Boss.unity
+    guid: 44a725544c40f4b0e8453a3ccb36d0aa
   m_configObjects: {}

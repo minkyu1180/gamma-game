@@ -1,0 +1,39 @@
+AutoFreeze
+
+StopMusic
+PlayMusic naiveAnalogMusic
+
+ChangeEmotion susang laugh
+susang "후... 꽤 강하군. 좋다. 다음 단계로 넘어가도 좋아. 아파트에 도전할 자격이 있다."
+susang "그러나... 결국 정령의 힘을 쓴 거 아닌가. 나는 그것 때문에 진심으로 인정은 못하겠어."
+susang "요즘 세대는 뭐든 자기 힘으로 해결 안하고 남의 힘을 빌려서... 후..."
+
+ChangeEmotion minkyu despise
+minkyu "엥. 제가 합격했다는 거예요. 아닌거예요."
+
+susang "어... 합격은 했는데, 내 맘에 들지는 않는다. 이말이야."
+susang "왜 화나?"
+ChangeEmotion susang so
+susang "그치만 내가 인정 안해준다는데 네가 뭘 할 수 있는데."
+ChangeEmotion susang what
+susang "화내고 욕하고 절망하는 거 이외에 네가 뭘 할 수 있는데 이 수호령 의존도 1000% 좆밥새끼야 ㅋㅋㅋㅋㅋ"
+
+ChangeEmotion minkyu shout
+minkyu "(뜨악하네 진짜.)"
+
+ChangeEmotion susang laugh
+susang "통과한 건 통과한 거니까, 너에게 활강 능력을 줄게."
+susang "공중에서 떨어질 때 윗 키를 누르면, 좀 더 천천히 떨어질 수 있다. 이것도 다 정령의 힘이지."
+
+ChangeEmotion minkyu aggrovate
+minkyu "아예 멈출 수는 없나요?"
+ChangeEmotion susang so
+susang "되겠냐?"
+ChangeEmotion susang laugh
+susang "아무튼, 즐거웠다. 다음에 또 보지."
+
+ChangeEmotion minkyu default
+minkyu "(선생님의 시험을 통과했다…!)"
+minkyu "(그렇지만 진정한 인정을 위해서는 뭔가 대책을 갖고 다시 한번 대결을 펼쳐야 할 것 같다.)"
+
+AutoUnFreeze

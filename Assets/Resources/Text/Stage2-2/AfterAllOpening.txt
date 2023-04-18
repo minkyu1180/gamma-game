@@ -3,12 +3,16 @@ PlayMusic secondFieldMusic
 
 Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
 Character(susang, 이수상, color=white, emotion=default, speed=0.06, voice=susangVoice)
+Character(green, 그린, color=white, emotion=default, speed=0.06, voice=clickSound)
+Character(pink, 핑크, color=white, emotion=default, speed=0.06, voice=clickSound)
+Character(orange, 오렌지, color=white, emotion=default, speed=0.06, voice=clickSound)
 
 AutoFreeze
 ChangeEmotion minkyu happy
-ChangeEmotion susang laugh
-susang "왜 또 할 말이 있나?"
-minkyu "그건 아니고. 그냥 훈련하러 왔습니다! 핫! 하하하하핫!"
-susang "먼저 가서 기다리지. 협박범"
-minkyu "네~ 민머리 선생님~"
+minkyu "여어~"
+orange "인간...! 인간이 왔어...!"
+pink "뭐, 인간?"
+green "우우끼끼끽!"
+ChangeEmotion minkyu shout
+minkyu "가즈아아아아아아!!!"
 AutoUnFreeze

@@ -97,24 +97,30 @@ public class SusangPatternScript : MonoBehaviour
         {
             FullPowerLaserXPattern();
         }
-        */
         if (Input.GetKeyDown(KeyCode.Q))
         {
             BossPatternManager();
         }
+        */
+        
+        /*
+        //CHEAT//
         if (Input.GetKeyDown(KeyCode.T))
         {
             hp = -1;
         }
-
+        //CHEAT//
+        */
         if (hp <= 0)
         {
-            if (BossPatternCoroutine != null) StopCoroutine(BossPatternCoroutine);
+            if (BossPatternCoroutine != null) {
+                StopCoroutine(BossPatternCoroutine);
+            }
         }
     }
 
 
-    void BossPatternManager()
+    public void BossPatternManager()
     {
         BossPatternCoroutine = StartCoroutine(BossPattern());
 
@@ -306,7 +312,7 @@ public class SusangPatternScript : MonoBehaviour
         yield return new WaitForSeconds(3.5f);
         audioSource.PlayOneShot(FullPowerAttackAudioClip);
         yield return new WaitForSeconds(0.5f);
-        
+
         animator.SetBool("IsRedEraser", false);
         spiritManagerScript.getRidOfAll();
         spiritManagerScript.spiritSpread();

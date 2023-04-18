@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3434396
 Transform:
   m_ObjectHideFlags: 0
@@ -2063,7 +2063,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &425069236
 Transform:
   m_ObjectHideFlags: 0
@@ -2231,6 +2231,7 @@ MonoBehaviour:
   AttackedSprite: {fileID: 21300000, guid: 7b73e4b042fd542cca8ea68a4a9877e8, type: 3}
   NormalSprite: {fileID: 21300000, guid: edd6e20129238489ea680b4f8093340e, type: 3}
   FaintedSprite: {fileID: 21300000, guid: fd6c870b1e3384b82831460a51aebbdd, type: 3}
+  IsFainted: 0
   IsFirstStage: 1
   HealthBar: {fileID: 1255613596}
   dataPersistenceManager: {fileID: 0}
@@ -2431,6 +2432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57d144d97b1ba40199d6ef7d89f99c6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsBossStage: 1
   pinkSpirit: {fileID: 928441692375176529, guid: f5ab130ad51a74d4ba30ce875bda4fb3, type: 3}
   orangeSpirit: {fileID: 8846874544205553983, guid: f7cff389516ce4384ac5e92c6862a291, type: 3}
   greenSpirit: {fileID: 9072566941051616007, guid: b261cbe60ffb34a1f98914f512694c42, type: 3}
@@ -9821,7 +9823,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &801053454
 Transform:
   m_ObjectHideFlags: 0
@@ -19814,7 +19816,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1836640809}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f3e69327983940de8a1a88ea59faf8b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b5e087554ec1494e84f90c9afa48cae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Camera: {fileID: 0}

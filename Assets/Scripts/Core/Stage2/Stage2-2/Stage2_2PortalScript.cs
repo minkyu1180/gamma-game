@@ -8,6 +8,7 @@ public class Stage2_2PortalScript : MonoBehaviour, IDataPersistence
 {
     GameObject DialogBoxTextObject;
     GameObject dataPersistenceManager;
+    SpiritManagerScript spiritManagerScript;
 
     bool didTrueClearStage2;
     bool didClearStage2;    
@@ -30,7 +31,7 @@ public class Stage2_2PortalScript : MonoBehaviour, IDataPersistence
     /*
     public void Update()
     {  
-        //CHEAT. EXSISTS FOR GAME TESTING. MUST BE ELIMINATED IN FINAL RELEASE
+        //CHEAT. EXSISTS FOR GAME TESTING. MUST BE ELIMINATED IN FINAL RELEASE    
         if (Input.GetKeyDown(KeyCode.F))
         {
             GameObject minkyu = GameObject.Find("Minkyu");
@@ -43,6 +44,7 @@ public class Stage2_2PortalScript : MonoBehaviour, IDataPersistence
     {
         DialogBoxTextObject = GameObject.Find("DialogBoxText");
         dataPersistenceManager = GameObject.Find("DataPersistenceManager");
+        spiritManagerScript = GameObject.Find("SpiritUI").GetComponent<SpiritManagerScript>();
     }
     void OnTriggerStay2D(Collider2D other)
     {
@@ -67,7 +69,8 @@ public class Stage2_2PortalScript : MonoBehaviour, IDataPersistence
                         else                  textLocation = "Text/Stage2-2/Ending/Ending";
                     }
                 }
-                StartCoroutine(GoNextStage(textLocation));
+                if (spiritManagerScript.checkHasAllSpirits())   StartCoroutine(GoNextStage(textLocation));
+                else StartCoroutine(NotEnoughSpirits("Text/Stage2-2/Ending/Nope"));
             }
         }
     }
@@ -85,5 +88,12 @@ public class Stage2_2PortalScript : MonoBehaviour, IDataPersistence
         yield return new WaitWhile(() => !saved);
 
         SceneManager.LoadScene("Stage 2-Boss");
+    }
+
+    IEnumerator NotEnoughSpirits(string textLocation)
+    {
+        InputDecoder.InterfaceElements.SetActive(true);
+        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript(textLocation);
+        yield return new WaitWhile(() => InputDecoder.isGameInScript);
     }
 }

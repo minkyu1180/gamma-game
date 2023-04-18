@@ -31,6 +31,7 @@ public class Stage2_0PortalScript : MonoBehaviour, IDataPersistence
     public void Update()
     {  
         //CHEAT. EXSISTS FOR GAME TESTING. MUST BE ELIMINATED IN FINAL RELEASE
+        
         if (Input.GetKeyDown(KeyCode.F))
         {
             GameObject minkyu = GameObject.Find("Minkyu");

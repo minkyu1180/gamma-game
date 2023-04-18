@@ -1,5 +1,8 @@
 AutoFreeze
 ChangeEmotion minkyu aggrovated
-minkyu "이런 걸로 공직자를 협박하기는 싫지만..."
-minkyu "인과 응보라고요. 좀 쉽게 가면 좋잖아요?"
+minkyu "이제 협박 시간이야."
+minkyu "정령왕은 대머리가 확신하다고."
+pink "남자한테 대머리라 놀리는 건 굉장히... 무례한 일 아닌가요?"
+minkyu "...어쩔 수 없어."
+pink "(...이번 용사 지원자는 좀 나쁜 놈이군요!)"
 AutoUnFreeze
