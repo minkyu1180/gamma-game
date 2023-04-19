@@ -18,7 +18,7 @@ public class HealthScript : MonoBehaviour, IDataPersistence
     private GameObject GameElements;
     AudioSource audioSource;
     private AudioClip hitSound;
-    private int dayCount;
+    public int dayCount;
     public GameObject dataPersistenceManager;
 
 
@@ -108,11 +108,10 @@ public class HealthScript : MonoBehaviour, IDataPersistence
         DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/System/Fainted");
         yield return new WaitWhile(() => InputDecoder.isGameInScript);
 
-        dayCount++;
+        dayCount = dayCount + 1;
         bool saved = false;
         saved = dataPersistenceManager.GetComponent<DataPersistenceManager>().SaveGame();
         yield return new WaitWhile(() => !saved);
-        
         SceneManager.LoadScene("PreLobbyScene");
     }
 }

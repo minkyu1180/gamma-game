@@ -43,7 +43,7 @@ public class Stage2_BossSceneManager : MonoBehaviour, IDataPersistence
         data.didTrueClearStage2 = this.didTrueClearStage2;
         data.didClearStage2 = this.didClearStage2;
         data.stageCount = this.stageCount;
-        data.dayCount = this.dayCount;
+        data.dayCount = this.dayCount + 1;
     }
 
     void Start()
@@ -138,7 +138,6 @@ public class Stage2_BossSceneManager : MonoBehaviour, IDataPersistence
         }
 
         if (stageCount <= 2)stageCount = 2;
-        dayCount++;
         bool saved = false;
         saved = dataPersistenceManager.GetComponent<DataPersistenceManager>().SaveGame();
         yield return new WaitWhile(() => !saved);

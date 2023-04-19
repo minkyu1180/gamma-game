@@ -52,7 +52,7 @@ public class Stage1_BossSceneManager : MonoBehaviour, IDataPersistence
         data.didTrueClearStage1 = this.didTrueClearStage1;
         data.didClearStage1 = this.didClearStage1;
         data.stageCount = this.stageCount;
-        data.dayCount = this.dayCount;
+        data.dayCount = this.dayCount + 1; //either case the day pass
     }
 
 
@@ -72,7 +72,7 @@ public class Stage1_BossSceneManager : MonoBehaviour, IDataPersistence
 
         audioSource = gameObject.GetComponent<AudioSource>();
         bikeEndSound = Resources.Load("Sound/Voice/bikeEndSound") as AudioClip;
-        //audioSource = gameObject.GetComponent<AudioSource>();
+        audioSource = gameObject.GetComponent<AudioSource>();
         dataPersistenceManager = GameObject.Find("DataPersistenceManager");
 
         string textLocation;
@@ -177,7 +177,6 @@ public class Stage1_BossSceneManager : MonoBehaviour, IDataPersistence
         }
 
         if (stageCount <= 1)stageCount = 1;
-        dayCount++;
         bool saved = false;
         saved = dataPersistenceManager.GetComponent<DataPersistenceManager>().SaveGame();
         yield return new WaitWhile(() => !saved);
