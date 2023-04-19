@@ -765,6 +765,8 @@ MonoBehaviour:
   Stage1Button: {fileID: 552717210}
   Stage2Button: {fileID: 495598081}
   Stage3Button: {fileID: 865584946}
+  GoBossDirectQuest: {fileID: 2748795098642766741, guid: fd6bc8d74cccb4775a1806cd387cb425, type: 3}
+  GoDirectBoss: 0
 --- !u!1 &285339689
 GameObject:
   m_ObjectHideFlags: 0
@@ -3961,6 +3963,7 @@ MonoBehaviour:
   horizontalInput: 0
   beforeJumpInertia: 0
   doubleJumpEnabled: 0
+  glideEnabled: 0
   highJumpEnabled: 0
   frozen: 0
   isDirectionDoomed: 0

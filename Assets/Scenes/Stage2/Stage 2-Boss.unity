@@ -2232,7 +2232,7 @@ MonoBehaviour:
   NormalSprite: {fileID: 21300000, guid: edd6e20129238489ea680b4f8093340e, type: 3}
   FaintedSprite: {fileID: 21300000, guid: fd6c870b1e3384b82831460a51aebbdd, type: 3}
   IsFainted: 0
-  IsFirstStage: 1
+  IsFirstStage: 0
   HealthBar: {fileID: 1255613596}
   dataPersistenceManager: {fileID: 0}
 --- !u!82 &436883460
@@ -9487,6 +9487,7 @@ MonoBehaviour:
   horizontalInput: 0
   beforeJumpInertia: 0
   doubleJumpEnabled: 1
+  glideEnabled: 0
   highJumpEnabled: 0
   frozen: 0
   isDirectionDoomed: 0
