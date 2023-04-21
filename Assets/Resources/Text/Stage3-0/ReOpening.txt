@@ -1,0 +1,12 @@
+Show school
+PlayMusic thirdFieldMusic
+
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(susang, 이수상, color=white, emotion=default, speed=0.06, voice=susangVoice)
+AutoFreeze
+
+susang "조심하면서 오라고. 솔직히 여기 길이, 그렇게 쉽지는 않아."
+minkyu "네...!"
+
+minkyu "다시 학교군."
+AutoUnFreeze

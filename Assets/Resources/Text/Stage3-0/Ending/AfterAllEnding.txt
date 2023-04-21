@@ -1,0 +1,4 @@
+AutoFreeze
+ChangeEmotion minkyu happy
+minkyu "이제 여기도 훈련용으로 오는거지"
+AutoUnFreeze

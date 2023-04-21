@@ -21,8 +21,8 @@ public class ExExTextMaker : MonoBehaviour, IDataPersistence
         else if (stageCount == 1)
             this.GetComponent<TextMeshPro>().text = "더블점프: space * 2";
         else if (stageCount == 2)
-            this.GetComponent<TextMeshPro>().text = "더블점프: space * 2\n체공: 추락 시 아래 키";
+            this.GetComponent<TextMeshPro>().text = "더블점프: space * 2\n체공: 추락 시 윗 키";
         else
-            this.GetComponent<TextMeshPro>().text = "더블점프: 더블점프: space * 2\n체공: 추락 시 아래 키\n윗점프: 윗키 + space\n"; 
+            this.GetComponent<TextMeshPro>().text = "더블점프: 더블점프: space * 2\n체공: 추락 시 윗 키\n윗점프: 윗키 + space\n"; 
     }
 }

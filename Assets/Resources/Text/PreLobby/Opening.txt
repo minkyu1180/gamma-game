@@ -1,8 +1,9 @@
 Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
 
-
+AutoFreeze
 ChangeEmotion minkyu happy
 minkyu "(집에서 푹 쉬고, 다음날.)"
 minkyu "(어느 때처럼 열심히 일했고 이제 퇴근시간이 되었다.)"
 ChangeEmotion minkyu default
 minkyu "오늘도 도전해볼까."
+AutoUnFreeze

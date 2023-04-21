@@ -1,0 +1,5 @@
+AutoFreeze
+ChangeEmotion minkyu aggrovated
+minkyu "이런 걸로 공직자를 협박하기는 싫지만..."
+minkyu "인과 응보라고요. 좀 쉽게 가면 좋잖아요?"
+AutoUnFreeze
