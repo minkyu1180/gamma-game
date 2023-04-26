@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 
-public class GoTaeChoScript : MonoBehaviour
+public class GoTaeCho3_2AutoScrollScript : MonoBehaviour
 {
     public bool hitting = false;
-
+    public GameObject Camera;
     public GameObject StartPoint;
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -32,5 +31,6 @@ public class GoTaeChoScript : MonoBehaviour
         other.gameObject.transform.parent.GetComponent<Rigidbody2D>().position = StartPoint.GetComponent<Rigidbody2D>().position;
         other.gameObject.transform.parent.GetComponent<Rigidbody2D>().velocity = new Vector2(0f,0f);
         hitting = false;
+        Camera.GetComponent<AutoScroll3_2Camera>().CameraInit = true;
     }
 }

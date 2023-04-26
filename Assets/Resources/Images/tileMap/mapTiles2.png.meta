@@ -270,6 +270,132 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: mapTiles2_6
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 476
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4859338e81f94baab234b4b9390f721
+      internalID: 1330603267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapTiles2_7
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 476
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4710342a8b6d24e39bc306b7de922520
+      internalID: 1784863100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapTiles2_8
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 476
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff18a0cccf0a24e3eb62b1a4158bb448
+      internalID: -712769400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapTiles2_9
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 437
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d738ea5191ed94e2b8f2eebde5d5d8e5
+      internalID: -1072840431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapTiles2_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 437
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be46c210ae07d4ad982d80d11ef01716
+      internalID: -576750135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapTiles2_11
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 437
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f88c4ff1d68f94187b4fba55c75c340f
+      internalID: 1339606289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -281,10 +407,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      mapTiles2_11: 1339606289
       mapTiles2_1: 1342210693
+      mapTiles2_9: -1072840431
       mapTiles2_0: 815895386
       mapTiles2_3: -1297726420
+      mapTiles2_10: -576750135
+      mapTiles2_6: 1330603267
       mapTiles2_4: 1252148787
+      mapTiles2_8: -712769400
+      mapTiles2_7: 1784863100
       mapTiles2_2: -1203415335
       mapTiles2_5: -2039799970
   spritePackingTag: 
