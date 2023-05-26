@@ -1,0 +1,10 @@
+Show apart
+PlayMusic thirdFieldMusic
+
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+
+AutoFreeze
+minkyu "이제 이것도 별로 어렵지 않습니다."
+ChangeEmotion minkyu happy
+minkyu "별 거 아니죠!!!"
+AutoUnFreeze

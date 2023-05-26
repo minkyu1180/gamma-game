@@ -1,0 +1,15 @@
+Show apart
+PlayMusic thirdFieldMusic
+
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+
+AutoFreeze
+minkyu "옛날에 이렇게 동네를 뛰어다니던 뭐가 있었는데…"
+ChangeEmotion minkyu aggrovated
+minkyu "강철 수염…이었나? 그 파란 색 아저씨."
+minkyu "갑자기 그게 생각나네."
+minkyu "백 덤블링으로 도시를 돌아다녔지…"
+ChangeEmotion minkyu despise
+minkyu "…뭔 생각을 하고 있는 거지. 일단 가자."
+
+AutoUnFreeze

@@ -1,6 +1,6 @@
 AutoFreeze
-ChangeEmotion minkyu despise
-minkyu "아니 진정한 인정이 대체 뭐지? 그 선생님, 약점이 있기는 하나? 꽤 완벽해 보이는데..."
+ChangeEmotion minkyu aggrovate
+minkyu "음, 할 만하네~"
 ChangeEmotion minkyu default
-minkyu "안 가본 곳을 뒤져가며 약점을 찾아야겠어...."
+minkyu "그나저나 반지는 어디에 있으려나~"
 AutoUnFreeze

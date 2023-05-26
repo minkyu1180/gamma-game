@@ -1,0 +1,15 @@
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(jihee, 이지희, color=white, emotion=default, speed=0.06, voice=jiheeVoice)
+Character(dahye, 박다혜, color=white, emotion=default, speed=0.06, voice=dahyeVoice)
+AutoFreeze
+
+minkyu "흠… 퇴근…."
+minkyu "오늘은 아파트 단지나 가야겠다."
+ChangeEmotion minkyu happy
+minkyu "고생 많으셨습니다~!"
+ChangeEmotion jihee aggrovated
+jihee "(오…)"
+ChangeEmotion jihee happy
+jihee "(따라가면서 봐야겠다.)"
+
+AutoUnFreeze

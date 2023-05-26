@@ -1,0 +1,11 @@
+Show apart
+PlayMusic thirdFieldMusic
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+
+AutoFreeze
+
+minkyu "음… 여기에 반지가 있을 거야. 틀림 없어."
+ChangeEmotion minkyu aggrovated
+minkyu "빨리 가보자."
+
+AutoUnFreeze

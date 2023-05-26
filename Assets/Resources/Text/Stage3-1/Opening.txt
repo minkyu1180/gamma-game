@@ -1,0 +1,12 @@
+Show apart
+PlayMusic thirdFieldMusic
+
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+
+AutoFreeze
+minkyu "옥상… 파쿠르…"
+minkyu "왜 길이 이러냐고 대부분의 사람들은 그러겠으나…"
+ChangeEmotion minkyu happy
+minkyu "나는 할 수 있다! 빨리 가자!”
+ChangeEmotion minkyu default
+AutoUnFreeze

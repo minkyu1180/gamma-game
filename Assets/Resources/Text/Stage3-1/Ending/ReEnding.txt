@@ -1,0 +1,4 @@
+AutoFreeze
+ChangeEmotion minkyu shout
+minkyu "왔다! 가즈아!"
+AutoUnFreeze

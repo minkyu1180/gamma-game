@@ -1,0 +1,35 @@
+Show apart
+PlayMusic naiveAnalogMusic
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(jihee, 이지희, color=white, emotion=default, speed=0.06, voice=jiheeVoice)
+
+AutoFreeze
+
+minkyu "네. 지희 누나"
+ChangeEmotion minkyu happy
+minkyu "반지… 찾았어요."
+ChangeEmotion jihee excited
+jihee "오. 그걸 찾았구나."
+jihee "자 그럼 손가락에 껴줘"
+ChangeEmotion jihee happy
+jihee "원래 내가 하고 다니던 거니까…"
+ChangeEmotion minkyu despise
+minkyu "껴달라고요?"
+jihee "응."
+minkyu "…(이게 맞나?)"
+ChangeEmotion minkyu aggrovated
+minkyu "(아니 뭐 근데 죽은 사람 소원도 들어준다는데… 안될 건 없지?)"
+ChangeEmotion minkyu default
+minkyu "네. 뭐"
+ChangeEmotion jihee excited
+jihee "…"
+ChangeEmotion jihee chu
+jihee "……!"
+ChangeEmotion minkyu happy
+minkyu "네… 다 됐습니다. 다음부터 잃어버리지 마세요!"
+ChangeEmotion jihee excited
+jihee "고마워, 우리 착한 민규…"
+minkyu "뭘요. 이정도야."
+jihee "(우리… 사랑스러운 민규…)"
+
+AutoUnFreeze

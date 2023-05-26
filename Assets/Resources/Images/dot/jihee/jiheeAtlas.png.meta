@@ -125,7 +125,7 @@ TextureImporter:
         width: 34
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -133,6 +133,132 @@ TextureImporter:
       bones: []
       spriteID: 4bf7b07e1207e436a80bf5043c60ad87
       internalID: -1805521012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jiheeAtlas_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 158
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dbc8c0ef8d7b484faa287f78c0d9e4c
+      internalID: 1334984631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jiheeAtlas_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 158
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c872bbcd44d43deb45f1b35c4c5726
+      internalID: 698584304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jiheeAtlas_2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 158
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8a5ef21f7c744fc397f57a41179949d
+      internalID: -1859704193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jiheeAtlas_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 87
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d4966f2efc7400280e4e72a566d162
+      internalID: 1385242345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jiheeAtlas_4
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 87
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0b46ec55f27345e6b53ec3ba6d51fc4
+      internalID: -774120318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jiheeAtlas_5
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 86
+        width: 89
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f8d0e605b05466ba8dd1f20b9767af
+      internalID: 1264585376
       vertices: []
       indices: 
       edges: []
@@ -149,6 +275,12 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       jihee_default: -1805521012
+      jiheeAtlas_1: 698584304
+      jiheeAtlas_4: -774120318
+      jiheeAtlas_5: 1264585376
+      jiheeAtlas_0: 1334984631
+      jiheeAtlas_3: 1385242345
+      jiheeAtlas_2: -1859704193
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

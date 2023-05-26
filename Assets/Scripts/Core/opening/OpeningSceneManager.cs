@@ -63,7 +63,6 @@ public class OpeningSceneManager : MonoBehaviour
         Camera.GetComponent<Camera>().orthographicSize = cameraSizeSaved;
 
         NPCJihee.GetComponent<Button>().interactable = true;
-        Debug.Log("NPC INTERACTION PLZ");
         yield return new WaitWhile(() => InputDecoder.isConditionWaiting);
         
         // 관장 등장!

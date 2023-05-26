@@ -1,0 +1,10 @@
+Show apart
+PlayMusic thirdFieldMusic
+
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+
+AutoFreeze
+minkyu "여태까지 해온 것들의 굉장히 숙달된 반복이 필요할 것 같다."
+ChangeEmotion minkyu despise
+minkyu "쉽지 않겠는 걸…"
+AutoUnFreeze

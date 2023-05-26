@@ -766,6 +766,8 @@ MonoBehaviour:
   Stage2Button: {fileID: 495598081}
   Stage3Button: {fileID: 865584946}
   GoBossDirectQuest: {fileID: 2748795098642766741, guid: fd6bc8d74cccb4775a1806cd387cb425, type: 3}
+  minkyu: {fileID: 0}
+  jihee: {fileID: 0}
   GoDirectBoss: 0
 --- !u!1 &285339689
 GameObject:

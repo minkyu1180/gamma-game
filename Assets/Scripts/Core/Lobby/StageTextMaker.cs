@@ -18,6 +18,7 @@ public class StageTextMaker : MonoBehaviour, IDataPersistence
 
     void Start()
     {
-        this.GetComponent<TextMeshPro>().text = "Stage" + Convert.ToString(stageCount + 1);
+        if (stageCount != 3) this.GetComponent<TextMeshPro>().text = "Stage" + Convert.ToString(stageCount + 1);
+        else this.GetComponent<TextMeshPro>().text = "AllClear";
     }
 }

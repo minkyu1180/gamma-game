@@ -1,0 +1,14 @@
+Show apart
+PlayMusic thirdBossPlainMusic
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(jihee, 이지희, color=white, emotion=default, speed=0.06, voice=jiheeVoice)
+
+AutoFreeze
+
+ChangeEmotion minkyu aggrovated
+minkyu "여기가… 어디지?"
+minkyu "여기까지 왔는데 시험관이 없다는 게 말이 되나?"
+minkyu "여기 말고… 안 본 곳은 거의 없는데…?"
+ChangeEmotion minkyu despise
+minkyu "거참… 허탕인가…"
+Wait 1.5

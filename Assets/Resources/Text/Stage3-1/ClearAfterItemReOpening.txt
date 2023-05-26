@@ -1,0 +1,18 @@
+Show apart
+PlayMusic thirdFieldMusic
+
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+
+AutoFreeze
+
+minkyu "높은 빌딩 숲 사이"
+minkyu "마주 선 빨강과 파랑…"
+minkyu "......"
+Wait 1.0f
+
+ChangeEmotion minkyu aggrovate
+minkyu "이거 완전 데스노트 아닌가."
+ChangeEmotion minkyu default
+minkyu "아냐. 일단 빨리 가자."
+
+AutoUnFreeze

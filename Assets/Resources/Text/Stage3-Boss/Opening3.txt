@@ -1,0 +1,8 @@
+ChangeSpeed minkyu 0.03
+minkyu "한대가 많이 셀 것 같은데요? 무서워요..."
+ChangeEmotion minkyu despise
+minkyu "그리고 너무 갑작스러운 거 아니에요?"
+ChangeSpeed minkyu 0.06
+jihee "따끔할거야~"
+ChangeEmotion jihee chu
+jihee "진짜 간다!!!!"

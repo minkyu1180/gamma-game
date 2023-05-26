@@ -1,0 +1,22 @@
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(jihee, 이지희, color=white, emotion=default, speed=0.06, voice=jiheeVoice)
+Character(dahye, 박다혜, color=white, emotion=default, speed=0.06, voice=dahyeVoice)
+AutoFreeze
+
+ChangeEmotion jihee excited
+jihee "엣, 뭐야뭐야. 오늘도 이 나의 영역에 가는 건가?"
+jihee "그럼 나부터 갈게! 조금 있다가 퇴근해!"	
+ChangeEmotion minkyu happy
+minkyu "…안 기다려주면 예의가 아니겠죠? 관장님?"
+dahye "당연하지~ 먼저 가서 폼 잡고 있는 게 얼마나 힘들겠냐. 용사님이 폼 잡아야 한다는데~ 어떻게 하겠어~"
+ChangeEmotion minkyu aggrovate
+minkyu "낄낄낄낄낄"
+ChangeEmotion dahye laugh
+dahye "끼룪끼룩끼룩"
+ChangeEmotion jihee anger
+jihee "아니! 용사가 멋있어야 하는 건 당연한 거예요!"
+jihee "하지 말라고!"
+dahye "흐지믈르그~"
+minkyu "ㅋㅋㅋㅋㅋㅋㅋㅋ"
+
+AutoUnFreeze

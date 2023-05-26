@@ -1,0 +1,6 @@
+AutoFreeze
+minkyu "(이제부터는 위로 올라가야 한다.)"
+minkyu "(심호흡이나 하고 가야겠다.)"
+ChangeEmotion minkyu despise
+minkyu "후... 하..."
+AutoUnFreeze

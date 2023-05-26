@@ -1,0 +1,13 @@
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(jihee, 이지희, color=white, emotion=default, speed=0.06, voice=jiheeVoice)
+Character(dahye, 박다혜, color=white, emotion=default, speed=0.06, voice=dahyeVoice)
+AutoFreeze
+
+minkyu "퇴근… 음…"
+minkyu "오늘은 학교나 가야겠다."
+ChangeEmotion minkyu happy
+minkyu "고생 많으셨습니다~!"
+ChangeEmotion jihee laugh
+jihee "어어~ 내일 봐!"
+
+AutoUnFreeze

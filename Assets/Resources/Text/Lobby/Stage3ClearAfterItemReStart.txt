@@ -1,0 +1,31 @@
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(jihee, 이지희, color=white, emotion=default, speed=0.06, voice=jiheeVoice)
+Character(dahye, 박다혜, color=white, emotion=default, speed=0.06, voice=dahyeVoice)
+AutoFreeze
+
+minkyu "일로 와봐요. 지희 누나."
+jihee "?? 알았어."
+ChangeEmotion jihee happy
+jihee "왜?"
+minkyu "(속닥속닥) 지희 누나… 근데 반지라는 거 있잖아요"
+ChangeEmotion minkyu aggrovated
+minkyu "저 찾았는데... 그냥 여기서 드리면 안될까요?"
+ChangeEmotion jihee excited
+jihee "어머머멈ㅁ멈ㅁ머! 세상에 얘"
+jihee "그러면 다혜 언니가 오해할 수도 있잖아!"
+jihee "창피하게..!"
+ChangeEmotion minkyu despise
+minkyu "아 프러포즈라도 하는 줄 알고 오해할수도… 하긴 남자가 여자한테 반지주는 게 보통 그런거긴 하죠…?"
+minkyu "(근데 이분 왜 이리 기분이 좋아보이지...)"
+minkyu "알겠어요..."
+ChangeEmotion jihee happy
+jihee "그럼~ 오늘도 먼저 가 있을게!"
+jihee "조금 있다가 봐!"
+
+Wait 1.0f
+ChangeEmotion dahye embarrassed
+dahye "………"
+dahye "(다 들리는데…)"
+dahye "(하, 그냥 못 들은 척 해야겠다.)"
+
+AutoUnFreeze

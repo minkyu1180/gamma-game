@@ -1,18 +1,20 @@
-Show school
+Show apart
 PlayMusic thirdFieldMusic
 
 Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
-Character(susang, 이수상, color=white, emotion=default, speed=0.06, voice=susangVoice)
 
 AutoFreeze
-ChangeEmotion susang so
-susang "여어 정령빨. 왔나"
-ChangeEmotion minkyu despise
-minkyu "아니 자기도 정령사면서 왜 나보고만 그러는데요."
-susang "좀 용사는 좀 더... 잘해야지 임마. 난 간다."
-minkyu "후..."
 ChangeEmotion minkyu aggrovated
-minkyu "(재도전 해도 먹힐 것 같지가 않다. 저 사람, 약점이라도 잡아서 협박이라도 하는 편이 좋겠다.)"
-minkyu "(솔직히 정령 없이 이길 자신도 없고...)"
+minkyu "용사… 용사라…"
+minkyu "지희 누나가 용사였다니…"
+minkyu "용사가 강한 사람일 것은 어느정도 예상은 했지만."
+ChangeEmotion minkyu despise
+minkyu "실제로 저 정도 해야 용사라고 생각하니… 좀 경외감이 드네…"
+minkyu "내가 잘 해낼 수 있으려나?"
+
+ChangeEmotion minkyu default
+minkyu "아냐… 뭐 어떻게든 되겠지?"
+ChangeEmotion minkyu happy
+minkyu "부탁 받은 반지나 찾아봐야겠다."
 
 AutoUnFreeze

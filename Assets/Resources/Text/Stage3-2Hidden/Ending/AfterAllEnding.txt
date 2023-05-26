@@ -1,0 +1,4 @@
+AutoFreeze
+ChangeEmotion minkyu happy
+minkyu "나쁘지 않았다!"
+AutoUnFreeze

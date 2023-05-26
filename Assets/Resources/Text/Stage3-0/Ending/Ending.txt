@@ -1,5 +1,6 @@
 AutoFreeze
 ChangeEmotion minkyu happy
-minkyu "더블 점프가 확실히 어려운 편이네... 얼른 가자."
+minkyu "캬 좀 빡세네."
+minkyu "(계속 간다…!)"
 ChangeEmotion minkyu default
 AutoUnFreeze

@@ -1,0 +1,136 @@
+
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(jihee, 이지희, color=white, emotion=default, speed=0.06, voice=jiheeVoice)
+Character(dahye, 박다혜, color=white, emotion=default, speed=0.06, voice=dahyeVoice)
+Character(orange, 제작자, color=white, emotion=default, speed=0.06, voice=clickSound)
+
+Show blackScene
+minkyu "(그 주 주말)"
+
+Show sheepHouse
+PlayMusic titleMusic
+
+ChangeEmotion dahye laugh
+dahye "건배~"
+ChangeEmotion jihee laugh
+jihee "이예에에엒!"
+ChangeEmotion minkyu aggrovate
+minkyu "이예예~"
+dahye "이야 민규가 용사라니"
+ChangeEmotion dahye panic
+dahye "개 쩔어?"
+ChangeEmotion jihee happy
+jihee "그럼요~ 개 쩔죠~"
+ChangeEmotion minkyu happy
+minkyu "헤… 좋아요…"
+minkyu "술 맛도 좋고"
+ChangeEmotion minkyu aggrovated
+minkyu "근데 그렇게 쩌는 거예요?"
+minkyu "저희 말고는 아는 사람이 없는데?"
+ChangeEmotion minkyu despise
+minkyu "제가 용사로서 기대했던 부와 명예, 긍지… 이런 거는 없는 건가요? 마왕은? 세상의 평화는?"
+minkyu "이거 거의 두 분이 다른 사람들 몇명 도움을 얻어서 짜고 치는 느낌이라구요"
+ChangeEmotion jihee excited
+jihee "ㅋㅋㅋㅋ 그치만 진짜 용사 맞아. 국가에서도 공론화는 안 시키지만 실제로 있는 자격이고"
+minkyu "무슨 혜택이 있는데요?"
+ChangeEmotion jihee aggrovated
+jihee "놀이 공원 10% 할인이라던가, 미술관 할인, 기차 할인…?"
+ChangeEmotion minkyu shout
+minkyu "국가 유공자…군요?"
+ChangeEmotion jihee happy
+jihee "비슷하지!"
+ChangeEmotion dahye default
+StopMusic
+
+dahye "민규야, 겉보기에는 뭐 별거 없어도 말이야."
+dahye "솔직히 너가 얻은 게 없다고는 못하잖아?"
+ChangeEmotion minkyu default
+minkyu "오."
+minkyu "어… 예전보다… 강해지긴 했죠."
+minkyu "강해졌? 나? 움직임이 조금 더 자유로워졌다 싶죠."
+minkyu "음. 맞아요. 저는 강해졌죠."
+
+Show blackScene
+PlayMusic disappointmentMusic
+ChangeEmotion dahye laugh
+dahye "…아직도 사는 게 무료하고 의미가 없니?"
+dahye "목표의 부재에 헤매이고 있니?"
+ChangeEmotion minkyu despise
+minkyu "…! 어떻게 그걸…!"
+ChangeEmotion dahye embarrassed
+dahye "미세 표정… 사람을 잘 관찰한다면 알 수 있는 사실이다."
+dahye "그래서, 대답은?"
+
+StopMusic
+ChangeEmotion minkyu default
+minkyu "흠. 살 만합니다."
+ChangeEmotion minkyu aggrovated
+minkyu "목표로 한 용사도 뭐… 솔직히 별 거 없는 것일 수는 있죠."
+ChangeEmotion minkyu default
+minkyu "하지만 그 과정이 저를 더 나은 사람이 되게 했어요."
+ChangeEmotion jihee excited
+jihee "…!"
+ChangeEmotion minkyu happy
+minkyu "나쁘지 않은 경험이었어요. 용사로서, 더 강해져 보려고요."
+minkyu "좀 더 멋진 사람이 된다는 건, 생각보다 큰 걸 요구하는 게 아니더라고요."
+ChangeEmotion dahye laugh
+
+Show sheepHouse
+PlayMusic lobbyMusic
+
+dahye "그래, 그걸 느꼈으면 됐다."
+dahye "좀 더 많은 일들이 있을 테지만…"
+dahye "지금은 일단 그걸로 됐어."
+ChangeEmotion jihee happy
+jihee "맞아 민규! 이 누나는 니가 자랑스럽다!"
+jihee "그리고… 아주…"
+ChangeEmotion jihee excited
+jihee "…"
+ChangeEmotion minkyu despise
+minkyu "거 참 이제 표정으로도 성희롱을 하시네요."
+minkyu "으윾… 술은 적당히 먹다 가야지 이러다 정신을 잃고 모텔 침대에서 눈을 뜨는 게 아닌가 싶어…"
+ChangeEmotion jihee anger
+jihee "야! 내가 뭘 했다고 그래!"
+ChangeEmotion dahye panic
+dahye "청춘을 즐겨라…"
+dahye "즐길 수 있을 때 즐겨야지. 많이 고기 먹고 술도 먹고 울고 웃고 해라."
+jihee "아니 저 분 나보다 3살 밖에 안 많으면서!"
+
+
+
+Show blackScene
+
+ChangeEmotion minkyu default
+minkyu "여기서부터는 독백이다. 그냥 편하게 들어줬으면 좋겠다."
+ChangeEmotion minkyu happy
+minkyu "그날 이후, 뭐, 별거 없다."
+minkyu "나는 일상으로 돌아갔고, 수련을 계속했다."
+minkyu "달라진 건 오직 내 마음가짐 뿐이었다."
+ChangeEmotion minkyu default
+minkyu "나는 이제 용사였고, 그에 걸맞게 강해지고 싶을 뿐이었다."
+minkyu "그리고 그걸 위해 필요한 건 노력이라는 사실을 이제 안다…!"
+ChangeEmotion minkyu aggrovate
+minkyu "물론 뭐 강해진다고 그걸 쓸 일이 있겠냐만…."
+
+Wait 2.5
+StopMusic
+ChangeEmotion dahye panic
+dahye "쓸 일이… 없었으면 좋겠는데 말야."
+ChangeEmotion dahye default
+dahye "이 이야기는 여기서 끝이다."
+ChangeEmotion dahye laugh
+dahye "다음 이야기는 먼 미래… 아니 어쩌면 가까운 미래에 다시 보도록 하지."
+
+Wait 1.0
+
+orange "엔딩 감상을 완료하였습니다."
+orange "지금까지 <현란한 혀놀림-Gamma>를 플레이해주셔서 감사합니다."
+orange "당신이 없었으면 여기까지 오지 못했을 거예요."
+orange "진짜 사랑합니다."
+
+Wait 0.5
+PlayMusic finalBossPreviewMusic
+
+ChangeEmotion dahye laugh
+dahye "아니, 잠깐만. 실은 끝은 아니다. 살짝은... 볼만한 이야기가 하나 남았지."
+dahye "여태껏 체육관에서 쓰지 않은 문으로 와봐."

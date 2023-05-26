@@ -1,3 +1,4 @@
 AutoFreeze
-minkyu "해 정령 올 때는 점프를 할지, 숙여야 할지 애매한 때가 많단 말이야. 어쨌든, 더 깊은 곳으로 가야겠다."
+ChangeEmotion minkyu default
+minkyu "한번 해 보니까 할 만하네…"
 AutoUnFreeze

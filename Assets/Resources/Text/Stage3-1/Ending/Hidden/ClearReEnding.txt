@@ -1,0 +1,6 @@
+AutoFreeze
+ChangeEmotion minkyu despise
+minkyu "오... 여기는 뭐여."
+ChangeEmotion minkyu happy
+minkyu "일단 들어가 볼까…!"
+AutoUnFreeze

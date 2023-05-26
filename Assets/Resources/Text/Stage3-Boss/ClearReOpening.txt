@@ -1,0 +1,39 @@
+Show apart
+PlayMusic thirdBossPlainMusic
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(jihee, 이지희, color=white, emotion=default, speed=0.06, voice=jiheeVoice)
+
+AutoFreeze
+
+ChangeEmotion jihee laugh
+jihee "오 민규 안녕?"
+ChangeEmotion minkyu aggrovated
+minkyu "엥? 와 있으셨네요?"
+ChangeEmotion jihee happy
+jihee "뭐… 그냥 따라와봤지."
+jihee "잘 되어가니?"
+ChangeEmotion minkyu despise
+minkyu "뭐… 실력이 늘겠거니 하고 그냥 하는 거죠…"
+minkyu "아 맞다. 반지는 못 찾았어요."
+ChangeEmotion minkyu default
+minkyu "꽤 많이 찾아다녔는데, 어디 있는 걸까요?"
+ChangeEmotion jihee aggrovated
+jihee "음…"
+jihee "높이 점프해서 갈 수 있는 곳 중심으로 찾아보는 건 어떨끼?"
+jihee "싶네…"
+ChangeEmotion jihee happy
+jihee "뭐 아무튼! 여기까지 오느라 고생 많았어!"
+ChangeEmotion minkyu despise
+minkyu "고생이 많기는 했죠..."
+AutoDown
+minkyu "배고파서 쓰러질 것 같아요..."
+jihee "그래, 내가 쏠게. 같이 편의점이나 가자."
+AutoUnDown
+ChangeEmotion minkyu happy
+minkyu "오 진짜요? 좋죠."
+AutoJump
+Wait 1.5
+Show BlackScene
+minkyu "(그날 밤, 지희 누나랑 삼각 김밥을 사 먹었다.)"
+
+AutoUnFreeze

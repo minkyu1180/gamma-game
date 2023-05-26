@@ -1,0 +1,5 @@
+AutoFreeze
+ChangeEmotion minkyu default
+minkyu "(내 손에는 이미 반지가 있다.)"
+minkyu "흠 맞아. 반지 드려야지. 어서 전해 드리러 가야겠다."
+AutoUnFreeze

@@ -1,0 +1,10 @@
+AutoFreeze
+ChangeEmotion minkyu despise
+minkyu "어…"
+minkyu "잠깐. 난 높이 점프가 없을 텐데…"
+minkyu "어떻게 여길 온 거지…"
+ChangeEmotion minkyu aggrovated
+minkyu "이게 진짜라면… 개발자한테 연락 좀 해줄래? pikachu9807@gmail.com 이야"
+ChangeEmotion minkyu happy
+minkyu "고마워…"
+AutoUnFreeze

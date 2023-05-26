@@ -5,26 +5,23 @@ using UnityEngine;
 public class AutoScroll3_2Camera : MonoBehaviour
 {
     public GameObject Target;
-    public static bool CameraGameMode;
+    public bool CameraGameMode;
     public Vector3 InitPosition;
     public bool CameraInit = false;
-    Vector2 firstDirection = new Vector2(2.0f, 0f);
+    Vector2 firstDirection = new Vector2(0f, 1f);
     bool firstMove = false;
-    bool secondMove = false;
-    bool thirdMove = false;
-    bool hiddenMove = false;
-    Vector2 secondDirection = new Vector2(1.3f, 0.4f);
-    Vector2 thirdDirection = new Vector2(1.8f, 0f);
-    Vector2 upDirection = new Vector2(0f, 5.0f);
+    bool scrollFinished = false;
     Coroutine upCoroutine = null;
+    public bool portalTouched = false;
     // Start is called before the first frame update
     void Start()
     {
-        CameraGameMode = true;
+        //CameraGameMode = true;
         Target = GameObject.Find("Minkyu");
-        InitPosition = new Vector3(Target.transform.position.x + 2.3f, -27.8f , transform.position.z);
-        CameraInit = true;
+        InitPosition = new Vector3(-33.5f, -27.8f , transform.position.z);
+        transform.position = InitPosition;
         gameObject.GetComponent<Rigidbody2D>().velocity = firstDirection;
+        CameraInit = true;
         //Screen.SetResolution(1280,720,true);
     }
 
@@ -34,49 +31,34 @@ public class AutoScroll3_2Camera : MonoBehaviour
         //in game Camera
         //if (Target.activeSelf) // if Camera enabled
 
-        if (CameraInit)
+        if (CameraGameMode && CameraInit)
         {
             if (upCoroutine != null) StopCoroutine(upCoroutine);
             transform.position = InitPosition;
             gameObject.GetComponent<Rigidbody2D>().velocity = firstDirection;
             CameraInit = !CameraInit;
             firstMove = false;
-            secondMove = false;
-            thirdMove = false;
-            hiddenMove = false;
+            scrollFinished = false;
+            portalTouched = false;
         }
 
-        if (transform.position.x > 7.4 && !firstMove)
+        if (!scrollFinished && portalTouched)
+        {
+            gameObject.GetComponent<Rigidbody2D>().velocity = firstDirection * 5; 
+        }
+
+
+
+        if (transform.position.y > 32f && !firstMove)
         {
             firstMove = true;
-            gameObject.GetComponent<Rigidbody2D>().velocity = secondDirection;
+            gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            scrollFinished = true;
         }
 
-        if (transform.position.x > 29f && !secondMove)
+        if (!CameraGameMode)
         {
-            secondMove = true;
-            gameObject.GetComponent<Rigidbody2D>().velocity = thirdDirection;
-        }
-
-        if (transform.position.x > 80f && !thirdMove)
-        {
-            thirdMove = true;
-            hiddenMove = true;
             gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         }
-
-        if (Target.transform.position.y > -13.5f && Target.transform.position.x > 64f && !hiddenMove)
-        {
-            thirdMove = true;
-            hiddenMove = true;
-            upCoroutine = StartCoroutine(GoUpFor(2.0f));
-        }
-    }
-
-    IEnumerator GoUpFor(float duration)
-    {
-        gameObject.GetComponent<Rigidbody2D>().velocity = upDirection;
-        yield return new WaitForSeconds(duration);
-        gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
     }
 }

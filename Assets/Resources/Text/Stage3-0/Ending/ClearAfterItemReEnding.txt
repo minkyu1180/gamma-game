@@ -1,5 +1,5 @@
 AutoFreeze
-ChangeEmotion minkyu aggrovated
-minkyu "이런 걸로 공직자를 협박하기는 싫지만..."
-minkyu "인과 응보라고요. 좀 쉽게 가면 좋잖아요?"
+ChangeEmotion minkyu default
+minkyu "뭐 그래도 지금은"
+minkyu "반지는 내 손에 있고, 가기만 하면 되니까."
 AutoUnFreeze

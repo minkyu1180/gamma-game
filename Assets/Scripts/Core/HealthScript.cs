@@ -10,7 +10,7 @@ public class HealthScript : MonoBehaviour, IDataPersistence
     public Sprite AttackedSprite;
     public Sprite NormalSprite;
     public Sprite FaintedSprite;
-    private static int hp;
+    public int hp;
     public bool IsFainted;
     public bool IsFirstStage;
     public GameObject HealthBar;

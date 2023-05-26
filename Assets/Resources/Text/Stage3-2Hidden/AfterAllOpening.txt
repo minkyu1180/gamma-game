@@ -1,0 +1,8 @@
+Show apart
+PlayMusic thirdFieldMusic
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+
+ChangeEmotion minkyu happy
+minkyu "열심히 하자…!"
+
+AutoUnFreeze

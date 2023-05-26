@@ -1,0 +1,13 @@
+Show apart
+PlayMusic thirdFieldMusic
+
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+
+AutoFreeze
+minkyu "이렇다한 일은 없지만, 뭐"
+minkyu "나도 잘 모르겠지만, 뭐"
+minkyu "실력이 느는 게 느껴지네."
+ChangeEmotion minkyu happy
+minkyu "가자."
+ChangeEmotion minkyu default
+AutoUnFreeze

@@ -1,0 +1,12 @@
+Show apart
+PlayMusic thirdFieldMusic
+
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+AutoFreeze
+
+ChangeEmotion minkyu despise
+minkyu "한 두번 삐끗하면 바로 나락이라."
+ChangeEmotion minkyu default
+minkyu "쉽지 않은 걸...?"
+
+AutoUnFreeze

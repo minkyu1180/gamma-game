@@ -1,0 +1,10 @@
+Show apart
+PlayMusic thirdFieldMusic
+
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+
+AutoFreeze
+minkyu "위로 끝없이 올라가는 삶…"
+ChangeEmotion minkyu happy
+minkyu "우리가 지향해야 할 삶의 방식이 아닐까."
+AutoUnFreeze

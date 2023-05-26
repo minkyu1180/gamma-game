@@ -1,0 +1,16 @@
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(jihee, 이지희, color=white, emotion=default, speed=0.06, voice=jiheeVoice)
+Character(dahye, 박다혜, color=white, emotion=default, speed=0.06, voice=dahyeVoice)
+AutoFreeze
+
+ChangeEmotion minkyu happy
+minkyu "오늘도 그럼 같이 퇴근하시죠."
+minkyu "끼야앗후"
+
+ChangeEmotion jihee aggrovated
+jihee "어… 그… 너 먼저 가"
+ChangeEmotion jihee laugh
+jihee "아니다. 그냥 나 먼저 갈게 민규야!"
+jihee "너는 한 5분만 있다가 와!"
+ChangeEmotion jihee happy
+jihee "꼭! 꼭이야!"

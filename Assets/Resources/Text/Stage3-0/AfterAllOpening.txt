@@ -1,14 +1,10 @@
-Show school
+Show apart
 PlayMusic thirdFieldMusic
 
 Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
-Character(susang, 이수상, color=white, emotion=default, speed=0.06, voice=susangVoice)
 
 AutoFreeze
+minkyu "밤 공기가 좋아…"
 ChangeEmotion minkyu happy
-ChangeEmotion susang laugh
-susang "왜 또 할 말이 있나?"
-minkyu "그건 아니고. 그냥 훈련하러 왔습니다! 핫! 하하하하핫!"
-susang "먼저 가서 기다리지. 협박범"
-minkyu "네~ 민머리 선생님~"
+minkyu "오늘도 열심히 가야겠다."
 AutoUnFreeze

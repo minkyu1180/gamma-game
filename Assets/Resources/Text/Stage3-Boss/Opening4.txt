@@ -1,0 +1,72 @@
+AutoDown
+ChangeEmotion minkyu despise
+minkyu "커흐흑… 허억…"
+ChangeEmotion jihee default
+jihee "살아있니?"
+minkyu "너무 아파요…"
+ChangeEmotion jihee laugh
+jihee "기절은 안했으니 다행이네 ^^"
+minkyu "으흐흑 그게 중요한 게 아닌데…"
+ChangeEmotion jihee excited
+jihee "좋아 시험은 이걸로 끝이야!"
+jihee "너도 이제 어엿한 용사라고!"
+AutoUnDown
+ChangeEmotion minkyu aggrovated
+minkyu "어… 감사합니다…"
+minkyu "잠깐… 이게 끝이에요?"
+
+PlayMusic naiveAnalogMusic
+
+ChangeEmotion jihee laugh
+jihee "어! 맞아! 너 지금 이 순간부터 용사야!"
+jihee "왜?"
+ChangeEmotion jihee excited
+jihee "뽀뽀라도 해줄까?"
+ChangeEmotion minkyu despise
+minkyu "아뇨! 뭔 애도 아니고… 예전부터…"
+minkyu "부끄러워요."
+ChangeEmotion jihee laugh
+jihee "농담 농담~"
+jihee "물론 너가 하고 싶다면 나야 상관 없다~"
+ChangeEmotion minkyu despise
+minkyu "(으휴…)"
+ChangeEmotion minkyu aggrovated
+minkyu "(남녀 반대였으면 저 사람은 성희롱으로 진작에 잡혀갔어.)"
+ChangeEmotion jihee aggrovated
+jihee "아 맞다! 좀 뜬끔없는 소리기는 하지만…"
+ChangeEmotion minkyu despise
+minkyu "?"
+ChangeEmotion jihee default
+jihee "여기서 내가 예전에 반지를 잃어버렸는데…"
+jihee "다음에 수련할 때 혹시 찾으면 나한테 줄 수 있니?"
+ChangeEmotion jihee laugh
+jihee "나는 통~ 안보여서 말이야."
+ChangeEmotion minkyu default
+minkyu "아 뭐. 그정도야."
+ChangeEmotion minkyu happy
+minkyu "보이면 가져다 드릴게요!"
+ChangeEmotion jihee happy
+jihee "고마워!"
+Wait 1.5
+
+ChangeEmotion jihee laugh
+jihee "자! 그럼 일단 오늘은 자러 들어가고"
+jihee "이번 주말에 뭐, 새로운 용사를 선발한 기념으로 파티라도 할까~"
+ChangeEmotion minkyu excited
+minkyu "오. 뭐 먹나요."
+ChangeEmotion jihee excited
+jihee "삼겹살에 소주? 양꼬치에 칭따오?"
+minkyu "양꼬치가 더 끌리긴 하네요."
+ChangeEmotion jihee excited
+jihee "그래 그러자. 어쨌든 오늘 수고했어~ 조심히 들어가고"
+ChangeEmotion jihee laugh
+jihee "좋은 꿈 꿔."
+ChangeEmotion minkyu happy
+minkyu "네! 감사합니다!"
+jihee "음 맞아. 까먹을 뻔했네. 용사가 된 기념으로 이번에 폴짝 뛰는 법이라도 알려줄게~”
+ChangeEmotion jihee happy
+jihee "이제부터 높이 뛸 수 있을 거야!”
+ChangeEmotion minkyu default
+minkyu "(지상에서 위 키와 점프 키를 같이 누르면 위로 높이 점프할 수 있을 것 같다.)”
+
+AutoUnFreeze

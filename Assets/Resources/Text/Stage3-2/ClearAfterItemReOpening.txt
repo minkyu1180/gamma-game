@@ -1,0 +1,12 @@
+Show apart
+PlayMusic thirdFieldMusic
+
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+
+AutoFreeze
+
+minkyu "반지… 전해드려야겠지?"
+ChangeEmotion minkyu happy
+minkyu "얼른 가야겠다."
+
+AutoUnFreeze

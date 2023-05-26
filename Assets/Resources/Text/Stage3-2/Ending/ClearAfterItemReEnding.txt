@@ -1,0 +1,8 @@
+AutoFreeze
+ChangeEmotion minkyu default
+minkyu "다 왔네."
+ChangeEmotion minkyu shout
+minkyu "반지 원정대 도프로도가 여기 왔다!"
+ChangeEmotion minkyu aggrovate
+minkyu "(음…. 잠깐… 난 파괴 시키려는 게 아닌데.)"
+AutoUnFreeze

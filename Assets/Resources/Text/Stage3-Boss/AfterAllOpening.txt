@@ -1,0 +1,70 @@
+Show apart
+PlayMusic naiveAnalogMusic
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(jihee, 이지희, color=white, emotion=default, speed=0.06, voice=jiheeVoice)
+
+AutoFreeze
+
+
+minkyu "흠… 다 왔다."
+minkyu "지희 누나는… 어… 있을리가 없지."
+ChangeEmotion jihee laugh
+jihee "아니! 쨔잔! 나 여기 있지롱!"
+ChangeEmotion minkyu despise
+minkyu "깜짝이야..! 왜 여기 계세요?"
+jihee "말했잖아. 집이 이 근처라고."
+minkyu "아니 그래도 그렇죠?"
+ChangeEmotion jihee default
+jihee "선배 용사로서 후배를 지켜보는 건… 당연한 일이야…"
+ChangeEmotion jihee happy
+jihee "너가 이렇게 노력하는데 내가 집에서 발 뻗고 자는 것도 민망한 일이지."
+jihee "안 그래?"
+ChangeEmotion minkyu happy
+minkyu "모범적인 선배의 모습이군요."
+minkyu "저는 후배가 생기면 그렇게는 하지 못할 것 같은데…"
+ChangeEmotion jihee laugh
+jihee "아잇 너도 다 하게 되어 있…"
+jihee "아니다. 잠깐. 어… 네 후배는…"
+ChangeEmotion jihee excited
+jihee "벌써 거기까지 생각하는 거야 민규…?"
+ChangeEmotion jihee chu
+ChangeColor jihee red
+jihee "누나를 도발하는 거니…?"
+ChangeColor jihee white
+ChangeEmotion minkyu despise
+minkyu "(대체 무슨 소리지…) 아뇨 뭐 그런 건 아니고요… 아하하…"
+ChangeEmotion minkyu happy
+minkyu "아 누나 이렇게 만난 것도 인연인데. 같이 편의점이나 가죠."
+minkyu "진순에 크래미 먹으면 딱…!"
+ChangeEmotion jihee despise
+jihee "우욱"
+jihee "너무 편의점 음식 치고는 심심한 거 아니야?"
+ChangeEmotion minkyu aggrovate
+minkyu "뭘 모르시네요."
+minkyu "원래 밤에 먹을수록 자극적이지 않게 먹어야 한다고요."
+ChangeEmotion minkyu aggrovated
+minkyu "어… 그래야 역류성 식도염도 예방할 수 있고… 어…"
+ChangeEmotion minkyu despise
+minkyu "실은 제가 매운 걸 그렇게 잘 먹는 편이 아니라…"
+ChangeEmotion jihee excited
+jihee "아하."
+jihee "그렇구마잉…"
+jihee "맵찔이였구마잉…"
+ChangeEmotion jihee happy
+jihee "그럼 뭐, 뭘 먹든 간에 가볼까?"
+
+ChangeEmotion minkyu happy
+minkyu "네!"
+
+Wait 1.5
+Show blackScene
+
+ChangeEmotion minkyu default
+minkyu "(결국 밤이라 뭘 많이 먹지는 않고 삼각김밥 정도만 먹었다…)"
+ChangeEmotion minkyu happy
+minkyu "(지희 누나는 내가 그거 먹는 시간에 까르보 불닭에 핫바까지 먹었지만…)"
+minkyu "(언제봐도 참 복스럽게 먹는 사람이다.)"
+minkyu "(먹방 같은 거라도 하면 대박이 날 텐데. 저 사람이 먹는 걸 보고 있자면... 기분이 좋아...)"
+
+
+AutoUnFreeze

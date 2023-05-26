@@ -1,0 +1,5 @@
+AutoFreeze
+minkyu "별거 아니라니까?"
+ChangeEmotion minkyu happy
+minkyu "하하…"
+AutoUnFreeze

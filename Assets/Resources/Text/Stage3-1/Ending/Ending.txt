@@ -1,0 +1,6 @@
+AutoFreeze
+ChangeEmotion minkyu despise
+minkyu "아니… 스피디하게 가는 게… 쉬운 일이 아니구만…"
+minkyu "헉헉…"
+ChangeEmotion minkyu default
+AutoUnFreeze

@@ -1,0 +1,14 @@
+Show apart
+PlayMusic thirdFieldMusic
+
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+AutoFreeze
+
+ChangeEmotion minkyu despise
+minkyu "아이 참."
+minkyu "일로 오지 말 걸 그랬나. 저번에 좀 빡세던데."
+minkyu "근데... 뭐... 어쩌겠어..."
+ChangeEmotion minkyu shout
+minkyu "그냥 가자...!"
+
+AutoUnFreeze

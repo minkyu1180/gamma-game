@@ -1,4 +1,6 @@
 AutoFreeze
 ChangeEmotion minkyu happy
-minkyu "이제 여기도 훈련용으로 오는거지"
+minkyu "모든 일이 일단 일단락 되었다."
+ChangeEmotion minkyu happy
+minkyu "남은 건 끝 없는 수련 뿐…"
 AutoUnFreeze

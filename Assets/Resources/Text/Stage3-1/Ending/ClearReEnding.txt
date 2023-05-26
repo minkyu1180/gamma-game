@@ -1,0 +1,11 @@
+AutoFreeze
+ChangeEmotion minkyu happy
+minkyu "예아 위 아 넘버원~!"
+ChangeEmotion minkyu default
+minkyu "아 잠깐, 뭘 잊은 것 같은데…!"
+ChangeEmotion minkyu despise
+minkyu "맞다 반지!"
+minkyu "체크하지 않은 곳은 없었을까?"
+ChangeEmotion minkyu aggrovated
+minkyu "여기까지 온 이상 어쩔 수 없지… 그냥 가자."
+AutoUnFreeze

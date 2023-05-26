@@ -1,0 +1,5 @@
+AutoFreeze
+ChangeEmotion minkyu despise
+minkyu "진짜 온갖 걸 다 이용하네."
+minkyu "어으윽… 힘들다."
+AutoUnFreeze

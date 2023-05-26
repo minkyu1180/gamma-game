@@ -1,0 +1,5 @@
+AutoFreeze
+minkyu "굳이 일로 가야 할까?"
+ChangeEmotion minkyu aggrovate
+minkyu "그치만… 재미있으니까 간다!"
+AutoUnFreeze

@@ -19,7 +19,18 @@ public class StageUIScript : MonoBehaviour, IDataPersistence
     int stageCount;
     bool didClearStage1_2;
     bool didClearStage2_2;
+
+    bool didClearStage1;
+    bool didTrueClearStage1;
+    bool didClearStage2;
+    bool didTrueClearStage2;
+    
+
+    bool didClearStage3;
+    bool didClear3_2Hidden;
+    bool didTrueClearStage3;
     public GameObject minkyu;
+    public GameObject jihee;
 
     public bool GoDirectBoss = false;
 
@@ -28,12 +39,23 @@ public class StageUIScript : MonoBehaviour, IDataPersistence
         this.stageCount = data.stageCount;
         this.didClearStage1_2 = data.didClearStage1_2;
         this.didClearStage2_2 = data.didClearStage2_2;
+
+        this.didClearStage1 = data.didClearStage1;
+        this.didTrueClearStage1 = data.didTrueClearStage1;
+
+        this.didClearStage2 = data.didClearStage2;
+        this.didTrueClearStage2 = data.didTrueClearStage2;
+        
+        this.didClearStage3 = data.didClearStage3;
+        this.didClear3_2Hidden = data.didClearStage3_2Hidden;
+        this.didTrueClearStage3 = data.didTrueClearStage3;
     }
     public void SaveData(ref GameData data){}
     
     void Start()
     {
         minkyu = GameObject.Find("Minkyu");
+        jihee = GameObject.Find("Jihee");
         DialogBoxTextObject = GameObject.Find("DialogBoxText");
         if (stageCount == 0)
         {
@@ -98,12 +120,18 @@ public class StageUIScript : MonoBehaviour, IDataPersistence
         StartCoroutine(Button2Script("Stage 2-Boss"));
     }   
 
+    public void Stage3Go()
+    {
+        InputDecoder.isGameInScript = true;
+        StartCoroutine(Button3Script("Stage 3-0"));
+    }
 
 
     public void Stage3Click()
     {
-        //minkyufreeze
-        //buttonDisable();
+        minkyu.GetComponent<PlayerMovement>().freeze();
+        buttonDisable();
+        Stage3Go();
     }
 
     public void buttonDisable()
@@ -117,7 +145,9 @@ public class StageUIScript : MonoBehaviour, IDataPersistence
     IEnumerator Button1Script(string destination)
     {
         InputDecoder.InterfaceElements.SetActive(true);
-        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Lobby/Stage1Go" + Convert.ToString(UnityEngine.Random.Range(1,4)));
+        if (didTrueClearStage3) DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Lobby/Stage1GoAfterAllStart");
+        else if (didClearStage1 && !didTrueClearStage1) DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Lobby/Stage1Go3");
+        else DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Lobby/Stage1Go" + Convert.ToString(UnityEngine.Random.Range(1,3))); // 1~2
         yield return new WaitWhile(() => InputDecoder.isGameInScript);
 
         SceneManager.LoadScene(destination);
@@ -126,8 +156,46 @@ public class StageUIScript : MonoBehaviour, IDataPersistence
     IEnumerator Button2Script(string destination)
     {
         InputDecoder.InterfaceElements.SetActive(true);
-        DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Lobby/Stage2Go" + Convert.ToString(UnityEngine.Random.Range(1,4)));
+        if (didTrueClearStage3) DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Lobby/Stage2GoAfterAllStart");
+        else if (didClearStage2 && !didTrueClearStage2) DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Lobby/Stage2Go3");
+        else DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Lobby/Stage2Go" + Convert.ToString(UnityEngine.Random.Range(1,3)));
         yield return new WaitWhile(() => InputDecoder.isGameInScript);
+
+        SceneManager.LoadScene(destination);
+    }
+
+    IEnumerator Button3Script(string destination)
+    {
+        InputDecoder.InterfaceElements.SetActive(true);
+
+        if (didTrueClearStage3)
+        {
+            DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Lobby/Stage3AfterAllStart");
+        }
+        else if (didClear3_2Hidden)
+        {
+            DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Lobby/Stage3ClearAfterItemReStart");
+        }
+        else if (didClearStage3)
+        {
+            DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Lobby/Stage3ClearReStart");
+        }
+        else
+        {
+            DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Lobby/Stage3Start");
+            yield return new WaitWhile(() => InputDecoder.isGameInScript);
+
+            //eliminate jihee sprite
+            jihee.SetActive(false);
+
+            InputDecoder.isGameInScript = true;
+            InputDecoder.InterfaceElements.SetActive(true);
+            DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Lobby/Stage3Start2");
+
+        }
+
+        yield return new WaitWhile(() => InputDecoder.isGameInScript);
+
 
         SceneManager.LoadScene(destination);
     }

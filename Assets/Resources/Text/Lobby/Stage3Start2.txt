@@ -1,0 +1,11 @@
+ChangeEmotion minkyu aggrovated
+minkyu "…? 왜 저렇게 서두르시는 거지?"
+minkyu "혹시 아세요 관장님?"
+
+dahye "…글쎄다. 그럴만한 사정이 있겠지."
+ChangeEmotion dahye laugh
+dahye  "뭐 그래도 저렇게까지 말하니, 5분만 기다렸다가 가는 게 낫지 않을까?"
+minkyu "으음…. 굳이…?"
+ChangeEmotion minkyu default
+minkyu "싶기는 한데… 뭐, 알겠어요."
+AutoUnFreeze

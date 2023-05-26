@@ -1,0 +1,7 @@
+AutoFreeze
+ChangeEmotion minkyu aggrovate
+minkyu "난 올라갈거야."
+minkyu "난 올라갈거야."
+minkyu "내 뼈를 깎아도~"
+minkyu "그래 솔직히 아파도~"
+AutoUnFreeze

@@ -5,7 +5,7 @@ using UnityEngine;
 public class AutoScroll3_1Camera : MonoBehaviour
 {
     public GameObject Target;
-    public static bool CameraGameMode;
+    public bool CameraGameMode;
     public Vector3 InitPosition;
     public bool CameraInit = false;
     Vector2 firstDirection = new Vector2(2.0f, 0f);
@@ -20,11 +20,12 @@ public class AutoScroll3_1Camera : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        CameraGameMode = true;
+        //CameraGameMode = true;
         Target = GameObject.Find("Minkyu");
         InitPosition = new Vector3(Target.transform.position.x + 2.3f, -27.8f , transform.position.z);
-        CameraInit = true;
+        transform.position = InitPosition;
         gameObject.GetComponent<Rigidbody2D>().velocity = firstDirection;
+        CameraInit = true;
         //Screen.SetResolution(1280,720,true);
     }
 
@@ -34,7 +35,7 @@ public class AutoScroll3_1Camera : MonoBehaviour
         //in game Camera
         //if (Target.activeSelf) // if Camera enabled
 
-        if (CameraInit)
+        if (CameraGameMode && CameraInit)
         {
             if (upCoroutine != null) StopCoroutine(upCoroutine);
             transform.position = InitPosition;
@@ -70,6 +71,11 @@ public class AutoScroll3_1Camera : MonoBehaviour
             thirdMove = true;
             hiddenMove = true;
             upCoroutine = StartCoroutine(GoUpFor(2.0f));
+        }
+
+        if (!CameraGameMode)
+        {
+            gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         }
     }
 
