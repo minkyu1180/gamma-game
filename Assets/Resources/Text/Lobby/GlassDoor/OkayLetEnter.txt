@@ -1,0 +1,12 @@
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(jihee, 이지희, color=white, emotion=default, speed=0.06, voice=jiheeVoice)
+Character(dahye, 박다혜, color=white, emotion=default, speed=0.06, voice=dahyeVoice)
+
+AutoFreeze
+
+ChangeEmotion minkyu default
+minkyu "이야기… 이제 해줄 수 있죠?"
+ChangeEmotion dahye default
+dahye "어, 물론. 그래. 안으로 들어가자."
+
+AutoUnFreeze

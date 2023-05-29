@@ -1,0 +1,38 @@
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(jihee, 이지희, color=white, emotion=default, speed=0.06, voice=jiheeVoice)
+Character(dahye, 박다혜, color=white, emotion=default, speed=0.06, voice=dahyeVoice)
+
+AutoFreeze
+
+ChangeEmotion minkyu aggrovated
+minkyu "관장님. 안에서 얘기 좀 할 수 있을까요."
+minkyu "관장님의 정체라던가… 이 체육관에 관해."
+ChangeEmotion minkyu despise
+minkyu "그 때는 너무 취해서 물어볼 생각이 안 들었어서…"
+ChangeEmotion dahye embarrassed
+dahye "흠"
+dahye "언젠가 네가 물어볼 거라고 예상은 했지만."
+ChangeEmotion dahye laugh
+dahye "용사여. 하지만 아직 그 거대한 진실을 알기에는 자격이 부족하다!"
+minkyu "자격…? 그럼 뭘 해야 하죠??"
+ChangeEmotion dahye default
+dahye "세 시험관의 진정한 인정을 모두 받아와라!"
+ChangeEmotion minkyu aggrovated
+minkyu "흐음… 그렇게 되는 건가…"
+minkyu "알겠어요! 그럼, 나중에 꼭 제 질문에 답해 주셔야 해요!"
+ChangeEmotion dahye laugh
+dahye "그래. 알았어."
+ChangeEmotion minkyu default
+minkyu "(세 시험관의 인정을 먼저 받아오도록 하자)"
+
+Wait 1.5
+ChangeEmotion minkyu aggrovated
+minkyu "........?"
+minkyu "잠깐, 저는 다 받은 것 같은데요."
+ChangeEmotion minkyu despise
+minkyu "훈장 3개 다 있잖아요."
+ChangeEmotion dahye embarrassed
+dahye "엥? 진짜 그러네."
+dahye "그럼 안에 들어가서 이야기 해 보자."
+
+AutoUnFreeze

@@ -51,6 +51,9 @@ public class GameData
     public bool didClearStage3;
     public bool didTrueClearStage3;
 
+    public bool didSeeGlassDoorEvent;
+    public bool didCheckEnterGlassDoorAfterEnding;
+
     public GameData()
     {
         this.stageCount = 0;
@@ -86,18 +89,21 @@ public class GameData
         this.didClearStage2 = false;
         this.didTrueClearStage2 = false;
 
-        didSeeStage3_0 = false;
-        didSeeStage3_1 = false;
-        didSeeStage3_2 = false;
-        didSeeStage3_2Hidden = false;
-        didSeeStage3_Boss = false;
+        this.didSeeStage3_0 = false;
+        this.didSeeStage3_1 = false;
+        this.didSeeStage3_2 = false;
+        this.didSeeStage3_2Hidden = false;
+        this.didSeeStage3_Boss = false;
 
-        didClearStage3_0 = false;
-        didClearStage3_1 = false;
-        didClearStage3_2 = false;
-        didClearStage3_2Hidden = false;
+        this.didClearStage3_0 = false;
+        this.didClearStage3_1 = false;
+        this.didClearStage3_2 = false;
+        this.didClearStage3_2Hidden = false;
 
         this.didClearStage3 = false;
         this.didTrueClearStage3 = false;
+
+        this.didSeeGlassDoorEvent = false;
+        this.didCheckEnterGlassDoorAfterEnding = false;
     }
 }

@@ -1,0 +1,10 @@
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(jihee, 이지희, color=white, emotion=default, speed=0.06, voice=jiheeVoice)
+Character(dahye, 박다혜, color=white, emotion=default, speed=0.06, voice=dahyeVoice)
+
+AutoFreeze
+
+ChangeEmotion minkyu default
+minkyu "단련실이다. 퇴근시간이라 굳이 들어갈 필요가 없다."
+
+AutoUnFreeze

@@ -1,0 +1,10 @@
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(jihee, 이지희, color=white, emotion=default, speed=0.06, voice=jiheeVoice)
+Character(dahye, 박다혜, color=white, emotion=default, speed=0.06, voice=dahyeVoice)
+
+AutoFreeze
+
+ChangeEmotion minkyu default
+minkyu "(모든 진실을 알고 싶다면 세 시험관의 인정을 먼저 받아오도록 하자.)"
+
+AutoUnFreeze

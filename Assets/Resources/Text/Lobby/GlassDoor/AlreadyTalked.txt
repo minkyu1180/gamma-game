@@ -1,0 +1,12 @@
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(jihee, 이지희, color=white, emotion=default, speed=0.06, voice=jiheeVoice)
+Character(dahye, 박다혜, color=white, emotion=default, speed=0.06, voice=dahyeVoice)
+
+AutoFreeze
+
+ChangeEmotion minkyu happy
+minkyu "퇴근도 하고, 체육관의 비밀, 관장님의 정체도… 모두 알아냈다."
+minkyu "즉! 지금은 들어갈 필요가 없을 듯하다."
+ChangeEmotion minkyu default
+
+AutoUnFreeze

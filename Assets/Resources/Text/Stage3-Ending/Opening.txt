@@ -46,14 +46,14 @@ dahye "민규야, 겉보기에는 뭐 별거 없어도 말이야."
 dahye "솔직히 너가 얻은 게 없다고는 못하잖아?"
 ChangeEmotion minkyu default
 minkyu "오."
-minkyu "어… 예전보다… 강해지긴 했죠."
+minkyu "어… 얻은 거라… 예전보다 강해지긴 했죠."
 minkyu "강해졌? 나? 움직임이 조금 더 자유로워졌다 싶죠."
-minkyu "음. 맞아요. 저는 강해졌죠."
+minkyu "뭐 어찌되었건, 맞아요. 저는 강해졌죠."
 
 Show blackScene
 PlayMusic disappointmentMusic
 ChangeEmotion dahye laugh
-dahye "…아직도 사는 게 무료하고 의미가 없니?"
+dahye "…혹시 아직도 사는 게 무료하고 의미가 없니?"
 dahye "목표의 부재에 헤매이고 있니?"
 ChangeEmotion minkyu despise
 minkyu "…! 어떻게 그걸…!"
@@ -78,7 +78,7 @@ ChangeEmotion dahye laugh
 Show sheepHouse
 PlayMusic lobbyMusic
 
-dahye "그래, 그걸 느꼈으면 됐다."
+dahye "그래, 그걸 느꼈으면 훌륭하다."
 dahye "좀 더 많은 일들이 있을 테지만…"
 dahye "지금은 일단 그걸로 됐어."
 ChangeEmotion jihee happy

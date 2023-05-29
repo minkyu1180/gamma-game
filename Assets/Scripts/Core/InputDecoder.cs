@@ -255,8 +255,8 @@ public class InputDecoder : MonoBehaviour
             newCharVoice = matches.Groups["voice"].ToString();
         }
 
-
-        CharacterList.Add(new Character(newCharShortName, newCharFullName, newCharColor, newCharEmotion, newCharTextSpeed, newCharVoice));
+        if (CharacterList.FindIndex(x => x.fullName == newCharFullName) == -1) // check it is not duplicated
+            CharacterList.Add(new Character(newCharShortName, newCharFullName, newCharColor, newCharEmotion, newCharTextSpeed, newCharVoice));
     }
     #endregion
 }

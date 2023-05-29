@@ -8,13 +8,15 @@ minkyu "스피드를 키울 방법이 없을까요?"
 jihee "갑자기? 어... 뭔 바람이 불었는지는 모르겠지만... 일단 살을 빼면 돼! 정확하게는 몸의 모든 무게를 줄이면 돼!"
 jihee "근육이 낼 수 있는 스피드에는 한계가 있거든..."
 minkyu "엣 그래요?"
-jihee "어 나 국대 때는 그래서 나 머리 밀다시피 했잖아."
+jihee "어 나 국대 때는 그래서 나 머리도 밀다시피 했잖아."
 
 ChangeEmotion minkyu despise
 minkyu "그렇게까지?"
 ChangeEmotion jihee happy
 jihee "그 때의 나는 뭐랄까... 승부에 미쳤었지"
+ChangeEmotion jihee laugh
 jihee "그치만 지금은 외모도 어느정도 중요하다고 생각해서"
+jihee "이렇게 이쁘게 머릿결 관리하느라 고생이라구."
 
 ChangeEmotion minkyu default
 minkyu "흠... 그렇군요. 좋은 의견 고마워요."

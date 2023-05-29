@@ -16,7 +16,7 @@ susang "왜 화나?"
 ChangeEmotion susang so
 susang "그치만 내가 인정 안해준다는데 네가 뭘 할 수 있는데."
 ChangeEmotion susang what
-susang "화내고 욕하고 절망하는 거 이외에 네가 뭘 할 수 있는데 이 수호령 의존도 1000% 좆밥새끼야 ㅋㅋㅋㅋㅋ"
+susang "화내고 욕하고 절망하는 거 이외에 네가 뭘 할 수 있는데 ㅋㅋㅋㅋㅋ"
 
 ChangeEmotion minkyu shout
 minkyu "(뜨악하네 진짜.)"
