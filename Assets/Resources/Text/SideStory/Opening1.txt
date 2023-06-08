@@ -1,0 +1,8 @@
+Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
+Character(dahye, 박다혜, color=white, emotion=default, speed=0.06, voice=dahyeVoice)
+PlayMusic disappointmentMusic
+AutoFreeze
+ChangeEmotion minkyu aggrovated
+minkyu "관장님은 대체 어떤 사람인거죠...?"
+ChangeEmotion minkyu despise
+minkyu "이제 알려주세요."

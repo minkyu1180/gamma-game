@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -125,7 +125,7 @@ TextureImporter:
         width: 30
         height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -133,6 +133,447 @@ TextureImporter:
       bones: []
       spriteID: 9e8394e40eaeb4caba707bfa3bff6c33
       internalID: -134178847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dahyeAtlas_0
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 252
+        width: 28
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b918d64a9df4b67a2c77ff970cc1a7
+      internalID: 1091307532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dahyeAtlas_1
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 252
+        width: 28
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a1ebd59ae6a43939ede6544972d67c
+      internalID: -1086833246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dahyeAtlas_2
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 251
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc1e4f0627124137b85a9af61cc4aaa
+      internalID: -1394836479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dahyeAtlas_3
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 251
+        width: 64
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38177f32614b24eada923d1f07112658
+      internalID: 1720415072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dahyeAtlas_4
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 187
+        width: 64
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa1364a0cb0d4e03a422304f381c3e8
+      internalID: -512117958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dahyeAtlas_5
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 187
+        width: 64
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a66c3aba27e4505a4117ede0462fa3
+      internalID: 1131624276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dahyeAtlas_6
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 187
+        width: 64
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb43aec954ce4465b9a014d0c04c596c
+      internalID: -1178707879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dahyeAtlas_7
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 188
+        width: 64
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1d66ca292c2d4debb9c36fe50efc855
+      internalID: 952864132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dahyeAtlas_8
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 127
+        width: 64
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e31327017a6948cc85e3fe0479e1661
+      internalID: -918253229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dahyeAtlas_9
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 127
+        width: 64
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04be4951209fe4541823b5ef567a3de2
+      internalID: 613706234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dahyeAtlas_10
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 128
+        width: 64
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a1613005ce114187bd9d281ada20772
+      internalID: -689170020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dahyeAtlas_11
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 129
+        width: 64
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37666a8dd493147de8e82b7e4476758a
+      internalID: -686687384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dahyeAtlas_12
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 67
+        width: 64
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44f66b33fd2bd4a18a758c23bf87143d
+      internalID: -1249930848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dahyeAtlas_13
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 67
+        width: 64
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471b0acad8c12461db8ce437f8aa26fc
+      internalID: -850979385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dahyeAtlas_14
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 68
+        width: 64
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ad63ffe145954b579f99c71e701b065
+      internalID: -1976006096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dahyeAtlas_15
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 68
+        width: 64
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f963cbadff8a409c84fffb8f0eb4af5
+      internalID: 1308865107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dahyeAtlas_16
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 7
+        width: 64
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d041fd53e8a440bba0e5f032ace703
+      internalID: -431125481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dahyeAtlas_17
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 7
+        width: 64
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3381d243614e947449d7541edb46761f
+      internalID: -318868616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dahyeAtlas_18
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 7
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d364c2a4f4045c1aaceecab223ae0c
+      internalID: -13319319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dahyeAtlas_19
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 7
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31836b1fb83a94f6d8d6e56db3126475
+      internalID: 1795684598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dahyeAtlas_20
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 7
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453c314758d19417f979d807c7b28db5
+      internalID: -1711253802
       vertices: []
       indices: 
       edges: []
@@ -149,6 +590,27 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       dahye_default: -134178847
+      dahyeAtlas_2: -1394836479
+      dahyeAtlas_3: 1720415072
+      dahyeAtlas_6: -1178707879
+      dahyeAtlas_10: -689170020
+      dahyeAtlas_14: -1976006096
+      dahyeAtlas_19: 1795684598
+      dahyeAtlas_0: 1091307532
+      dahyeAtlas_12: -1249930848
+      dahyeAtlas_15: 1308865107
+      dahyeAtlas_16: -431125481
+      dahyeAtlas_8: -918253229
+      dahyeAtlas_20: -1711253802
+      dahyeAtlas_17: -318868616
+      dahyeAtlas_1: -1086833246
+      dahyeAtlas_7: 952864132
+      dahyeAtlas_18: -13319319
+      dahyeAtlas_9: 613706234
+      dahyeAtlas_5: 1131624276
+      dahyeAtlas_4: -512117958
+      dahyeAtlas_11: -686687384
+      dahyeAtlas_13: -850979385
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

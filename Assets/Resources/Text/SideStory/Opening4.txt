@@ -1,0 +1,13 @@
+ChangeEmotion dahye transformLaugh
+dahye "뭐 아무튼, 잘 부탁한다고, 용사"
+dahye "이제 지희랑 더 가까워지겠네."
+ChangeEmotion minkyu happy
+minkyu "?? 아 뭐 지금도 가까운데요. 뭘"
+ChangeEmotion dahye transformPanic
+dahye "어… 그게… 생각해 보니 너는 몰랐겠네."
+dahye "뭐 극소수의 예외는 있었다고 했지만…"
+dahye "용사들은 결혼을 한다 하더라고?"
+minkyu "뭐 하겠죠?"
+StopMusic
+ChangeEmotion dahye transformEmbarrassed
+dahye "아니 둘이. 서로. 결혼한다고."

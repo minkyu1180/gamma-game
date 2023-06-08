@@ -1,0 +1,52 @@
+ChangeColor dahye red
+dahye "마왕이다!"
+PlayMusic finalBossFightMusic
+ChangeColor dahye white
+
+ChangeEmotion minkyu aggrovated
+AutoJump
+minkyu "에엣!"
+minkyu "헐"
+
+ChangeEmotion minkyu despise
+minkyu "세상에! 그럼 용사인 저를 죽일 건가요?"
+minkyu "아니, 그것보다… 어…"
+ChangeEmotion minkyu excited
+minkyu "옷이 굉장히 노출이 심하네요."
+minkyu "와… 배꼽…!"
+ChangeEmotion dahye transformPanic
+dahye "미친놈이?"
+dahye "그만 봐! 임마! 나도 좋아서 입는 게 아니라 마왕복이 원래 이렇다고!"
+ChangeEmotion dahye transformEmbarrassed
+dahye "그리고 너를 죽인다니?"
+dahye "그럼 지희도 용사니까 죽여야 하니?"
+ChangeEmotion minkyu aggrovated
+minkyu "에."
+ChangeEmotion minkyu default
+minkyu "생각해보니까 그러네요."
+ChangeEmotion dahye transformLaugh
+dahye "용사는, 마왕과 싸우는 자야."
+minkyu "아 뭐 그건 알아요."
+dahye "즉... 서로 죽이는 관계는 아니라고. 먼 옛날에는 그랬을 수도 있지만."
+ChangeEmotion minkyu aggrovate
+minkyu "그래요??"
+dahye "그렇다."
+dahye "마왕은 인간보다 너무 강해서, 뭔가 법적인 조치가 있기는 하지."
+dahye "이런 식으로 용사가 배정 된다거나, 어… 운동선수는 할 수 없다던가…"
+dahye "근데 솔직히 이 남아도는 힘을 안 쓰기에는 아깝고 그러니까."
+ChangeEmotion dahye transformEmbarrassed
+dahye "대대로… 체육관을 좀 하고 있지."
+ChangeEmotion minkyu aggrovated
+minkyu "그럼, 용사는 대체 뭔가요."
+ChangeEmotion dahye transformLaugh
+dahye "원래 목적은… 유사 시에 마왕이랑 싸우는 사람."
+dahye "마왕이 폭주하면 바로 제압해야 하니까… 보통 가까이 있었어."
+ChangeEmotion dahye transformEmbarrassed
+dahye "근데 그게 별탈 없이 이어지다 보니까."
+dahye "이제는 뭐.. 마왕의 유일한 대련 상대? 정도로 여겨지고 있는 거야."
+dahye "지희 쟤랑은 그래서 어렸을 때부터 빡세게 훈련했고… 태어났을 때부터 용사였거든, 쟤는."
+ChangeEmotion dahye transformLaugh
+dahye "열심히 하다보니 챔피언까지 되더라."
+ChangeEmotion minkyu despise
+minkyu "거참… 그렇군요."
+minkyu "챔피언의 탄생 비화가 이런 이야기였다니…"

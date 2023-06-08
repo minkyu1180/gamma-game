@@ -1,0 +1,23 @@
+PlayMusic titleMusic
+minkyu "..."
+minkyu "................"
+minkyu "..........................................."
+ChangeEmotion minkyu despise
+minkyu "네?"
+dahye "지희가 널 좀 봐주는 느낌이 들지 않았니?"
+dahye "체육관에서 만날 하듯이 시험 봤으면 넌 그대로 기절하고 용사는 끝이었을 걸."
+minkyu "…진짜 그렇네요?"
+ChangeEmotion minkyu shout
+minkyu "뭐에요, 그럼 지희 누나가 진짜 나 좋아해요? 정말?"
+ChangeEmotion dahye transformLaugh
+dahye "그건 둘이 해결봐야 하는 문제지~"
+dahye "왜 나한테 묻냐."
+ChangeEmotion dahye transformLaugh
+dahye "뭐, 아무튼, 잘 부탁한다고 용사님."
+dahye "언젠가. 나랑 싸울 정도로 강해져야 한다?"
+
+ChangeEmotion minkyu despise
+minkyu "이이읶...! 너무 많은 정보가 머리에 들어왔는데?"
+minkyu "이게 뭐야 갑자기...?"
+
+AutoUnFreeze

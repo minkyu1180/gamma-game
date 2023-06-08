@@ -878,7 +878,7 @@ Tilemap:
       m_AnimatedSprites:
       - {fileID: 492293386, guid: c7122724862bc44dd97a46b70411a8bf, type: 3}
       - {fileID: 1415804691, guid: c7122724862bc44dd97a46b70411a8bf, type: 3}
-      m_AnimationSpeed: 7.0000005
+      m_AnimationSpeed: 7
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 0, y: 4, z: 0}
