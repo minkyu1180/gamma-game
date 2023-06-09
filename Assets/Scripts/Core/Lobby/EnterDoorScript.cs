@@ -97,7 +97,7 @@ public class EnterDoorScript : MonoBehaviour, IDataPersistence
         saved = dataPersistenceManager.GetComponent<DataPersistenceManager>().SaveGame();
         yield return new WaitWhile(() => !saved);
 
-        if (enterSideStory) Debug.Log("GOGOGGO");
+        if (enterSideStory) SceneManager.LoadScene("SideStoryScene");
         //Go SideStory Scene
     }
 }

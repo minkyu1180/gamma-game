@@ -49,7 +49,7 @@ public class OpeningSceneManager : MonoBehaviour
         yield return new WaitForSeconds(3.0f);
 
         //전체를 비추다 한 2초후에 (두명만 찍음) 
-        Camera.transform.position = new Vector3(-1.2f, -3.3f, cameraPositionSaved.z);
+        Camera.transform.position = new Vector3(-1.0f, -3.0f, cameraPositionSaved.z);
         Camera.GetComponent<Camera>().orthographicSize = 3.3f;
 
         yield return new WaitForSeconds(2.0f);

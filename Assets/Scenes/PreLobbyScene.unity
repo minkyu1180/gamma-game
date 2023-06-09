@@ -765,6 +765,10 @@ MonoBehaviour:
   Stage1Button: {fileID: 552717210}
   Stage2Button: {fileID: 495598081}
   Stage3Button: {fileID: 865584946}
+  GoBossDirectQuest: {fileID: 0}
+  minkyu: {fileID: 0}
+  jihee: {fileID: 0}
+  GoDirectBoss: 0
 --- !u!1 &285339689
 GameObject:
   m_ObjectHideFlags: 0
@@ -3496,6 +3500,7 @@ MonoBehaviour:
   horizontalInput: 0
   beforeJumpInertia: 0
   doubleJumpEnabled: 0
+  glideEnabled: 0
   highJumpEnabled: 0
   frozen: 0
   isDirectionDoomed: 0
@@ -5959,7 +5964,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1440890758}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.0718, y: -6.4041, z: 0}
+  m_LocalPosition: {x: -4.0718, y: -6.15, z: 0}
   m_LocalScale: {x: 1.5330602, y: 1.5371014, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -8019,7 +8024,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1963014998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.2147, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

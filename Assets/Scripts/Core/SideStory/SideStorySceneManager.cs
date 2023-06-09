@@ -52,7 +52,7 @@ public class SideStorySceneManager : MonoBehaviour
         
 
         //전체를 비추다 한 2초후에 (두명만 찍음) 
-        Camera.transform.position = new Vector3(3.8f, -2f, cameraPositionSaved.z);
+        Camera.transform.position = new Vector3(3.5f, -2f, cameraPositionSaved.z);
         Camera.GetComponent<Camera>().orthographicSize = 3.3f;
 
         yield return new WaitForSeconds(1.0f);

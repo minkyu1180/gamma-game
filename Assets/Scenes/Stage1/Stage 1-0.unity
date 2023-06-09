@@ -9344,6 +9344,7 @@ MonoBehaviour:
   horizontalInput: 0
   beforeJumpInertia: 0
   doubleJumpEnabled: 0
+  glideEnabled: 0
   highJumpEnabled: 0
   frozen: 0
   isDirectionDoomed: 0
@@ -10937,6 +10938,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 636cc7b0726ac45edaf8e38b66afbbae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpForce: 1300
 --- !u!251 &883827620
 PlatformEffector2D:
   m_ObjectHideFlags: 0
@@ -17573,8 +17575,11 @@ MonoBehaviour:
   AttackedSprite: {fileID: 21300000, guid: 7b73e4b042fd542cca8ea68a4a9877e8, type: 3}
   NormalSprite: {fileID: 21300000, guid: edd6e20129238489ea680b4f8093340e, type: 3}
   FaintedSprite: {fileID: 21300000, guid: fd6c870b1e3384b82831460a51aebbdd, type: 3}
+  hp: 0
+  IsFainted: 0
   IsFirstStage: 1
   HealthBar: {fileID: 1438178928}
+  dayCount: 0
   dataPersistenceManager: {fileID: 0}
 --- !u!114 &1858639057
 MonoBehaviour:
