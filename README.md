@@ -1,5 +1,6 @@
 # 현란한 혀놀림 Gamma
-### 1.0.0 version release
+### 1.0.0 version release  
+![image](https://github.com/minkyu1180/gamma-game/assets/36839753/57223de5-09f1-478b-b339-8f316ac5f599)
 * DownLoad:  
  [dropbox](https://www.dropbox.com/sh/03ncksi4xr6qfoo/AADXja-arGn3NL8ad9r8Gt4na?dl=0)  
  
@@ -22,6 +23,4 @@
 * pikachu9807@gmail.com  
   
 지금 당장 즐겨보세요!  
-현란한 혀놀림 Gamma!  
-  
-![image](https://github.com/minkyu1180/gamma-game/assets/36839753/3ac9d4fe-b8dd-4aff-bae0-a3694bbfa825)
+현란한 혀놀림 Gamma! 
