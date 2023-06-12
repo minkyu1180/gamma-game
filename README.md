@@ -24,4 +24,4 @@
 지금 당장 즐겨보세요!  
 현란한 혀놀림 Gamma!  
   
-![image](https://github.com/minkyu1180/gamma-game/assets/36839753/6fe511b4-8120-4443-b854-c4ba6dfef24b)
+![image](https://github.com/minkyu1180/gamma-game/assets/36839753/3ac9d4fe-b8dd-4aff-bae0-a3694bbfa825)
