@@ -5,7 +5,7 @@ AutoFreeze
 
 ChangeEmotion chunbok fainted
 chunbok "쿨럭.... 쿨럭...."
-chunbok "이것이 빠른 스피드를 추구한 나의 대가인가... 요즘 눈이 안 보이다가 보니 벽에 박아버렸군..."
+chunbok "이것이 빠른 스피드를 추구한 나의 말로인가... 요즘 눈이 안 보이다가 보니 벽에 박아버렸군..."
 
 ChangeEmotion minkyu shout
 minkyu "아니? 괜찮아요? 정신 좀 차려보세요!"
@@ -21,7 +21,7 @@ minkyu "앗 이건...."
 
 minkyu "(DNR 문신이 그의 가슴팍에 있었다...)"
 minkyu "그런가... 참 화끈하게 살다 가시는 분이네."
-minkyu "(심장이 멈춰가는 건, 굉장히 고통스러운 과정이라고 들은 적이 있다. 바늘 천 몇개가 심장을 관통하는 기분이라고.)"
+minkyu "(심장이 멈춰가는 건, 굉장히 고통스러운 과정이라고 들은 적이 있다. 바늘 천개 정도가 심장을 관통하는 기분이라고.)"
 ChangeEmotion minkyu aggrovated
 minkyu "(나는 과연 이 죽어가는 노인을 위해 무엇을 할 수 있을까.)"
 
@@ -68,7 +68,7 @@ minkyu "오 감사합니다."
 
 Wait 1.5
 StopMusic
-chunbok "그런데 청년. 그런데 한 번 만 더 해주면 안되나?"
+chunbok "그런데 청년. 혹시 한번만 더 해주면 안되겠나?"
 
 minkyu "...... 뭐를요?"
 chunbok "방금 그거 말일세. 자네 혀놀림이 굉장했거든."

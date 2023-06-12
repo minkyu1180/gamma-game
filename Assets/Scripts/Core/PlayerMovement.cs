@@ -320,7 +320,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         
         float dir = -1;
         anim.SetBool("IsWalking", true);
-        for (float i = 0; i < duration; i = i + 0.02f)
+        for (float i = 0; i < duration; i = i + 0.015f)
         {
             if (isRight) dir = 1;
             
@@ -329,7 +329,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
                 dir = 0f;
             }
             PlayerRigidbody.AddForce(new Vector2(speed * dir, 0f));
-            yield return new WaitForSeconds(0.02f);
+            yield return new WaitForSeconds(0.015f);
         }
         anim.SetBool("IsWalking", false);
     }

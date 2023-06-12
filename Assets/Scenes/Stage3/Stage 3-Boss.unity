@@ -1625,6 +1625,7 @@ MonoBehaviour:
   AttackedSprite: {fileID: 21300000, guid: 7b73e4b042fd542cca8ea68a4a9877e8, type: 3}
   NormalSprite: {fileID: 21300000, guid: edd6e20129238489ea680b4f8093340e, type: 3}
   FaintedSprite: {fileID: 21300000, guid: fd6c870b1e3384b82831460a51aebbdd, type: 3}
+  hp: 0
   IsFainted: 0
   IsFirstStage: 0
   HealthBar: {fileID: 1255613596}
@@ -8256,7 +8257,7 @@ Tilemap:
     m_Data: {r: 0.77423567, g: 0.32017198, b: 0.3979067, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 0.007843138}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_Origin: {x: -82, y: -6, z: 0}
   m_Size: {x: 384, y: 71, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}

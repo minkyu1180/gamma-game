@@ -7,7 +7,7 @@ ChangeEmotion minkyu aggrovated
 minkyu "아윽... 힘들어... 퇴근할게요.."
 dahye "오 나도 가야겠다. 집까지 태워줄까?"
 ChangeEmotion minkyu excited
-minkyu "(캬 집까지 편하게 가서 발 닦고 잠이나 자면 기분 째질 것 같은데...) 아뇨 그 저 오늘은 일이 있어서요. 들어가세요."
+minkyu "(캬 집까지 편하게 가서 발 닦고 잠이나 자면 기분 째질 것 같은데...) 아뇨 그... 오늘은 일이 있어서요. 들어가세요."
 ChangeEmotion jihee excited
 jihee "뭐냐 만날 집에 꿀 발라놓은 것 같이 가던 애가? 여자라도 생겼냐?"
 ChangeEmotion minkyu despise

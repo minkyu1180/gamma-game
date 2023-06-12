@@ -1,6 +1,6 @@
 AutoFreeze
 ChangeEmotion minkyu default
-minkyu "이 타이밍에 높이 점프라니"
+minkyu "타미밍 맞추기가 참"
 ChangeEmotion minkyu despise
 minkyu "빡세기 그지 없구만…"
 minkyu "지희 누나는 이걸 매번 간다는 거지…"

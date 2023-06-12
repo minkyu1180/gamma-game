@@ -11,9 +11,9 @@ minkyu "그런가요? 감사합니다!"
 chunbok "어떤가? 좀 쉬다 가겠는가?"
 
 ChangeEmotion minkyu despise
-minkyu "앗 죄송합니다... 오늘은 집에서 뭘 챙길 게 있어서..."
+minkyu "앗 죄송합니다... 오늘은 집에서 뭘 할 게 있어서..."
 ChangeEmotion chunbok laugh
-chunbok "뭘 미안해하는가. 그럼 어서 가게!"
+chunbok "무얼 미안해하는가. 그럼 어서 가게!"
 
 Wait 2.0
 Show blackScene
@@ -23,7 +23,7 @@ StopMusic
 ChangeEmotion chunbok default
 chunbok "(민규 저 청년, 과거에 무슨 일이 있었던 게 분명하다. 그렇게 잊으라고 말하는 거 보면.)"
 chunbok "(분명 좋지 않은 일이었겠지...)"
-chunbok "(나를 분명 그대로 내버려두어도 별 상관이 없을 수 있다. 하지만 그는 계속 나를 찾아와 계약까지 하며 잊는 걸 다그쳤다.)"
+chunbok "(나를 그대로 내버려두어도 별 상관이 없었을 수 있다. 하지만 그는 계속 나를 찾아와 계약까지 하며 잊는 걸 다그쳤다.)"
 
 ChangeColor chunbok blue
 chunbok "그의 선의..."

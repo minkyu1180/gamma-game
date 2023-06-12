@@ -46,7 +46,7 @@ public class SideStorySceneManager : MonoBehaviour
 
 
         Player.GetComponent<PlayerMovement>().autoWalk(1.4f, true);
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(0.6f);
         Player.GetComponent<PlayerMovement>().autoJump();
         yield return new WaitForSeconds(1.3f);
         

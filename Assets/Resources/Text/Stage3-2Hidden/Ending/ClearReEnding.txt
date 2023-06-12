@@ -2,7 +2,7 @@ AutoFreeze
 ChangeEmotion minkyu despise
 minkyu "반지… 오 마이 프레셔스…"
 minkyu "(바닥에서 반지를 찾았다.)"
-minkyu "(놀랍게도 예전에 잃어버렸다는 것치고는 떄가 별로 타지 않은 듯하다.)"
+minkyu "(놀랍게도 예전에 잃어버렸다는 것치고는 때가 별로 타지 않은 듯하다.)"
 ChangeEmotion minkyu aggrovated
 minkyu "왜지?"
 ChangeEmotion minkyu default

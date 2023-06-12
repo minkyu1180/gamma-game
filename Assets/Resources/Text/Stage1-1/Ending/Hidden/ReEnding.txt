@@ -1,8 +1,8 @@
 AutoFreeze
 ChangeEmotion minkyu despise
 minkyu "여긴 어디지?"
-minkyu "이거 이단 점프 없었으면 못 들어갔을 곳인데?"
-minkyu "잠깐... 난 아직 할아버지를 이기지 못해서 이단 점프가 없을 텐데."
+minkyu "이거 더블 점프 없었으면 못 들어갔을 곳인데?"
+minkyu "잠깐... 난 아직 할아버지를 이기지 못해서 더블 점프가 없을 텐데."
 
 ChangeSpeed minkyu 0.12
 ChangeColor minkyu red

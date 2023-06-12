@@ -13,7 +13,7 @@ ChangeEmotion dahye embarrassed
 dahye "흠"
 dahye "언젠가 네가 물어볼 거라고 예상은 했지만."
 ChangeEmotion dahye laugh
-dahye "용사여. 하지만 아직 그 거대한 진실을 알기에는 자격이 부족하다!"
+dahye "용사여. 그러나 아직 그 거대한 진실을 알기에는 자격이 부족하다!"
 minkyu "자격…? 그럼 뭘 해야 하죠??"
 ChangeEmotion dahye default
 dahye "세 시험관의 진정한 인정을 모두 받아와라!"

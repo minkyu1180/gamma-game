@@ -22,8 +22,8 @@ ChangeEmotion minkyu shout
 minkyu "(뜨악하네 진짜.)"
 
 ChangeEmotion susang laugh
-susang "통과한 건 통과한 거니까, 너에게 활강 능력을 줄게."
-susang "공중에서 떨어질 때 윗 키를 누르면, 좀 더 천천히 떨어질 수 있다. 이것도 다 정령의 힘이지."
+susang "통과한 건 통과한 거니까, 너에게 활강 능력을 주지."
+susang "공중에서 떨어질 때 윗 키를 누르면, 좀 더 천천히 떨어질 수 있다. 이것도 다 정령의 힘이야."
 
 ChangeEmotion minkyu aggrovate
 minkyu "아예 멈출 수는 없나요?"

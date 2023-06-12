@@ -10,7 +10,7 @@ jihee "오 민규 안녕?"
 ChangeEmotion minkyu aggrovated
 minkyu "엥? 와 있으셨네요?"
 ChangeEmotion jihee happy
-jihee "뭐… 그냥 따라와봤지."
+jihee "뭐… 그냥 빨리 왔지."
 jihee "잘 되어가니?"
 ChangeEmotion minkyu despise
 minkyu "뭐… 실력이 늘겠거니 하고 그냥 하는 거죠…"

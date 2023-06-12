@@ -6,5 +6,6 @@ AutoFreeze
 minkyu "지금 생각해보니 이거 진짜 어렵네..."
 ChangeEmotion minkyu happy
 minkyu "낭만적이야..."
+minkyu "(그건 그렇고 여기 반지는 있으려나?)"
 
 AutoUnFreeze

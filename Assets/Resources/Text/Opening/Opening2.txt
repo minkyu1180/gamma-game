@@ -23,7 +23,7 @@ ChangeColor jihee white
 minkyu "아뇨. 뭐... '아이'는 '아이'라는 뜻입니다."
 
 ChangeEmotion jihee aggrovated
-jihee "후... 진짜 개 쌉노잼..."
+jihee "후... 진짜 개노잼..."
 jihee "네가 어린 거지 내가 늙은 게 아닌데..."
 jihee "아무튼, 기절이나 했는데 몸은 괜찮은 거 맞니? 입 놀리는 거 보니까 멀쩡해 보이긴 하지만."
 

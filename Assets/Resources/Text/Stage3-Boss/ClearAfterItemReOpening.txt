@@ -18,6 +18,7 @@ minkyu "껴달라고요?"
 jihee "응."
 minkyu "…(이게 맞나?)"
 ChangeEmotion minkyu aggrovated
+AutoWalk 0.9 true
 minkyu "(아니 뭐 근데 죽은 사람 소원도 들어준다는데… 안될 건 없지?)"
 ChangeEmotion minkyu default
 minkyu "네. 뭐"

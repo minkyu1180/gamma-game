@@ -18,7 +18,7 @@ Show blackScene
 minkyu "유명한 전설이지만, 말이 안되는 이야기다."
 
 ChangeEmotion minkyu happy
-minkyu "하지만 용사는 진짜 폼 난다 생각한다."
+minkyu "하지만 용사는 진짜 폼 난다고 생각한다."
 minkyu "어디서든 어깨 펴고 다니고, 노후도 든든하고, 예쁜 여자도 엄청 많이 만나고 그럴텐데"
 minkyu "부럽기 짝이 없다. 뭐, 당연히 어려운 일이니까 그러겠지만."
 StopMusic
@@ -29,9 +29,9 @@ ChangeEmotion jihee anger
 jihee "누워서~ 근무시간 다 빼는~ 도민규는 언제 일어나냐~"
 ChangeEmotion minkyu aggrovated
 minkyu "아."
-minkyu "벌써 일어날 시간이군요."
+minkyu "벌써 일어날 시간이야..."
 ChangeEmotion minkyu despise
-minkyu "삶은 참 힘들어요..."
+minkyu "삶은 고통이어야요..."
 ShowInGame
 AutoFreeze
 PlayMusic lobbyMusic

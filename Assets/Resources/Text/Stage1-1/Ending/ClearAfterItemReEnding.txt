@@ -3,5 +3,5 @@ ChangeEmotion minkyu aggrovate
 minkyu "얼른 가야겠다."
 minkyu "이건... 어쩔 수 없어. 할아버지랑 계약을 하는 수밖에."
 ChangeEmotion minkyu despise
-minkyu "고통스럽다 진짜..."
+minkyu "..."
 AutoUnFreeze

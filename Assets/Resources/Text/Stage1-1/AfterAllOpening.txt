@@ -8,7 +8,7 @@ AutoFreeze
 ChangeEmotion chunbok default
 chunbok "지치지도 않는구만."
 ChangeEmotion minkyu happy
-minkyu "아, 춘복 할아버지. 제가... 좀 일터에서 약한 편이거든요. 저도 좀 강해져야 할 것 같아서요."
+minkyu "아, 춘복 할아버지. 제가... 저희 체육관에서 제일 약한 편이거든요. 저도 좀 강해져야 할 것 같아서요."
 ChangeEmotion chunbok laugh
 chunbok "좋은 자세네! 꼭 그렇게 되기를 바라겠네"
 minkyu "예. 감사합니다."

@@ -21,8 +21,10 @@ ChangeEmotion minkyu happy
 minkyu "야호! 감사합니다."
 minkyu "(선생님께 가발을 돌려드렸다.)"
 susang "미친 놈…"
-minkyu "(씽긋) 개운하군요 그래. 아주 개운해."
+minkyu "(싱긋) 개운하군요 그래. 아주 개운해."
+ChangeColor minkyu red
 minkyu "크하하하하하! 크하하하하하하하하하핫!"
+ChangeColor minkyu white
 
 
 AutoUnFreeze

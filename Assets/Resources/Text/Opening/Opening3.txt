@@ -10,7 +10,7 @@ dahye "그치, 뭐 열심히 하는 것도 좋긴한데."
 dahye "쟤 도망가면 너랑 내가 일 다해야 하는데?"
 dahye "우리 체육관 다시 2인 체제로 돌아가는 거야."
 ChangeEmotion dahye embarrassed
-dahye "진짜 감당 가능해? 일단 난 못할 것 같은데."
+dahye "진짜 감당 가능해? 일단 난 못 할 것 같은데."
 
 ChangeEmotion jihee despise
 jihee "앗... 아앗... 어..."

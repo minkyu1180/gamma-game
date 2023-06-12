@@ -16,7 +16,7 @@ jihee "그러면 다혜 언니가 오해할 수도 있잖아!"
 jihee "창피하게..!"
 ChangeEmotion minkyu despise
 minkyu "아 프러포즈라도 하는 줄 알고 오해할수도… 하긴 남자가 여자한테 반지주는 게 보통 그런거긴 하죠…?"
-minkyu "(근데 이분 왜 이리 기분이 좋아보이지...)"
+minkyu "(근데 이 분 왜 이리 기분이 좋아보이지...)"
 minkyu "알겠어요..."
 ChangeEmotion jihee happy
 jihee "그럼~ 오늘도 먼저 가 있을게!"

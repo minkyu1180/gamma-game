@@ -14,7 +14,7 @@ ChangeEmotion chunbok surprised
 chunbok "......"
 ChangeEmotion chunbok laugh
 chunbok "그렇군. 오늘은 좀 다른 이야기를 하게 될 지도 모르겠군."
-chunbok "하지만 훈련이 끝난 뒤에 하자고. 자, 간다네."
+chunbok "하지만 그건 훈련이 끝난 뒤에 하자고. 자, 간다네."
 
 AutoUnFreeze
 PlayMusic firstBossFightMusic

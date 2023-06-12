@@ -7,7 +7,7 @@ ChangeEmotion minkyu happy
 minkyu "오 지희 누나. 여긴 어쩐 일이래요."
 minkyu "요 근처가 누나 집이라는 건 알고 있긴 했지만."
 ChangeEmotion minkyu default
-minkyu "저도 어… 기다리는 사람이 안 와서 할게 없는데… 같이 편의점이나 가실래요?"
+minkyu "저도 어… 기다리는 사람이 안 와서 할 일이 없는데… 같이 편의점이나 가실래요?"
 ChangeEmotion jihee happy
 jihee "편의점? 마침 출출했는데? 좋지…"
 ChangeEmotion jihee laugh
@@ -62,7 +62,9 @@ ChangeEmotion minkyu despise
 minkyu "…그 말은?"
 
 StopMusic
+ChangeColor jihee red
 jihee "한대만 맞자."
+ChangeColor jihee white
 minkyu "?!?!?!?!"
 jihee "간다~!"
 

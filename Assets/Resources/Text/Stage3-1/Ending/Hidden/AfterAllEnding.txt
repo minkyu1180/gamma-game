@@ -1,7 +1,5 @@
 AutoFreeze
 ChangeEmotion minkyu happy
-minkyu "이게… 그러니까 여기로 들어가면 좀 어려웠었는데."
-minkyu "잘 할 수 있으려나…"
-ChangeEmotion minkyu aggrovate
-minkyu "뭐 다 나 하기 나름이겠지만…"
+minkyu "이게… 그러니까 여기로 들어가면 좀 어려웠었는데..."
+minkyu "잘 할 수 있겠지 뭐."
 AutoUnFreeze

@@ -145,7 +145,7 @@ public class StageUIScript : MonoBehaviour, IDataPersistence
     IEnumerator Button1Script(string destination)
     {
         InputDecoder.InterfaceElements.SetActive(true);
-        if (didTrueClearStage3) DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Lobby/Stage1GoAfterAllStart");
+        if (didTrueClearStage1) DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Lobby/Stage1GoAfterAllStart");
         else if (didClearStage1 && !didTrueClearStage1) DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Lobby/Stage1Go3");
         else DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Lobby/Stage1Go" + Convert.ToString(UnityEngine.Random.Range(1,3))); // 1~2
         yield return new WaitWhile(() => InputDecoder.isGameInScript);
@@ -156,7 +156,7 @@ public class StageUIScript : MonoBehaviour, IDataPersistence
     IEnumerator Button2Script(string destination)
     {
         InputDecoder.InterfaceElements.SetActive(true);
-        if (didTrueClearStage3) DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Lobby/Stage2GoAfterAllStart");
+        if (didTrueClearStage2) DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Lobby/Stage2GoAfterAllStart");
         else if (didClearStage2 && !didTrueClearStage2) DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Lobby/Stage2Go3");
         else DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Lobby/Stage2Go" + Convert.ToString(UnityEngine.Random.Range(1,3)));
         yield return new WaitWhile(() => InputDecoder.isGameInScript);

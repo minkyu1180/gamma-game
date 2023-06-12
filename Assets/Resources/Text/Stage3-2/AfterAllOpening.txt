@@ -4,7 +4,7 @@ PlayMusic thirdFieldMusic
 Character(minkyu, 도민규, color=white, emotion=default, speed=0.06, voice=minkyuVoice)
 
 AutoFreeze
-minkyu "이제 이것도 별로 어렵지 않습니다."
+minkyu "아직도 어렵긴 한데..."
 ChangeEmotion minkyu happy
-minkyu "별 거 아니죠!!!"
+minkyu "하다 보면 쉬워지는 거지."
 AutoUnFreeze

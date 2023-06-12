@@ -4,12 +4,28 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class Stage1_2PortalScript : MonoBehaviour
+public class Stage1_2PortalScript : MonoBehaviour, IDataPersistence
 {
     GameObject DialogBoxTextObject;
+    GameObject dataPersistenceManager;
+
+    bool didClearStage1_2;
+
+    public void LoadData(GameData data)
+    {
+        this.didClearStage1_2 = data.didClearStage1_2;
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.didClearStage1_2 = this.didClearStage1_2;
+    }
+
     void Start()
     {
         DialogBoxTextObject = GameObject.Find("DialogBoxText");
+        dataPersistenceManager = GameObject.Find("DataPersistenceManager");
+
     }
     void OnTriggerStay2D(Collider2D other)
     {
@@ -40,6 +56,11 @@ public class Stage1_2PortalScript : MonoBehaviour
         InputDecoder.InterfaceElements.SetActive(true);
         DialogBoxTextObject.GetComponent<DialogBoxTextTyper>().LoadScript("Text/Stage1-2/Ending/Ending");
         yield return new WaitWhile(() => InputDecoder.isGameInScript);
+
+        didClearStage1_2 = true;
+        bool saved = false;
+        saved = dataPersistenceManager.GetComponent<DataPersistenceManager>().SaveGame();
+        yield return new WaitWhile(() => !saved);
 
         SceneManager.LoadScene("Stage 1-Boss");
     }

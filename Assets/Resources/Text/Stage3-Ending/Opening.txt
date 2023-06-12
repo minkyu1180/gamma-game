@@ -29,7 +29,7 @@ minkyu "근데 그렇게 쩌는 거예요?"
 minkyu "저희 말고는 아는 사람이 없는데?"
 ChangeEmotion minkyu despise
 minkyu "제가 용사로서 기대했던 부와 명예, 긍지… 이런 거는 없는 건가요? 마왕은? 세상의 평화는?"
-minkyu "이거 거의 두 분이 다른 사람들 몇명 도움을 얻어서 짜고 치는 느낌이라구요"
+minkyu "이거 두 분이 다른 사람들 도움을 얻어서 짜고 치는 느낌이라구요"
 ChangeEmotion jihee excited
 jihee "ㅋㅋㅋㅋ 그치만 진짜 용사 맞아. 국가에서도 공론화는 안 시키지만 실제로 있는 자격이고"
 minkyu "무슨 혜택이 있는데요?"

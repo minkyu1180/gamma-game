@@ -10,7 +10,7 @@ minkyu "그러고 보면 수상 씨...? 수상 선생님...? 아잇 그냥 선�
 minkyu "선생님은 그럼 용사랑은 어떤 관계인가요? 저번 할아버지는 통 설명을 안해줘서..."
 
 ChangeEmotion susang laugh
-susang "난 용사랑 마왕의 학창시절 선생님이었지."
+susang "난 용사랑 마왕의 학창 시절 선생님이었지."
 susang "어릴 땐 귀여웠다고, 걔네. 배드민턴 수행 친다고 체육관에서 뽈뽈대며 연습하던 게 엊그제 같은데, 벌써 이렇게 크다니..."
 
 ChangeEmotion minkyu aggrovated

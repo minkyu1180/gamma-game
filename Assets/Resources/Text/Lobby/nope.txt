@@ -9,7 +9,7 @@ minkyu "아 이게 맞나? 도저히 안 되는 것 같은데."
 minkyu "아니 애초에 오토바이 탄 사람에게 스피드를 평가반는 게 맞나?"
 ChangeEmotion minkyu despise
 minkyu "에휴.."
-minkyu "그래도 뭐. 기초체혁 도움은 되는 것 같으니. 하는 데까지는 해 봐야지."
+minkyu "그래도 뭐. 기초 체력 도움은 되는 것 같으니. 하는 데까지는 해 봐야지."
 minkyu "저 퇴근할게요~!"
 
 ChangeEmotion jihee happy

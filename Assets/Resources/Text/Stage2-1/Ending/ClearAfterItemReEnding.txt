@@ -1,4 +1,4 @@
 AutoFreeze
 ChangeEmotion minkyu aggrovated
-minkyu "항상 '모'난 삶을 산 나는, '모'나지 않은 사람의 마음을... 이해할 수 없다."
+minkyu "항상 '모'난 삶을 살아온 나는, '모'나지 않은 사람의 마음을... 이해할 수 없다."
 AutoUnFreeze

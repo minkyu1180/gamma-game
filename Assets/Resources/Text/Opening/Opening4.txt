@@ -1,9 +1,9 @@
 ChangeEmotion minkyu default
 minkyu "(그로부터 며칠이 지났다.)"
-minkyu "(뭐가 어찌되었든, 출근을 하고 저는 오늘 하루를 살아가야만 하는 것이다. 그것이... 인간이니까.)"
+minkyu "(뭐가 어찌되었든, 출근을 하고 나는 오늘 하루를 살아가야만 하는 것이다. 그것이... 인간이니까.)"
 
 ChangeEmotion minkyu despise
-minkyu "월요일 좋아~ 너무나 좋아~ 예아 왓더 뻑~ 끼야앗호우~"
+minkyu "월요일 좋아~ 너무나 좋아~ 예아 왓더~ 끼야앗호우~"
 minkyu "엣"
 
 ChangeEmotion minkyu default

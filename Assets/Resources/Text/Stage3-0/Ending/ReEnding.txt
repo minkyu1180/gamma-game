@@ -1,4 +1,4 @@
 AutoFreeze
 ChangeEmotion minkyu default
-minkyu "한번 해 보니까 할 만하네…"
+minkyu "한 번 해 보니까 할 만하네…"
 AutoUnFreeze

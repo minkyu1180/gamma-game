@@ -6,7 +6,7 @@ ChangeEmotion minkyu despise
 minkyu "(후...)"
 
 ChangeEmotion minkyu default
-minkyu "훈련 시켜 주셔서 감사합니다."
+minkyu "훈련시켜 주셔서 감사합니다."
 
 ChangeEmotion chunbok laugh
 chunbok "하하, 뭘 이런 거 가지고 그러나. 다음에 또 오게!"

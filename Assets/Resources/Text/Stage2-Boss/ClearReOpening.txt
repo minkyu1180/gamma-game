@@ -9,9 +9,9 @@ Character(orange, 오렌지, color=white, emotion=default, speed=0.06, voice=cli
 AutoFreeze
 
 ChangeEmotion minkyu despise
-minkyu "솔직히 이거 몇번 더 싸운다 해서 인정 받을 거 같냐?"
+minkyu "솔직히 이거 몇번 더 싸운다 해서 인정 받을 거 같아?"
 green "ㄴㄴ 전혀"
-pink "자기도 정령검 쓰면서 용사 후보 보고는 뭐라하는 쫌생이 선생님~"
+pink "자기도 정령검 쓰면서 용사 후보 보고는 뭐라하는 쫌생이 선생님~ 또 뵙네요~"
 ChangeEmotion susang laugh
 susang "마음대로 지껄여라"
 ChangeEmotion susang default

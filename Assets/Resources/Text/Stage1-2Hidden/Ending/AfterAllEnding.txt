@@ -1,5 +1,5 @@
 AutoFreeze
 ChangeEmotion minkyu shout
 minkyu "전에는 경황이 없어서 몰랐지만."
-minkyu "이거 생각보다 난이도가 있는 것 같아..."
+minkyu "이거 난이도가 꽤 있는 게 맞다..."
 AutoUnFreeze

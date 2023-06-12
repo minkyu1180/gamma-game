@@ -6,7 +6,7 @@ ChangeEmotion minkyu despise
 minkyu "(난 지긋지긋 한데)"
 orange "별로... 아닌가... 보구나..."
 orange "다시 만나서... 기뻐... 인간... 네가 한 일?"
-orange "-요정... 버스트...-로 보답... 가능?"
+orange "요정-... 버스트...로 보답... 가능?"
 pink "오 우리가 말하기도 전에!"
 ChangeEmotion minkyu default
 minkyu "가능가능!"

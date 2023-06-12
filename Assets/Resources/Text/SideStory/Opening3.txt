@@ -43,7 +43,7 @@ dahye "원래 목적은… 유사 시에 마왕이랑 싸우는 사람."
 dahye "마왕이 폭주하면 바로 제압해야 하니까… 보통 가까이 있었어."
 ChangeEmotion dahye transformEmbarrassed
 dahye "근데 그게 별탈 없이 이어지다 보니까."
-dahye "이제는 뭐.. 마왕의 유일한 대련 상대? 정도로 여겨지고 있는 거야."
+dahye "이제는 뭐.. 마왕의 유이한 대련 상대? 정도로 여겨지고 있는 거야."
 dahye "지희 쟤랑은 그래서 어렸을 때부터 빡세게 훈련했고… 태어났을 때부터 용사였거든, 쟤는."
 ChangeEmotion dahye transformLaugh
 dahye "열심히 하다보니 챔피언까지 되더라."
