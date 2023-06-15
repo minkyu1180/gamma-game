@@ -1,8 +1,10 @@
 # 현란한 혀놀림 Gamma
 ### 1.0.0 version release  
 ![image](https://github.com/minkyu1180/gamma-game/assets/36839753/57223de5-09f1-478b-b339-8f316ac5f599)
-* DownLoad:  
- [dropbox](https://www.dropbox.com/sh/03ncksi4xr6qfoo/AADXja-arGn3NL8ad9r8Gt4na?dl=0)  
+* Download:  
+ [dropbox](https://www.dropbox.com/sh/03ncksi4xr6qfoo/AADXja-arGn3NL8ad9r8Gt4na?dl=0)
+* PlayThrough (2탄까지):  
+  [youtube](https://youtu.be/xbupdSSnaqI)
  
 ### Feature
 * 2D 횡스크롤 컨트롤 기반 게임.
@@ -20,7 +22,8 @@
 * 흥겨운 음악♪	
 
 ### Producer
-* pikachu9807@gmail.com  
+* pikachu9807@gmail.com
+* 모든 아트워크, 음악, 시나리오 1인 수제작
   
 지금 당장 즐겨보세요!  
 현란한 혀놀림 Gamma! 
